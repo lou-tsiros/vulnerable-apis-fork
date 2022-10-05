@@ -1,0 +1,21 @@
+id = 064c00b1-77d7-45d1-bc58-e0fff466e794
+
+[relations]
+
+[relations.collections]
+rootDirectory = postman/collections
+files[] = {"id":"20557208-ea877c73-efd6-4932-83f0-b11d5176e612","path":"The Good Bank APIs(1).json","metaData":{}}
+files[] = {"id":"20557208-115822cc-531e-4b9a-8d99-9d1548df36e3","path":"The Good Bank APIs.json","metaData":{}}
+files[] = {"id":"20557208-a7523e4d-5440-4a40-aa4f-f6fbda09aeb5","path":"The Good Bank APIs_f941d850-6b65-43d8-bd70-da52bf678859.json","metaData":{}}
+
+[relations.collections.metaData]
+
+[relations.apiDefinition]
+rootDirectory = postman/schemas
+files[] = {"path":"index Copy.yaml","metaData":{}}
+files[] = {"path":"index.yaml","metaData":{}}
+files[] = {"path":"schema.yaml","metaData":{}}
+
+[relations.apiDefinition.metaData]
+type = openapi:3
+rootFiles[] = schema.yaml
