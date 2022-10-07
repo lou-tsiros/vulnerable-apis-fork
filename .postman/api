@@ -1,23 +1,18 @@
-id = 78977cab-d1c5-4a2e-8f63-6004f6060191
+id = d401fce8-aebb-4f52-a61a-a102264bf366
 
 [relations]
 
 [relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"20557208-ea877c73-efd6-4932-83f0-b11d5176e612","path":"The Good Bank APIs(1).json","metaData":{}}
-files[] = {"id":"20557208-47ccaffe-163e-406e-8532-5d7a779b1430","path":"The Good Bank APIs(2).json","metaData":{}}
 files[] = {"id":"20557208-115822cc-531e-4b9a-8d99-9d1548df36e3","path":"The Good Bank APIs.json","metaData":{}}
-files[] = {"id":"20557208-a7523e4d-5440-4a40-aa4f-f6fbda09aeb5","path":"The Good Bank APIs_f941d850-6b65-43d8-bd70-da52bf678859.json","metaData":{}}
 
 [relations.collections.metaData]
 
 [relations.apiDefinition]
 rootDirectory = postman/schemas
-files[] = {"path":"index Copy.yaml","metaData":{}}
 files[] = {"path":"index.yaml","metaData":{}}
 files[] = {"path":"openAPISpecBank.yaml","metaData":{}}
 files[] = {"path":"schema.yaml","metaData":{}}
 
 [relations.apiDefinition.metaData]
 type = openapi:3
-rootFiles[] = schema.yaml
