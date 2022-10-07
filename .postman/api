@@ -4,7 +4,6 @@ id = d401fce8-aebb-4f52-a61a-a102264bf366
 
 [relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"20557208-115822cc-531e-4b9a-8d99-9d1548df36e3","path":"The Good Bank APIs.json","metaData":{}}
 
 [relations.collections.metaData]
 
@@ -16,3 +15,4 @@ files[] = {"path":"schema.yaml","metaData":{}}
 
 [relations.apiDefinition.metaData]
 type = openapi:3
+rootFiles[] = index.yaml
