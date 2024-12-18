@@ -1,0 +1,3025 @@
+{
+	"info": {
+		"_postman_id": "4f9a2183-ae2a-4e1a-a8fe-dc9c39c26975",
+		"name": "New Mexico Interactive - NMI Copy",
+		"description": "New Mexico Interactive(NMI) High Volume Data Sales Rest API Interface. Tyler Technologies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "36445156-4f9a2183-ae2a-4e1a-a8fe-dc9c39c26975"
+	},
+	"item": [
+		{
+			"name": "AdditionalFeesCharged",
+			"item": [
+				{
+					"name": "NMI Additional Fees",
+					"id": "2183516c-d191-4d89-b842-940ab583264a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeeAmount\": \"<number>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/AdditionalFeesCharged",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"AdditionalFeesCharged"
+							]
+						},
+						"description": "NMI additional fees charged web service."
+					},
+					"response": [
+						{
+							"id": "cdd96b38-0d63-4686-a72b-6902b7cf4bcb",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeeAmount\": \"<number>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/AdditionalFeesCharged",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"AdditionalFeesCharged"
+									]
+								},
+								"description": "NMI additional fees charged web service."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "e4325851-1c9c-4213-ad09-dc11c29f730e"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": {\n    \"BillableResponseKey\": \"<double>\"\n  },\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "c91eb5ea-26d2-4fab-b33f-bbc9abf293f1"
+		},
+		{
+			"name": "AddressSearch",
+			"item": [
+				{
+					"name": "NMI Address Search",
+					"id": "b8479e5f-8722-4eaa-8d62-95013777f829",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"Street1\": \"<string>\",\n  \"Street2\": \"<string>\",\n  \"City\": \"<string>\",\n  \"State\": \"<string>\",\n  \"Zip\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/AddressSearch",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"AddressSearch"
+							]
+						},
+						"description": "NMI service that retrieves customer info base on given address."
+					},
+					"response": [
+						{
+							"id": "508ccb27-8547-4814-87f0-ae6d6cc607d0",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"Street1\": \"<string>\",\n  \"Street2\": \"<string>\",\n  \"City\": \"<string>\",\n  \"State\": \"<string>\",\n  \"Zip\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/AddressSearch",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"AddressSearch"
+									]
+								},
+								"description": "NMI service that retrieves customer info base on given address."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "e517d4b2-b9b8-430e-8b0d-2a95ab751535"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": [\n    {\n      \"AccountKey\": \"<string>\",\n      \"DLN\": \"<string>\",\n      \"LicenseState\": \"<string>\",\n      \"DOB\": \"<string>\",\n      \"FirstName\": \"<string>\",\n      \"LastName\": \"<string>\",\n      \"MiddleInitial\": \"<string>\",\n      \"Suffix\": \"<string>\",\n      \"Street1\": \"<string>\",\n      \"Street2\": \"<string>\",\n      \"City\": \"<string>\",\n      \"State\": \"<string>\",\n      \"Zip\": \"<string>\"\n    },\n    {\n      \"AccountKey\": \"<string>\",\n      \"DLN\": \"<string>\",\n      \"LicenseState\": \"<string>\",\n      \"DOB\": \"<string>\",\n      \"FirstName\": \"<string>\",\n      \"LastName\": \"<string>\",\n      \"MiddleInitial\": \"<string>\",\n      \"Suffix\": \"<string>\",\n      \"Street1\": \"<string>\",\n      \"Street2\": \"<string>\",\n      \"City\": \"<string>\",\n      \"State\": \"<string>\",\n      \"Zip\": \"<string>\"\n    }\n  ],\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "4f7f92f7-6e4e-4354-a1f0-c8a6d8f423d1"
+		},
+		{
+			"name": "CitationActionCount",
+			"item": [
+				{
+					"name": "NMI Citation Add Count",
+					"id": "50c36c7b-5860-45ed-b1af-599942c0bb0e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeesCharged\": \"<number>\",\n  \"DLN\": \"<string>\",\n  \"StartDate\": \"<string>\",\n  \"EndDate\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/CitationActionCount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"CitationActionCount"
+							]
+						},
+						"description": "NMI service to retrieve the number of citations added to a given DLN."
+					},
+					"response": [
+						{
+							"id": "0085246e-d7f6-4b46-9e34-2f3fa9ae9829",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeesCharged\": \"<number>\",\n  \"DLN\": \"<string>\",\n  \"StartDate\": \"<string>\",\n  \"EndDate\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/CitationActionCount",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"CitationActionCount"
+									]
+								},
+								"description": "NMI service to retrieve the number of citations added to a given DLN."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "3afeed02-1de6-4737-a412-94e97bbe4467"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Exists\": \"<boolean>\",\n  \"CitationCount\": \"<double>\",\n  \"ActionCount\": \"<double>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\",\n  \"BillableResponseKey\": \"<double>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "7b1e5f6f-8526-45d2-a5f2-bfcc0a344bad"
+		},
+		{
+			"name": "CountLiensForVIN",
+			"item": [
+				{
+					"name": "NMI Lien Count By VIN",
+					"id": "4d2bec94-3af2-4a78-9181-6ebaa4686ec4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"VIN\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/CountLiensForVIN",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"CountLiensForVIN"
+							]
+						},
+						"description": "NMI service to count the number of liens associated with a given VIN."
+					},
+					"response": [
+						{
+							"id": "d97c9b83-3851-4424-a848-3457bb26917c",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"VIN\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/CountLiensForVIN",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"CountLiensForVIN"
+									]
+								},
+								"description": "NMI service to count the number of liens associated with a given VIN."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "7457f629-6609-4398-bc96-161e815e9f7d"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"LienCount\": \"<double>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "669b16ef-6407-406d-91fa-e2c65d52e070"
+		},
+		{
+			"name": "DLRDetail",
+			"item": [
+				{
+					"name": "NMI DLR Detail",
+					"id": "e36d0ff4-75a5-4764-8197-4ca0213e53e2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeesCharged\": \"<number>\",\n  \"DLN\": \"<string>\",\n  \"AccountKey\": \"<string>\",\n  \"RequestPhoto\": \"<boolean>\",\n  \"RequestSignature\": \"<boolean>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/DLRDetail",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"DLRDetail"
+							]
+						},
+						"description": "NMI service to retrieve DLR data for a given accountkey/DLN."
+					},
+					"response": [
+						{
+							"id": "3f870dfb-a368-40fc-b731-79289bf40f21",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeesCharged\": \"<number>\",\n  \"DLN\": \"<string>\",\n  \"AccountKey\": \"<string>\",\n  \"RequestPhoto\": \"<boolean>\",\n  \"RequestSignature\": \"<boolean>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/DLRDetail",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"DLRDetail"
+									]
+								},
+								"description": "NMI service to retrieve DLR data for a given accountkey/DLN."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "0a8e39b1-4900-4ca1-9ab9-dc29d904a266"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Driver\": {\n    \"UniqueId\": \"<string>\",\n    \"AccountKey\": \"<string>\",\n    \"DLN\": \"<string>\",\n    \"DOB\": \"<string>\",\n    \"EyeColor\": \"<string>\",\n    \"FirstName\": \"<string>\",\n    \"LastName\": \"<string>\",\n    \"Height\": \"<string>\",\n    \"Weight\": \"<string>\",\n    \"Sex\": \"<string>\",\n    \"OrganDonor\": \"<boolean>\",\n    \"LicenseMessage\": \"<string>\",\n    \"LicenseNCLStatus\": \"<string>\",\n    \"LicenseCDLStatus\": \"<string>\",\n    \"LicenseNCLSurrenderDate\": \"<string>\",\n    \"LicenseCDLSurrenderDate\": \"<string>\",\n    \"LicenseMessageColor\": \"<string>\",\n    \"LicenseNCLColor\": \"<string>\",\n    \"LicenseCDLColor\": \"<string>\",\n    \"MedCertCDLISPostedDate\": \"<string>\",\n    \"MedCertExpDate\": \"<string>\",\n    \"MedCertReceivedDate\": \"<string>\",\n    \"MedCertIssueDate\": \"<string>\",\n    \"MedCertSpeIssueDate\": \"<string>\",\n    \"MedCertSPEExpDate\": \"<string>\",\n    \"MedCertWaiverDate\": \"<string>\",\n    \"MedCertVarianceExpDate\": \"<string>\",\n    \"MedCertExaminerDesignation\": \"<string>\",\n    \"MedCertExaminerFirstName\": \"<string>\",\n    \"MedCertExaminerLastName\": \"<string>\",\n    \"MedCertExaminerLicenceNumber\": \"<string>\",\n    \"MedCertExaminerLicenceState\": \"<string>\",\n    \"MedCertExaminerPhone\": \"<string>\",\n    \"MedCertSelfCertified\": \"<string>\",\n    \"MedCertExaminerRegNumber\": \"<string>\",\n    \"MedCertRestrictions\": \"<string>\",\n    \"MedCertStatus\": \"<string>\",\n    \"MiddleName\": \"<string>\",\n    \"NameSuffix\": \"<string>\",\n    \"NonDriverFlag\": \"<boolean>\",\n    \"Photo\": \"<string>\",\n    \"Street1\": \"<string>\",\n    \"Street2\": \"<string>\",\n    \"City\": \"<string>\",\n    \"State\": \"<string>\",\n    \"Zip\": \"<string>\",\n    \"ResStreet1\": \"<string>\",\n    \"ResStreet2\": \"<string>\",\n    \"ResCity\": \"<string>\",\n    \"ResState\": \"<string>\",\n    \"ResZip\": \"<string>\",\n    \"MailingStreet1\": \"<string>\",\n    \"MailingStreet2\": \"<string>\",\n    \"MailingCity\": \"<string>\",\n    \"MailingState\": \"<string>\",\n    \"MailingZip\": \"<string>\"\n  },\n  \"DLSigPhoto\": \"<string>\",\n  \"Licenses\": [\n    {\n      \"LicenseClass\": \"<string>\",\n      \"LicenseType\": \"<string>\",\n      \"NonDomiciled\": \"<boolean>\",\n      \"LicenseRealID\": \"<boolean>\",\n      \"Endorsements\": [\n        {\n          \"EndorsementCode\": \"<string>\",\n          \"EndorsementDescription\": \"<string>\"\n        },\n        {\n          \"EndorsementCode\": \"<string>\",\n          \"EndorsementDescription\": \"<string>\"\n        }\n      ],\n      \"LicenseExpireDate\": \"<string>\",\n      \"LicenseIssueDate\": \"<string>\",\n      \"Restrictions\": [\n        {\n          \"RestrictionCode\": \"<string>\",\n          \"RestrictionDescription\": \"<string>\"\n        },\n        {\n          \"RestrictionCode\": \"<string>\",\n          \"RestrictionDescription\": \"<string>\"\n        }\n      ]\n    },\n    {\n      \"LicenseClass\": \"<string>\",\n      \"LicenseType\": \"<string>\",\n      \"NonDomiciled\": \"<boolean>\",\n      \"LicenseRealID\": \"<boolean>\",\n      \"Endorsements\": [\n        {\n          \"EndorsementCode\": \"<string>\",\n          \"EndorsementDescription\": \"<string>\"\n        },\n        {\n          \"EndorsementCode\": \"<string>\",\n          \"EndorsementDescription\": \"<string>\"\n        }\n      ],\n      \"LicenseExpireDate\": \"<string>\",\n      \"LicenseIssueDate\": \"<string>\",\n      \"Restrictions\": [\n        {\n          \"RestrictionCode\": \"<string>\",\n          \"RestrictionDescription\": \"<string>\"\n        },\n        {\n          \"RestrictionCode\": \"<string>\",\n          \"RestrictionDescription\": \"<string>\"\n        }\n      ]\n    }\n  ],\n  \"LicenseHistory\": [\n    {\n      \"LicenseClass\": \"<string>\",\n      \"LicenseType\": \"<string>\",\n      \"NonDomiciled\": \"<boolean>\",\n      \"LicenseRealID\": \"<boolean>\",\n      \"Endorsements\": [\n        {\n          \"EndorsementCode\": \"<string>\",\n          \"EndorsementDescription\": \"<string>\"\n        },\n        {\n          \"EndorsementCode\": \"<string>\",\n          \"EndorsementDescription\": \"<string>\"\n        }\n      ],\n      \"LicenseExpireDate\": \"<string>\",\n      \"LicenseIssueDate\": \"<string>\",\n      \"Restrictions\": [\n        {\n          \"RestrictionCode\": \"<string>\",\n          \"RestrictionDescription\": \"<string>\"\n        },\n        {\n          \"RestrictionCode\": \"<string>\",\n          \"RestrictionDescription\": \"<string>\"\n        }\n      ]\n    },\n    {\n      \"LicenseClass\": \"<string>\",\n      \"LicenseType\": \"<string>\",\n      \"NonDomiciled\": \"<boolean>\",\n      \"LicenseRealID\": \"<boolean>\",\n      \"Endorsements\": [\n        {\n          \"EndorsementCode\": \"<string>\",\n          \"EndorsementDescription\": \"<string>\"\n        },\n        {\n          \"EndorsementCode\": \"<string>\",\n          \"EndorsementDescription\": \"<string>\"\n        }\n      ],\n      \"LicenseExpireDate\": \"<string>\",\n      \"LicenseIssueDate\": \"<string>\",\n      \"Restrictions\": [\n        {\n          \"RestrictionCode\": \"<string>\",\n          \"RestrictionDescription\": \"<string>\"\n        },\n        {\n          \"RestrictionCode\": \"<string>\",\n          \"RestrictionDescription\": \"<string>\"\n        }\n      ]\n    }\n  ],\n  \"Citations\": [\n    {\n      \"CitationACDCode\": \"<string>\",\n      \"CitationCommercialVehicle\": \"<boolean>\",\n      \"CitationConstructionZone\": \"<boolean>\",\n      \"CitationCountyIssuedCode\": \"<string>\",\n      \"CitationCountyIssuedCodeDescription\": \"<string>\",\n      \"CitationCourtCode\": \"<string>\",\n      \"CitationCourtDate\": \"<string>\",\n      \"CitationCourtDescription\": \"<string>\",\n      \"CitationViolationCode\": \"<string>\",\n      \"CitationViolationDescription\": \"<string>\",\n      \"CitationHazmat\": \"<boolean>\",\n      \"CitationJurisdiction\": \"<string>\",\n      \"CitationNumber\": \"<string>\",\n      \"CitationPoints\": \"<double>\",\n      \"CitationPostDate\": \"<string>\",\n      \"CitationPaymentPostDate\": \"<string>\",\n      \"CitationPaymentAmount\": \"<number>\",\n      \"CitationPaymentMethod\": \"<string>\",\n      \"CitationPostedSpeed\": \"<double>\",\n      \"CitationRuralHighway\": \"<boolean>\",\n      \"CitationStatute\": \"<string>\",\n      \"CitationViolationDate\": \"<string>\",\n      \"CitationViolationSpeed\": \"<double>\",\n      \"CitationPass16\": \"<boolean>\",\n      \"CitationAgencyCode\": \"<string>\",\n      \"CitationAgencyDescription\": \"<string>\"\n    },\n    {\n      \"CitationACDCode\": \"<string>\",\n      \"CitationCommercialVehicle\": \"<boolean>\",\n      \"CitationConstructionZone\": \"<boolean>\",\n      \"CitationCountyIssuedCode\": \"<string>\",\n      \"CitationCountyIssuedCodeDescription\": \"<string>\",\n      \"CitationCourtCode\": \"<string>\",\n      \"CitationCourtDate\": \"<string>\",\n      \"CitationCourtDescription\": \"<string>\",\n      \"CitationViolationCode\": \"<string>\",\n      \"CitationViolationDescription\": \"<string>\",\n      \"CitationHazmat\": \"<boolean>\",\n      \"CitationJurisdiction\": \"<string>\",\n      \"CitationNumber\": \"<string>\",\n      \"CitationPoints\": \"<double>\",\n      \"CitationPostDate\": \"<string>\",\n      \"CitationPaymentPostDate\": \"<string>\",\n      \"CitationPaymentAmount\": \"<number>\",\n      \"CitationPaymentMethod\": \"<string>\",\n      \"CitationPostedSpeed\": \"<double>\",\n      \"CitationRuralHighway\": \"<boolean>\",\n      \"CitationStatute\": \"<string>\",\n      \"CitationViolationDate\": \"<string>\",\n      \"CitationViolationSpeed\": \"<double>\",\n      \"CitationPass16\": \"<boolean>\",\n      \"CitationAgencyCode\": \"<string>\",\n      \"CitationAgencyDescription\": \"<string>\"\n    }\n  ],\n  \"Actions\": [\n    {\n      \"ActionACDCode\": \"<string>\",\n      \"ActionBeginDate\": \"<string>\",\n      \"ActionEndDate\": \"<string>\",\n      \"ActionJurisdiction\": \"<string>\",\n      \"ActionPostDate\": \"<string>\",\n      \"ActionAmountDue\": \"<number>\",\n      \"ActionCitationNumber\": \"<string>\",\n      \"ActionTransactionCode\": \"<string>\",\n      \"ActionTransactionCodeDescription\": \"<string>\",\n      \"ActionViolationCode\": \"<string>\",\n      \"ActionViolationCodeDescription\": \"<string>\",\n      \"ActionAgencyCode\": \"<string>\",\n      \"ActionAgencyDescription\": \"<string>\",\n      \"ActionCourtDescription\": \"<string>\",\n      \"ActionHSDCaseNumber\": \"<string>\"\n    },\n    {\n      \"ActionACDCode\": \"<string>\",\n      \"ActionBeginDate\": \"<string>\",\n      \"ActionEndDate\": \"<string>\",\n      \"ActionJurisdiction\": \"<string>\",\n      \"ActionPostDate\": \"<string>\",\n      \"ActionAmountDue\": \"<number>\",\n      \"ActionCitationNumber\": \"<string>\",\n      \"ActionTransactionCode\": \"<string>\",\n      \"ActionTransactionCodeDescription\": \"<string>\",\n      \"ActionViolationCode\": \"<string>\",\n      \"ActionViolationCodeDescription\": \"<string>\",\n      \"ActionAgencyCode\": \"<string>\",\n      \"ActionAgencyDescription\": \"<string>\",\n      \"ActionCourtDescription\": \"<string>\",\n      \"ActionHSDCaseNumber\": \"<string>\"\n    }\n  ],\n  \"BillableResponseKey\": \"<double>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "9ed3352d-2003-40ce-bf62-b8c1b7f16c66"
+		},
+		{
+			"name": "DLRStatusChange",
+			"item": [
+				{
+					"name": "NMI DLR Status Change",
+					"id": "54ccaf3f-d658-4566-8308-9c5925acc88e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeesCharged\": \"<number>\",\n  \"DLN\": \"<string>\",\n  \"StartDate\": \"<string>\",\n  \"EndDate\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/DLRStatusChange",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"DLRStatusChange"
+							]
+						},
+						"description": "NMI service to retrieve DLR status change information for a given DLN."
+					},
+					"response": [
+						{
+							"id": "994a03cd-9dd2-4b55-be2d-3b5316042d59",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeesCharged\": \"<number>\",\n  \"DLN\": \"<string>\",\n  \"StartDate\": \"<string>\",\n  \"EndDate\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/DLRStatusChange",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"DLRStatusChange"
+									]
+								},
+								"description": "NMI service to retrieve DLR status change information for a given DLN."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "8a9564df-976d-4d65-925f-87e196cb2516"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": [\n    {\n      \"CDLStatusChange\": \"<boolean>\",\n      \"LicenseCDLStatus\": \"<string>\",\n      \"NonCDLStatusChange\": \"<boolean>\",\n      \"LicenseNCLStatus\": \"<string>\",\n      \"MedCertChange\": \"<boolean>\",\n      \"MedCertStatus\": \"<string>\",\n      \"DriverClassChange\": \"<boolean>\",\n      \"LicenseClass\": \"<string>\",\n      \"Exists\": \"<boolean>\",\n      \"CitationCount\": \"<double>\",\n      \"ActionCount\": \"<double>\",\n      \"DACHChangeDate\": \"<double>\"\n    },\n    {\n      \"CDLStatusChange\": \"<boolean>\",\n      \"LicenseCDLStatus\": \"<string>\",\n      \"NonCDLStatusChange\": \"<boolean>\",\n      \"LicenseNCLStatus\": \"<string>\",\n      \"MedCertChange\": \"<boolean>\",\n      \"MedCertStatus\": \"<string>\",\n      \"DriverClassChange\": \"<boolean>\",\n      \"LicenseClass\": \"<string>\",\n      \"Exists\": \"<boolean>\",\n      \"CitationCount\": \"<double>\",\n      \"ActionCount\": \"<double>\",\n      \"DACHChangeDate\": \"<double>\"\n    }\n  ],\n  \"HistoryResults\": [\n    {\n      \"HullId\": \"<string>\",\n      \"RegistrationNumber\": \"<string>\",\n      \"OwnerName\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"VesselClass\": \"<string>\",\n      \"AccountKey\": \"<string>\"\n    },\n    {\n      \"HullId\": \"<string>\",\n      \"RegistrationNumber\": \"<string>\",\n      \"OwnerName\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"VesselClass\": \"<string>\",\n      \"AccountKey\": \"<string>\"\n    }\n  ],\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\",\n  \"BillableResponseKey\": \"<double>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "bfe29501-2792-4db7-a67e-29125624f17c"
+		},
+		{
+			"name": "FeesCharged",
+			"item": [
+				{
+					"name": "NMI Fees Charged",
+					"id": "fd25f4a5-ad35-4e7f-a570-ba9e36e1620f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"BillableResponseKey\": \"<string>\",\n  \"AmountCharged\": \"<number>\",\n  \"Comment\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/FeesCharged",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"FeesCharged"
+							]
+						},
+						"description": "NMI service that updates the fees charged in the NMI web service tracking table."
+					},
+					"response": [
+						{
+							"id": "a9d1c95b-000e-42b5-a9b7-ed0748a5f031",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"BillableResponseKey\": \"<string>\",\n  \"AmountCharged\": \"<number>\",\n  \"Comment\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/FeesCharged",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"FeesCharged"
+									]
+								},
+								"description": "NMI service that updates the fees charged in the NMI web service tracking table."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "a0bba928-429d-4475-a5c5-b5be9ce71531"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": {\n    \"FeesChargedAccepted\": \"<boolean>\"\n  }\n}"
+						}
+					]
+				}
+			],
+			"id": "4fc89284-033b-4319-bb4d-df85f5a99c89"
+		},
+		{
+			"name": "GetBriefVehicleInfo",
+			"item": [
+				{
+					"name": "NMI Brief Vehicle Info",
+					"id": "9ea1027b-ac0d-4d77-812d-ef9743c00591",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"VIN\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/GetBriefVehicleInfo",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"GetBriefVehicleInfo"
+							]
+						},
+						"description": "NMI service that returns brief information about a vehicle based on the VIN provided."
+					},
+					"response": [
+						{
+							"id": "12531a3c-225e-404a-959c-6d9bbb1bb0e5",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"VIN\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/GetBriefVehicleInfo",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"GetBriefVehicleInfo"
+									]
+								},
+								"description": "NMI service that returns brief information about a vehicle based on the VIN provided."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "d5364ad3-1886-4b4f-be44-1543c5b86589"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": [\n    {\n      \"Make\": \"<string>\",\n      \"PlateNumber\": \"<string>\",\n      \"SeriesModel\": \"<string>\",\n      \"VIN\": \"<string>\",\n      \"OwnerName\": \"<string>\",\n      \"CustomerKey\": \"<string>\"\n    },\n    {\n      \"Make\": \"<string>\",\n      \"PlateNumber\": \"<string>\",\n      \"SeriesModel\": \"<string>\",\n      \"VIN\": \"<string>\",\n      \"OwnerName\": \"<string>\",\n      \"CustomerKey\": \"<string>\"\n    }\n  ],\n  \"HistoryResults\": [\n    {\n      \"Make\": \"<string>\",\n      \"PlateNumber\": \"<string>\",\n      \"SeriesModel\": \"<string>\",\n      \"VIN\": \"<string>\",\n      \"OwnerName\": \"<string>\",\n      \"CustomerKey\": \"<string>\"\n    },\n    {\n      \"Make\": \"<string>\",\n      \"PlateNumber\": \"<string>\",\n      \"SeriesModel\": \"<string>\",\n      \"VIN\": \"<string>\",\n      \"OwnerName\": \"<string>\",\n      \"CustomerKey\": \"<string>\"\n    }\n  ],\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "fae54cfb-209b-4b2b-9749-7c6b0aafcd06"
+		},
+		{
+			"name": "GetBriefVesselInformation",
+			"item": [
+				{
+					"name": "NMI Brief Vessel Info",
+					"id": "6b67e3fb-e569-4aec-a260-ca6935ecb738",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"HullId\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/GetBriefVesselInformation",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"GetBriefVesselInformation"
+							]
+						},
+						"description": "NMI service that returns brief vessel information for a given hull ID."
+					},
+					"response": [
+						{
+							"id": "e9fdde0b-dd63-4bf0-a79d-e8216d532277",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"HullId\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/GetBriefVesselInformation",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"GetBriefVesselInformation"
+									]
+								},
+								"description": "NMI service that returns brief vessel information for a given hull ID."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "8e6c0572-50e7-43cc-ad13-bbf66345754a"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": [\n    {\n      \"HullId\": \"<string>\",\n      \"RegistrationNumber\": \"<string>\",\n      \"OwnerName\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"VesselClass\": \"<string>\",\n      \"AccountKey\": \"<string>\"\n    },\n    {\n      \"HullId\": \"<string>\",\n      \"RegistrationNumber\": \"<string>\",\n      \"OwnerName\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"VesselClass\": \"<string>\",\n      \"AccountKey\": \"<string>\"\n    }\n  ],\n  \"HistoryResults\": [\n    {\n      \"HullId\": \"<string>\",\n      \"RegistrationNumber\": \"<string>\",\n      \"OwnerName\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"VesselClass\": \"<string>\",\n      \"AccountKey\": \"<string>\"\n    },\n    {\n      \"HullId\": \"<string>\",\n      \"RegistrationNumber\": \"<string>\",\n      \"OwnerName\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"VesselClass\": \"<string>\",\n      \"AccountKey\": \"<string>\"\n    }\n  ],\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "8c8f08ae-8e63-44f7-8a68-e4cdd202532e"
+		},
+		{
+			"name": "GetDealers",
+			"item": [
+				{
+					"name": "NMI Dealer Lookup",
+					"id": "ec9ab421-e100-4479-9808-2e2d3c07f873",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/GetDealers",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"GetDealers"
+							]
+						},
+						"description": "NMI service that returns dealer information for all dealers active within the last year."
+					},
+					"response": [
+						{
+							"id": "61231468-3b07-4758-8b5e-c017fde42e3b",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/GetDealers",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"GetDealers"
+									]
+								},
+								"description": "NMI service that returns dealer information for all dealers active within the last year."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "83adb65a-eb62-4516-8099-a694c2c7ae80"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\",\n  \"Result\": {\n    \"Dealers\": [\n      {\n        \"LicenseNumber\": \"<string>\",\n        \"LicenseStart\": \"<string>\",\n        \"LicenseExpiration\": \"<string>\",\n        \"LicenseCease\": \"<string>\",\n        \"Standing\": \"<string>\",\n        \"DBAName\": \"<string>\",\n        \"Street1\": \"<string>\",\n        \"Street2\": \"<string>\",\n        \"UnitType\": \"<string>\",\n        \"Unit\": \"<string>\",\n        \"City\": \"<string>\",\n        \"State\": \"<string>\",\n        \"Zip\": \"<string>\",\n        \"County\": \"<string>\",\n        \"Commence\": \"<string>\",\n        \"Cease\": \"<string>\",\n        \"IsPrimary\": \"<boolean>\",\n        \"IsFranchised\": \"<boolean>\"\n      },\n      {\n        \"LicenseNumber\": \"<string>\",\n        \"LicenseStart\": \"<string>\",\n        \"LicenseExpiration\": \"<string>\",\n        \"LicenseCease\": \"<string>\",\n        \"Standing\": \"<string>\",\n        \"DBAName\": \"<string>\",\n        \"Street1\": \"<string>\",\n        \"Street2\": \"<string>\",\n        \"UnitType\": \"<string>\",\n        \"Unit\": \"<string>\",\n        \"City\": \"<string>\",\n        \"State\": \"<string>\",\n        \"Zip\": \"<string>\",\n        \"County\": \"<string>\",\n        \"Commence\": \"<string>\",\n        \"Cease\": \"<string>\",\n        \"IsPrimary\": \"<boolean>\",\n        \"IsFranchised\": \"<boolean>\"\n      }\n    ]\n  }\n}"
+						}
+					]
+				}
+			],
+			"id": "447c5abd-9d9b-41ac-813c-904b56479b06"
+		},
+		{
+			"name": "GetVehicleCount",
+			"item": [
+				{
+					"name": "NMI Vehicle Count By VIN",
+					"id": "5848cd46-db8f-4b81-a892-a2ad37fe8bd8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"VIN\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/GetVehicleCount",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"GetVehicleCount"
+							]
+						},
+						"description": "NMI service to count the number of vehicles for a given VIN."
+					},
+					"response": [
+						{
+							"id": "17c332bd-ebb8-4ad2-a5f1-ed743bd98dee",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"VIN\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/GetVehicleCount",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"GetVehicleCount"
+									]
+								},
+								"description": "NMI service to count the number of vehicles for a given VIN."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "2e8038fc-76fd-40b3-baa9-a76b2b9f7268"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"VehicleCount\": \"<double>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "7b95e861-4efa-426f-9663-b409ef1ba68b"
+		},
+		{
+			"name": "GetVehicleOwnerByVIN",
+			"item": [
+				{
+					"name": "NMI VIN Owner Search",
+					"id": "f7ade4fa-08ea-4d54-a0de-ba6495314f0c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"VIN\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/GetVehicleOwnerByVIN",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"GetVehicleOwnerByVIN"
+							]
+						},
+						"description": "NMI service to retrieve owner data for a VIN."
+					},
+					"response": [
+						{
+							"id": "117eb2b8-a983-4693-98d1-10458d1e2c04",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"VIN\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/GetVehicleOwnerByVIN",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"GetVehicleOwnerByVIN"
+									]
+								},
+								"description": "NMI service to retrieve owner data for a VIN."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "eb176004-3d65-4f67-b781-791b26ac8ceb"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": [\n    {\n      \"RegisteredOwner\": \"<string>\",\n      \"VIN\": \"<string>\",\n      \"Year\": \"<double>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"CustomerKey\": \"<double>\"\n    },\n    {\n      \"RegisteredOwner\": \"<string>\",\n      \"VIN\": \"<string>\",\n      \"Year\": \"<double>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"CustomerKey\": \"<double>\"\n    }\n  ],\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "c4f0d285-11d9-4a93-a43e-3e49cce5a78b"
+		},
+		{
+			"name": "GetVehicleRecord",
+			"item": [
+				{
+					"name": "NMI Vehicle Record Search",
+					"id": "e495f77c-be06-4e31-ab5c-d6198e76562f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeesCharged\": \"<number>\",\n  \"CustomerKey\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/GetVehicleRecord",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"GetVehicleRecord"
+							]
+						},
+						"description": "NMI service used to retrieve vehicle, lien, brand, owner, registration, and title data for a given customer key."
+					},
+					"response": [
+						{
+							"id": "2fb76758-90f2-4040-ba24-58fbca575ee3",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeesCharged\": \"<number>\",\n  \"CustomerKey\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/GetVehicleRecord",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"GetVehicleRecord"
+									]
+								},
+								"description": "NMI service used to retrieve vehicle, lien, brand, owner, registration, and title data for a given customer key."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "8fbaef79-ca91-4b61-855e-7245c0dac281"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": {\n    \"Vehicle\": {\n      \"Body\": \"<string>\",\n      \"VehicleClass\": \"<string>\",\n      \"ClassDescription\": \"<string>\",\n      \"Cylinders\": \"<double>\",\n      \"Fuel\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"ModelYear\": \"<double>\",\n      \"NumberDoors\": \"<double>\",\n      \"VehicleStatus\": \"<string>\",\n      \"VehicleStatusIndicatorDescription\": \"<string>\",\n      \"PurchasePrice\": \"<string>\",\n      \"VIN\": \"<string>\",\n      \"Weight\": \"<double>\",\n      \"PrimaryColor\": \"<string>\",\n      \"SecondaryColor\": \"<string>\",\n      \"PassengerSafeQuantity\": \"<double>\",\n      \"VehicleType\": \"<string>\",\n      \"Liencount\": \"<double>\",\n      \"LienHistoryCount\": \"<double>\",\n      \"BrandCount\": \"<double>\",\n      \"BrandHistoryCount\": \"<double>\",\n      \"InsuranceStatus\": \"<string>\",\n      \"Surety\": \"<boolean>\"\n    },\n    \"Liens\": [\n      {\n        \"FileDate\": \"<string>\",\n        \"LienHolderName\": \"<string>\",\n        \"MaturityDate\": \"<string>\",\n        \"Street1\": \"<string>\",\n        \"Street2\": \"<string>\",\n        \"City\": \"<string>\",\n        \"State\": \"<string>\",\n        \"Zip\": \"<string>\"\n      },\n      {\n        \"FileDate\": \"<string>\",\n        \"LienHolderName\": \"<string>\",\n        \"MaturityDate\": \"<string>\",\n        \"Street1\": \"<string>\",\n        \"Street2\": \"<string>\",\n        \"City\": \"<string>\",\n        \"State\": \"<string>\",\n        \"Zip\": \"<string>\"\n      }\n    ],\n    \"LienHistory\": [\n      {\n        \"FileDate\": \"<string>\",\n        \"LienHolderName\": \"<string>\",\n        \"MaturityDate\": \"<string>\",\n        \"Street1\": \"<string>\",\n        \"Street2\": \"<string>\",\n        \"City\": \"<string>\",\n        \"State\": \"<string>\",\n        \"Zip\": \"<string>\"\n      },\n      {\n        \"FileDate\": \"<string>\",\n        \"LienHolderName\": \"<string>\",\n        \"MaturityDate\": \"<string>\",\n        \"Street1\": \"<string>\",\n        \"Street2\": \"<string>\",\n        \"City\": \"<string>\",\n        \"State\": \"<string>\",\n        \"Zip\": \"<string>\"\n      }\n    ],\n    \"BrandInformation\": [\n      {\n        \"BrandDate\": \"<string>\",\n        \"BrandCode\": \"<string>\",\n        \"BrandDescription\": \"<string>\",\n        \"BrandJurisdiction\": \"<string>\"\n      },\n      {\n        \"BrandDate\": \"<string>\",\n        \"BrandCode\": \"<string>\",\n        \"BrandDescription\": \"<string>\",\n        \"BrandJurisdiction\": \"<string>\"\n      }\n    ],\n    \"BrandHistoryInformation\": [\n      {\n        \"BrandDate\": \"<string>\",\n        \"BrandCode\": \"<string>\",\n        \"BrandDescription\": \"<string>\",\n        \"BrandJurisdiction\": \"<string>\"\n      },\n      {\n        \"BrandDate\": \"<string>\",\n        \"BrandCode\": \"<string>\",\n        \"BrandDescription\": \"<string>\",\n        \"BrandJurisdiction\": \"<string>\"\n      }\n    ],\n    \"MobileHomeInformation\": [\n      {\n        \"CountyDescription\": \"<string>\",\n        \"CountyNumber\": \"<string>\",\n        \"Length\": \"<double>\",\n        \"Width\": \"<double>\",\n        \"Location\": \"<string>\",\n        \"Plate1\": \"<string>\",\n        \"Plate2\": \"<string>\",\n        \"Plate3\": \"<string>\",\n        \"VINs\": [\n          {\n            \"VIN\": \"<string>\",\n            \"VINNumber\": \"<string>\"\n          },\n          {\n            \"VIN\": \"<string>\",\n            \"VINNumber\": \"<string>\"\n          }\n        ],\n        \"TitleAssignment\": \"<string>\"\n      },\n      {\n        \"CountyDescription\": \"<string>\",\n        \"CountyNumber\": \"<string>\",\n        \"Length\": \"<double>\",\n        \"Width\": \"<double>\",\n        \"Location\": \"<string>\",\n        \"Plate1\": \"<string>\",\n        \"Plate2\": \"<string>\",\n        \"Plate3\": \"<string>\",\n        \"VINs\": [\n          {\n            \"VIN\": \"<string>\",\n            \"VINNumber\": \"<string>\"\n          },\n          {\n            \"VIN\": \"<string>\",\n            \"VINNumber\": \"<string>\"\n          }\n        ],\n        \"TitleAssignment\": \"<string>\"\n      }\n    ],\n    \"Owners\": [\n      {\n        \"OwnerType\": \"<string>\",\n        \"OwnerRelation\": \"<string>\",\n        \"BusinessName\": \"<string>\",\n        \"FirstName\": \"<string>\",\n        \"LastName\": \"<string>\",\n        \"MiddleInitial\": \"<string>\",\n        \"DateOfBirth\": \"<string>\",\n        \"IdType\": \"<string>\",\n        \"Id\": \"<string>\",\n        \"AccountKey\": \"<string>\",\n        \"ResidentialStreet1\": \"<string>\",\n        \"ResidentialStreet2\": \"<string>\",\n        \"ResidentialCity\": \"<string>\",\n        \"ResidentialState\": \"<string>\",\n        \"ResidentialZip\": \"<string>\",\n        \"MailingStreet1\": \"<string>\",\n        \"MailingStreet2\": \"<string>\",\n        \"MailingCity\": \"<string>\",\n        \"MailingState\": \"<string>\",\n        \"MailingZip\": \"<string>\"\n      },\n      {\n        \"OwnerType\": \"<string>\",\n        \"OwnerRelation\": \"<string>\",\n        \"BusinessName\": \"<string>\",\n        \"FirstName\": \"<string>\",\n        \"LastName\": \"<string>\",\n        \"MiddleInitial\": \"<string>\",\n        \"DateOfBirth\": \"<string>\",\n        \"IdType\": \"<string>\",\n        \"Id\": \"<string>\",\n        \"AccountKey\": \"<string>\",\n        \"ResidentialStreet1\": \"<string>\",\n        \"ResidentialStreet2\": \"<string>\",\n        \"ResidentialCity\": \"<string>\",\n        \"ResidentialState\": \"<string>\",\n        \"ResidentialZip\": \"<string>\",\n        \"MailingStreet1\": \"<string>\",\n        \"MailingStreet2\": \"<string>\",\n        \"MailingCity\": \"<string>\",\n        \"MailingState\": \"<string>\",\n        \"MailingZip\": \"<string>\"\n      }\n    ],\n    \"RegistrationInformation\": [\n      {\n        \"CountyDescription\": \"<string>\",\n        \"CountyNumber\": \"<double>\",\n        \"DGVW\": \"<double>\",\n        \"EmsFlag\": \"<boolean>\",\n        \"EmsYearDue\": \"<double>\",\n        \"FirstYearRegistration\": \"<double>\",\n        \"FleetId\": \"<double>\",\n        \"NLETPlateCode\": \"<string>\",\n        \"NMMVDPlateCode\": \"<string>\",\n        \"NonUse\": \"<string>\",\n        \"PlateType\": \"<string>\",\n        \"PlateTypeImage\": \"<string>\",\n        \"PlateIssued\": \"<string>\",\n        \"PlateNumber\": \"<string>\",\n        \"PlateStatus\": \"<string>\",\n        \"PlateInactiveDate\": \"<string>\",\n        \"InactivePlateNumber\": \"<string>\",\n        \"RegistrationDate\": \"<string>\",\n        \"RegistrationExpireDate\": \"<string>\",\n        \"RegistrationStatus\": \"<string>\",\n        \"RegistrationStatusDescription\": \"<string>\",\n        \"RegistrationSuspensionDate\": \"<string>\",\n        \"RegistrationType\": \"<string>\",\n        \"RegistrationTypeDescription\": \"<string>\",\n        \"SpecialPlate\": \"<string>\",\n        \"VehicleCMVIndicator\": \"<double>\",\n        \"VINSuffix\": \"<double>\"\n      },\n      {\n        \"CountyDescription\": \"<string>\",\n        \"CountyNumber\": \"<double>\",\n        \"DGVW\": \"<double>\",\n        \"EmsFlag\": \"<boolean>\",\n        \"EmsYearDue\": \"<double>\",\n        \"FirstYearRegistration\": \"<double>\",\n        \"FleetId\": \"<double>\",\n        \"NLETPlateCode\": \"<string>\",\n        \"NMMVDPlateCode\": \"<string>\",\n        \"NonUse\": \"<string>\",\n        \"PlateType\": \"<string>\",\n        \"PlateTypeImage\": \"<string>\",\n        \"PlateIssued\": \"<string>\",\n        \"PlateNumber\": \"<string>\",\n        \"PlateStatus\": \"<string>\",\n        \"PlateInactiveDate\": \"<string>\",\n        \"InactivePlateNumber\": \"<string>\",\n        \"RegistrationDate\": \"<string>\",\n        \"RegistrationExpireDate\": \"<string>\",\n        \"RegistrationStatus\": \"<string>\",\n        \"RegistrationStatusDescription\": \"<string>\",\n        \"RegistrationSuspensionDate\": \"<string>\",\n        \"RegistrationType\": \"<string>\",\n        \"RegistrationTypeDescription\": \"<string>\",\n        \"SpecialPlate\": \"<string>\",\n        \"VehicleCMVIndicator\": \"<double>\",\n        \"VINSuffix\": \"<double>\"\n      }\n    ],\n    \"TitleInformation\": [\n      {\n        \"DuplicateFlag\": \"<string>\",\n        \"NumberOfLiens\": \"<double>\",\n        \"OdometerCode\": \"<string>\",\n        \"OdometerReading\": \"<double>\",\n        \"TitleNumber\": \"<string>\",\n        \"TitleIssueDate\": \"<string>\",\n        \"TitleOnly\": \"<string>\",\n        \"TitlePurchaseDate\": \"<string>\",\n        \"TitleStatus\": \"<string>\",\n        \"TitleStatusDescription\": \"<string>\",\n        \"TitleUse\": \"<string>\",\n        \"TitleAssignment\": \"<string>\"\n      },\n      {\n        \"DuplicateFlag\": \"<string>\",\n        \"NumberOfLiens\": \"<double>\",\n        \"OdometerCode\": \"<string>\",\n        \"OdometerReading\": \"<double>\",\n        \"TitleNumber\": \"<string>\",\n        \"TitleIssueDate\": \"<string>\",\n        \"TitleOnly\": \"<string>\",\n        \"TitlePurchaseDate\": \"<string>\",\n        \"TitleStatus\": \"<string>\",\n        \"TitleStatusDescription\": \"<string>\",\n        \"TitleUse\": \"<string>\",\n        \"TitleAssignment\": \"<string>\"\n      }\n    ]\n  },\n  \"BillableRequestKey\": \"<double>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "855a1ac1-4de6-41e6-8a67-981bcc462368"
+		},
+		{
+			"name": "GetVesselCountByHullId",
+			"item": [
+				{
+					"name": "NMI Vessel Count By Hull ID",
+					"id": "950d96bd-84a3-441d-ba65-2d710f9357ba",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"HullId\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/GetVesselCountByHullId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"GetVesselCountByHullId"
+							]
+						},
+						"description": "NMI service that returns the number of vessels for a provided hull ID."
+					},
+					"response": [
+						{
+							"id": "1f557d48-0e8b-4cc5-b674-2a34844c4439",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"HullId\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/GetVesselCountByHullId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"GetVesselCountByHullId"
+									]
+								},
+								"description": "NMI service that returns the number of vessels for a provided hull ID."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "356e040b-bd23-465d-bab0-5f0e4c229304"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"VesselCount\": \"<double>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "3c3ed562-7473-48d2-9f84-dd1313ce0cf1"
+		},
+		{
+			"name": "GetVesselCountByRegNumber",
+			"item": [
+				{
+					"name": "NMI Vessel Count By Registration Number",
+					"id": "e7a34ac0-ba71-421a-ae2f-482a5846bd93",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"RegistrationNumber\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/GetVesselCountByRegNumber",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"GetVesselCountByRegNumber"
+							]
+						},
+						"description": "NMI service that returns the number of vessels for a given registration number."
+					},
+					"response": [
+						{
+							"id": "de096d05-d4ce-4af2-a5e1-20ae4539bc22",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"RegistrationNumber\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/GetVesselCountByRegNumber",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"GetVesselCountByRegNumber"
+									]
+								},
+								"description": "NMI service that returns the number of vessels for a given registration number."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "b6838ea1-1713-46bb-b14a-bc7df1933e98"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"VesselCount\": \"<double>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "85c793ec-016f-44ba-b268-dda88302b52a"
+		},
+		{
+			"name": "GetVesselRecord",
+			"item": [
+				{
+					"name": "NMI Vessel Record Search",
+					"id": "e8ad30e2-57bf-44c8-a184-100fcc203a90",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeesCharged\": \"<number>\",\n  \"AccountKey\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/GetVesselRecord",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"GetVesselRecord"
+							]
+						},
+						"description": "NMI service to retrieve vessel record information."
+					},
+					"response": [
+						{
+							"id": "de27ec49-03b3-4881-8995-e11b075c5c97",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeesCharged\": \"<number>\",\n  \"AccountKey\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/GetVesselRecord",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"GetVesselRecord"
+									]
+								},
+								"description": "NMI service to retrieve vessel record information."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "20911aaf-80cd-4468-9593-569382286865"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": {\n    \"Vessel\": {\n      \"FirstYearReg\": \"<double>\",\n      \"BeamWidth\": \"<double>\",\n      \"FuelCodeDescription\": \"<string>\",\n      \"HorsePower\": \"<double>\",\n      \"HullMaterial\": \"<string>\",\n      \"LengthInFeet\": \"<double>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"ModelYear\": \"<double>\",\n      \"NumberOfPeople\": \"<double>\",\n      \"PropulsionDescription\": \"<string>\",\n      \"EngineDriveDescription\": \"<string>\",\n      \"RegistrationExpirationDate\": \"<string>\",\n      \"TransomDepth\": \"<double>\",\n      \"PersonCapacityInPound\": \"<double>\",\n      \"HullId\": \"<string>\",\n      \"EngineNumber\": \"<string>\",\n      \"StateOfUse\": \"<string>\",\n      \"TitleDate\": \"<string>\",\n      \"TitleNumber\": \"<string>\",\n      \"TitleStatusDescription\": \"<string>\",\n      \"OwnerName\": \"<string>\",\n      \"RecordStatusDescription\": \"<string>\",\n      \"RegistrationStatusDescription\": \"<string>\",\n      \"RegistrationNumber\": \"<string>\",\n      \"POTControlNumber\": \"<double>\",\n      \"TypeOfBoatDescription\": \"<string>\",\n      \"TypeOfUseDescription\": \"<string>\",\n      \"LienCount\": \"<double>\",\n      \"LienHistoryCount\": \"<double>\"\n    },\n    \"Liens\": [\n      {\n        \"FileDate\": \"<string>\",\n        \"LienHolderName\": \"<string>\",\n        \"MaturityDate\": \"<string>\",\n        \"Street1\": \"<string>\",\n        \"Street2\": \"<string>\",\n        \"City\": \"<string>\",\n        \"State\": \"<string>\",\n        \"Zip\": \"<string>\"\n      },\n      {\n        \"FileDate\": \"<string>\",\n        \"LienHolderName\": \"<string>\",\n        \"MaturityDate\": \"<string>\",\n        \"Street1\": \"<string>\",\n        \"Street2\": \"<string>\",\n        \"City\": \"<string>\",\n        \"State\": \"<string>\",\n        \"Zip\": \"<string>\"\n      }\n    ],\n    \"LienHistory\": [\n      {\n        \"FileDate\": \"<string>\",\n        \"LienHolderName\": \"<string>\",\n        \"MaturityDate\": \"<string>\",\n        \"Street1\": \"<string>\",\n        \"Street2\": \"<string>\",\n        \"City\": \"<string>\",\n        \"State\": \"<string>\",\n        \"Zip\": \"<string>\"\n      },\n      {\n        \"FileDate\": \"<string>\",\n        \"LienHolderName\": \"<string>\",\n        \"MaturityDate\": \"<string>\",\n        \"Street1\": \"<string>\",\n        \"Street2\": \"<string>\",\n        \"City\": \"<string>\",\n        \"State\": \"<string>\",\n        \"Zip\": \"<string>\"\n      }\n    ],\n    \"Owners\": [\n      {\n        \"OwnerType\": \"<string>\",\n        \"OwnerRelation\": \"<string>\",\n        \"BusinessName\": \"<string>\",\n        \"FirstName\": \"<string>\",\n        \"LastName\": \"<string>\",\n        \"MiddleInitial\": \"<string>\",\n        \"DateOfBirth\": \"<string>\",\n        \"IdType\": \"<string>\",\n        \"Id\": \"<string>\",\n        \"AccountKey\": \"<string>\",\n        \"ResidentialStreet1\": \"<string>\",\n        \"ResidentialStreet2\": \"<string>\",\n        \"ResidentialCity\": \"<string>\",\n        \"ResidentialState\": \"<string>\",\n        \"ResidentialZip\": \"<string>\",\n        \"MailingStreet1\": \"<string>\",\n        \"MailingStreet2\": \"<string>\",\n        \"MailingCity\": \"<string>\",\n        \"MailingState\": \"<string>\",\n        \"MailingZip\": \"<string>\"\n      },\n      {\n        \"OwnerType\": \"<string>\",\n        \"OwnerRelation\": \"<string>\",\n        \"BusinessName\": \"<string>\",\n        \"FirstName\": \"<string>\",\n        \"LastName\": \"<string>\",\n        \"MiddleInitial\": \"<string>\",\n        \"DateOfBirth\": \"<string>\",\n        \"IdType\": \"<string>\",\n        \"Id\": \"<string>\",\n        \"AccountKey\": \"<string>\",\n        \"ResidentialStreet1\": \"<string>\",\n        \"ResidentialStreet2\": \"<string>\",\n        \"ResidentialCity\": \"<string>\",\n        \"ResidentialState\": \"<string>\",\n        \"ResidentialZip\": \"<string>\",\n        \"MailingStreet1\": \"<string>\",\n        \"MailingStreet2\": \"<string>\",\n        \"MailingCity\": \"<string>\",\n        \"MailingState\": \"<string>\",\n        \"MailingZip\": \"<string>\"\n      }\n    ]\n  },\n  \"BillableResponseKey\": \"<double>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "ea60480a-f4fb-40e5-a7d1-a9943a0aeb68"
+		},
+		{
+			"name": "ListVehicleRecordsByOwner",
+			"item": [
+				{
+					"name": "NMI Vehicle Records By Owner",
+					"id": "db7be4eb-055f-4b1b-b8c6-d0aa39aa6823",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FirstName\": \"<string>\",\n  \"LastName\": \"<string>\",\n  \"MiddleName\": \"<string>\",\n  \"Suffix\": \"<string>\",\n  \"Age\": \"<string>\",\n  \"DOB\": \"<string>\",\n  \"BusinessName\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/ListVehicleRecordsByOwner",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ListVehicleRecordsByOwner"
+							]
+						},
+						"description": "NMI service to retrieve vehicle record(s) by owner name/age/DOB."
+					},
+					"response": [
+						{
+							"id": "2de6e399-87cd-457f-869c-3901e6df210b",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FirstName\": \"<string>\",\n  \"LastName\": \"<string>\",\n  \"MiddleName\": \"<string>\",\n  \"Suffix\": \"<string>\",\n  \"Age\": \"<string>\",\n  \"DOB\": \"<string>\",\n  \"BusinessName\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ListVehicleRecordsByOwner",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ListVehicleRecordsByOwner"
+									]
+								},
+								"description": "NMI service to retrieve vehicle record(s) by owner name/age/DOB."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "32f0fcd3-f026-45d0-8588-0ca15e1b822b"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": [\n    {\n      \"Vehicle\": {\n        \"Body\": \"<string>\",\n        \"VehicleClass\": \"<string>\",\n        \"ClassDescription\": \"<string>\",\n        \"Cylinders\": \"<double>\",\n        \"Fuel\": \"<string>\",\n        \"Make\": \"<string>\",\n        \"Model\": \"<string>\",\n        \"ModelYear\": \"<double>\",\n        \"NumberDoors\": \"<double>\",\n        \"VehicleStatus\": \"<string>\",\n        \"VehicleStatusIndicatorDescription\": \"<string>\",\n        \"PurchasePrice\": \"<string>\",\n        \"VIN\": \"<string>\",\n        \"Weight\": \"<double>\",\n        \"PrimaryColor\": \"<string>\",\n        \"SecondaryColor\": \"<string>\",\n        \"PassengerSafeQuantity\": \"<double>\",\n        \"VehicleType\": \"<string>\",\n        \"Liencount\": \"<double>\",\n        \"LienHistoryCount\": \"<double>\",\n        \"BrandCount\": \"<double>\",\n        \"BrandHistoryCount\": \"<double>\",\n        \"InsuranceStatus\": \"<string>\",\n        \"Surety\": \"<boolean>\"\n      },\n      \"Liens\": [\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        },\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        }\n      ],\n      \"LienHistory\": [\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        },\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        }\n      ],\n      \"BrandInformation\": [\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        },\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        }\n      ],\n      \"BrandHistoryInformation\": [\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        },\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        }\n      ],\n      \"MobileHomeInformation\": [\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<string>\",\n          \"Length\": \"<double>\",\n          \"Width\": \"<double>\",\n          \"Location\": \"<string>\",\n          \"Plate1\": \"<string>\",\n          \"Plate2\": \"<string>\",\n          \"Plate3\": \"<string>\",\n          \"VINs\": [\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            },\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            }\n          ],\n          \"TitleAssignment\": \"<string>\"\n        },\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<string>\",\n          \"Length\": \"<double>\",\n          \"Width\": \"<double>\",\n          \"Location\": \"<string>\",\n          \"Plate1\": \"<string>\",\n          \"Plate2\": \"<string>\",\n          \"Plate3\": \"<string>\",\n          \"VINs\": [\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            },\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            }\n          ],\n          \"TitleAssignment\": \"<string>\"\n        }\n      ],\n      \"Owners\": [\n        {\n          \"OwnerType\": \"<string>\",\n          \"OwnerRelation\": \"<string>\",\n          \"BusinessName\": \"<string>\",\n          \"FirstName\": \"<string>\",\n          \"LastName\": \"<string>\",\n          \"MiddleInitial\": \"<string>\",\n          \"DateOfBirth\": \"<string>\",\n          \"IdType\": \"<string>\",\n          \"Id\": \"<string>\",\n          \"AccountKey\": \"<string>\",\n          \"ResidentialStreet1\": \"<string>\",\n          \"ResidentialStreet2\": \"<string>\",\n          \"ResidentialCity\": \"<string>\",\n          \"ResidentialState\": \"<string>\",\n          \"ResidentialZip\": \"<string>\",\n          \"MailingStreet1\": \"<string>\",\n          \"MailingStreet2\": \"<string>\",\n          \"MailingCity\": \"<string>\",\n          \"MailingState\": \"<string>\",\n          \"MailingZip\": \"<string>\"\n        },\n        {\n          \"OwnerType\": \"<string>\",\n          \"OwnerRelation\": \"<string>\",\n          \"BusinessName\": \"<string>\",\n          \"FirstName\": \"<string>\",\n          \"LastName\": \"<string>\",\n          \"MiddleInitial\": \"<string>\",\n          \"DateOfBirth\": \"<string>\",\n          \"IdType\": \"<string>\",\n          \"Id\": \"<string>\",\n          \"AccountKey\": \"<string>\",\n          \"ResidentialStreet1\": \"<string>\",\n          \"ResidentialStreet2\": \"<string>\",\n          \"ResidentialCity\": \"<string>\",\n          \"ResidentialState\": \"<string>\",\n          \"ResidentialZip\": \"<string>\",\n          \"MailingStreet1\": \"<string>\",\n          \"MailingStreet2\": \"<string>\",\n          \"MailingCity\": \"<string>\",\n          \"MailingState\": \"<string>\",\n          \"MailingZip\": \"<string>\"\n        }\n      ],\n      \"RegistrationInformation\": [\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<double>\",\n          \"DGVW\": \"<double>\",\n          \"EmsFlag\": \"<boolean>\",\n          \"EmsYearDue\": \"<double>\",\n          \"FirstYearRegistration\": \"<double>\",\n          \"FleetId\": \"<double>\",\n          \"NLETPlateCode\": \"<string>\",\n          \"NMMVDPlateCode\": \"<string>\",\n          \"NonUse\": \"<string>\",\n          \"PlateType\": \"<string>\",\n          \"PlateTypeImage\": \"<string>\",\n          \"PlateIssued\": \"<string>\",\n          \"PlateNumber\": \"<string>\",\n          \"PlateStatus\": \"<string>\",\n          \"PlateInactiveDate\": \"<string>\",\n          \"InactivePlateNumber\": \"<string>\",\n          \"RegistrationDate\": \"<string>\",\n          \"RegistrationExpireDate\": \"<string>\",\n          \"RegistrationStatus\": \"<string>\",\n          \"RegistrationStatusDescription\": \"<string>\",\n          \"RegistrationSuspensionDate\": \"<string>\",\n          \"RegistrationType\": \"<string>\",\n          \"RegistrationTypeDescription\": \"<string>\",\n          \"SpecialPlate\": \"<string>\",\n          \"VehicleCMVIndicator\": \"<double>\",\n          \"VINSuffix\": \"<double>\"\n        },\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<double>\",\n          \"DGVW\": \"<double>\",\n          \"EmsFlag\": \"<boolean>\",\n          \"EmsYearDue\": \"<double>\",\n          \"FirstYearRegistration\": \"<double>\",\n          \"FleetId\": \"<double>\",\n          \"NLETPlateCode\": \"<string>\",\n          \"NMMVDPlateCode\": \"<string>\",\n          \"NonUse\": \"<string>\",\n          \"PlateType\": \"<string>\",\n          \"PlateTypeImage\": \"<string>\",\n          \"PlateIssued\": \"<string>\",\n          \"PlateNumber\": \"<string>\",\n          \"PlateStatus\": \"<string>\",\n          \"PlateInactiveDate\": \"<string>\",\n          \"InactivePlateNumber\": \"<string>\",\n          \"RegistrationDate\": \"<string>\",\n          \"RegistrationExpireDate\": \"<string>\",\n          \"RegistrationStatus\": \"<string>\",\n          \"RegistrationStatusDescription\": \"<string>\",\n          \"RegistrationSuspensionDate\": \"<string>\",\n          \"RegistrationType\": \"<string>\",\n          \"RegistrationTypeDescription\": \"<string>\",\n          \"SpecialPlate\": \"<string>\",\n          \"VehicleCMVIndicator\": \"<double>\",\n          \"VINSuffix\": \"<double>\"\n        }\n      ],\n      \"TitleInformation\": [\n        {\n          \"DuplicateFlag\": \"<string>\",\n          \"NumberOfLiens\": \"<double>\",\n          \"OdometerCode\": \"<string>\",\n          \"OdometerReading\": \"<double>\",\n          \"TitleNumber\": \"<string>\",\n          \"TitleIssueDate\": \"<string>\",\n          \"TitleOnly\": \"<string>\",\n          \"TitlePurchaseDate\": \"<string>\",\n          \"TitleStatus\": \"<string>\",\n          \"TitleStatusDescription\": \"<string>\",\n          \"TitleUse\": \"<string>\",\n          \"TitleAssignment\": \"<string>\"\n        },\n        {\n          \"DuplicateFlag\": \"<string>\",\n          \"NumberOfLiens\": \"<double>\",\n          \"OdometerCode\": \"<string>\",\n          \"OdometerReading\": \"<double>\",\n          \"TitleNumber\": \"<string>\",\n          \"TitleIssueDate\": \"<string>\",\n          \"TitleOnly\": \"<string>\",\n          \"TitlePurchaseDate\": \"<string>\",\n          \"TitleStatus\": \"<string>\",\n          \"TitleStatusDescription\": \"<string>\",\n          \"TitleUse\": \"<string>\",\n          \"TitleAssignment\": \"<string>\"\n        }\n      ]\n    },\n    {\n      \"Vehicle\": {\n        \"Body\": \"<string>\",\n        \"VehicleClass\": \"<string>\",\n        \"ClassDescription\": \"<string>\",\n        \"Cylinders\": \"<double>\",\n        \"Fuel\": \"<string>\",\n        \"Make\": \"<string>\",\n        \"Model\": \"<string>\",\n        \"ModelYear\": \"<double>\",\n        \"NumberDoors\": \"<double>\",\n        \"VehicleStatus\": \"<string>\",\n        \"VehicleStatusIndicatorDescription\": \"<string>\",\n        \"PurchasePrice\": \"<string>\",\n        \"VIN\": \"<string>\",\n        \"Weight\": \"<double>\",\n        \"PrimaryColor\": \"<string>\",\n        \"SecondaryColor\": \"<string>\",\n        \"PassengerSafeQuantity\": \"<double>\",\n        \"VehicleType\": \"<string>\",\n        \"Liencount\": \"<double>\",\n        \"LienHistoryCount\": \"<double>\",\n        \"BrandCount\": \"<double>\",\n        \"BrandHistoryCount\": \"<double>\",\n        \"InsuranceStatus\": \"<string>\",\n        \"Surety\": \"<boolean>\"\n      },\n      \"Liens\": [\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        },\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        }\n      ],\n      \"LienHistory\": [\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        },\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        }\n      ],\n      \"BrandInformation\": [\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        },\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        }\n      ],\n      \"BrandHistoryInformation\": [\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        },\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        }\n      ],\n      \"MobileHomeInformation\": [\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<string>\",\n          \"Length\": \"<double>\",\n          \"Width\": \"<double>\",\n          \"Location\": \"<string>\",\n          \"Plate1\": \"<string>\",\n          \"Plate2\": \"<string>\",\n          \"Plate3\": \"<string>\",\n          \"VINs\": [\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            },\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            }\n          ],\n          \"TitleAssignment\": \"<string>\"\n        },\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<string>\",\n          \"Length\": \"<double>\",\n          \"Width\": \"<double>\",\n          \"Location\": \"<string>\",\n          \"Plate1\": \"<string>\",\n          \"Plate2\": \"<string>\",\n          \"Plate3\": \"<string>\",\n          \"VINs\": [\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            },\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            }\n          ],\n          \"TitleAssignment\": \"<string>\"\n        }\n      ],\n      \"Owners\": [\n        {\n          \"OwnerType\": \"<string>\",\n          \"OwnerRelation\": \"<string>\",\n          \"BusinessName\": \"<string>\",\n          \"FirstName\": \"<string>\",\n          \"LastName\": \"<string>\",\n          \"MiddleInitial\": \"<string>\",\n          \"DateOfBirth\": \"<string>\",\n          \"IdType\": \"<string>\",\n          \"Id\": \"<string>\",\n          \"AccountKey\": \"<string>\",\n          \"ResidentialStreet1\": \"<string>\",\n          \"ResidentialStreet2\": \"<string>\",\n          \"ResidentialCity\": \"<string>\",\n          \"ResidentialState\": \"<string>\",\n          \"ResidentialZip\": \"<string>\",\n          \"MailingStreet1\": \"<string>\",\n          \"MailingStreet2\": \"<string>\",\n          \"MailingCity\": \"<string>\",\n          \"MailingState\": \"<string>\",\n          \"MailingZip\": \"<string>\"\n        },\n        {\n          \"OwnerType\": \"<string>\",\n          \"OwnerRelation\": \"<string>\",\n          \"BusinessName\": \"<string>\",\n          \"FirstName\": \"<string>\",\n          \"LastName\": \"<string>\",\n          \"MiddleInitial\": \"<string>\",\n          \"DateOfBirth\": \"<string>\",\n          \"IdType\": \"<string>\",\n          \"Id\": \"<string>\",\n          \"AccountKey\": \"<string>\",\n          \"ResidentialStreet1\": \"<string>\",\n          \"ResidentialStreet2\": \"<string>\",\n          \"ResidentialCity\": \"<string>\",\n          \"ResidentialState\": \"<string>\",\n          \"ResidentialZip\": \"<string>\",\n          \"MailingStreet1\": \"<string>\",\n          \"MailingStreet2\": \"<string>\",\n          \"MailingCity\": \"<string>\",\n          \"MailingState\": \"<string>\",\n          \"MailingZip\": \"<string>\"\n        }\n      ],\n      \"RegistrationInformation\": [\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<double>\",\n          \"DGVW\": \"<double>\",\n          \"EmsFlag\": \"<boolean>\",\n          \"EmsYearDue\": \"<double>\",\n          \"FirstYearRegistration\": \"<double>\",\n          \"FleetId\": \"<double>\",\n          \"NLETPlateCode\": \"<string>\",\n          \"NMMVDPlateCode\": \"<string>\",\n          \"NonUse\": \"<string>\",\n          \"PlateType\": \"<string>\",\n          \"PlateTypeImage\": \"<string>\",\n          \"PlateIssued\": \"<string>\",\n          \"PlateNumber\": \"<string>\",\n          \"PlateStatus\": \"<string>\",\n          \"PlateInactiveDate\": \"<string>\",\n          \"InactivePlateNumber\": \"<string>\",\n          \"RegistrationDate\": \"<string>\",\n          \"RegistrationExpireDate\": \"<string>\",\n          \"RegistrationStatus\": \"<string>\",\n          \"RegistrationStatusDescription\": \"<string>\",\n          \"RegistrationSuspensionDate\": \"<string>\",\n          \"RegistrationType\": \"<string>\",\n          \"RegistrationTypeDescription\": \"<string>\",\n          \"SpecialPlate\": \"<string>\",\n          \"VehicleCMVIndicator\": \"<double>\",\n          \"VINSuffix\": \"<double>\"\n        },\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<double>\",\n          \"DGVW\": \"<double>\",\n          \"EmsFlag\": \"<boolean>\",\n          \"EmsYearDue\": \"<double>\",\n          \"FirstYearRegistration\": \"<double>\",\n          \"FleetId\": \"<double>\",\n          \"NLETPlateCode\": \"<string>\",\n          \"NMMVDPlateCode\": \"<string>\",\n          \"NonUse\": \"<string>\",\n          \"PlateType\": \"<string>\",\n          \"PlateTypeImage\": \"<string>\",\n          \"PlateIssued\": \"<string>\",\n          \"PlateNumber\": \"<string>\",\n          \"PlateStatus\": \"<string>\",\n          \"PlateInactiveDate\": \"<string>\",\n          \"InactivePlateNumber\": \"<string>\",\n          \"RegistrationDate\": \"<string>\",\n          \"RegistrationExpireDate\": \"<string>\",\n          \"RegistrationStatus\": \"<string>\",\n          \"RegistrationStatusDescription\": \"<string>\",\n          \"RegistrationSuspensionDate\": \"<string>\",\n          \"RegistrationType\": \"<string>\",\n          \"RegistrationTypeDescription\": \"<string>\",\n          \"SpecialPlate\": \"<string>\",\n          \"VehicleCMVIndicator\": \"<double>\",\n          \"VINSuffix\": \"<double>\"\n        }\n      ],\n      \"TitleInformation\": [\n        {\n          \"DuplicateFlag\": \"<string>\",\n          \"NumberOfLiens\": \"<double>\",\n          \"OdometerCode\": \"<string>\",\n          \"OdometerReading\": \"<double>\",\n          \"TitleNumber\": \"<string>\",\n          \"TitleIssueDate\": \"<string>\",\n          \"TitleOnly\": \"<string>\",\n          \"TitlePurchaseDate\": \"<string>\",\n          \"TitleStatus\": \"<string>\",\n          \"TitleStatusDescription\": \"<string>\",\n          \"TitleUse\": \"<string>\",\n          \"TitleAssignment\": \"<string>\"\n        },\n        {\n          \"DuplicateFlag\": \"<string>\",\n          \"NumberOfLiens\": \"<double>\",\n          \"OdometerCode\": \"<string>\",\n          \"OdometerReading\": \"<double>\",\n          \"TitleNumber\": \"<string>\",\n          \"TitleIssueDate\": \"<string>\",\n          \"TitleOnly\": \"<string>\",\n          \"TitlePurchaseDate\": \"<string>\",\n          \"TitleStatus\": \"<string>\",\n          \"TitleStatusDescription\": \"<string>\",\n          \"TitleUse\": \"<string>\",\n          \"TitleAssignment\": \"<string>\"\n        }\n      ]\n    }\n  ],\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "090a3f90-b232-42a0-bc94-f0c4a67d28ee"
+		},
+		{
+			"name": "ListVehicleRecordsByPlate",
+			"item": [
+				{
+					"name": "NMI Vehicle Record By Plate",
+					"id": "efaabc0c-ad3b-451d-9527-54f7497ba813",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"PlateNumber\": \"<string>\",\n  \"PlateType\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/ListVehicleRecordsByPlate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ListVehicleRecordsByPlate"
+							]
+						},
+						"description": "NMI service to retrieve vehicle record(s) by plate number and plate type."
+					},
+					"response": [
+						{
+							"id": "4d97bfd4-a771-424d-abc8-a35365634ae5",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"PlateNumber\": \"<string>\",\n  \"PlateType\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ListVehicleRecordsByPlate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ListVehicleRecordsByPlate"
+									]
+								},
+								"description": "NMI service to retrieve vehicle record(s) by plate number and plate type."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "03f5bacb-3997-4692-8553-1067512710e4"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": [\n    {\n      \"Vehicle\": {\n        \"Body\": \"<string>\",\n        \"VehicleClass\": \"<string>\",\n        \"ClassDescription\": \"<string>\",\n        \"Cylinders\": \"<double>\",\n        \"Fuel\": \"<string>\",\n        \"Make\": \"<string>\",\n        \"Model\": \"<string>\",\n        \"ModelYear\": \"<double>\",\n        \"NumberDoors\": \"<double>\",\n        \"VehicleStatus\": \"<string>\",\n        \"VehicleStatusIndicatorDescription\": \"<string>\",\n        \"PurchasePrice\": \"<string>\",\n        \"VIN\": \"<string>\",\n        \"Weight\": \"<double>\",\n        \"PrimaryColor\": \"<string>\",\n        \"SecondaryColor\": \"<string>\",\n        \"PassengerSafeQuantity\": \"<double>\",\n        \"VehicleType\": \"<string>\",\n        \"Liencount\": \"<double>\",\n        \"LienHistoryCount\": \"<double>\",\n        \"BrandCount\": \"<double>\",\n        \"BrandHistoryCount\": \"<double>\",\n        \"InsuranceStatus\": \"<string>\",\n        \"Surety\": \"<boolean>\"\n      },\n      \"Liens\": [\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        },\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        }\n      ],\n      \"LienHistory\": [\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        },\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        }\n      ],\n      \"BrandInformation\": [\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        },\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        }\n      ],\n      \"BrandHistoryInformation\": [\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        },\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        }\n      ],\n      \"MobileHomeInformation\": [\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<string>\",\n          \"Length\": \"<double>\",\n          \"Width\": \"<double>\",\n          \"Location\": \"<string>\",\n          \"Plate1\": \"<string>\",\n          \"Plate2\": \"<string>\",\n          \"Plate3\": \"<string>\",\n          \"VINs\": [\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            },\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            }\n          ],\n          \"TitleAssignment\": \"<string>\"\n        },\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<string>\",\n          \"Length\": \"<double>\",\n          \"Width\": \"<double>\",\n          \"Location\": \"<string>\",\n          \"Plate1\": \"<string>\",\n          \"Plate2\": \"<string>\",\n          \"Plate3\": \"<string>\",\n          \"VINs\": [\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            },\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            }\n          ],\n          \"TitleAssignment\": \"<string>\"\n        }\n      ],\n      \"Owners\": [\n        {\n          \"OwnerType\": \"<string>\",\n          \"OwnerRelation\": \"<string>\",\n          \"BusinessName\": \"<string>\",\n          \"FirstName\": \"<string>\",\n          \"LastName\": \"<string>\",\n          \"MiddleInitial\": \"<string>\",\n          \"DateOfBirth\": \"<string>\",\n          \"IdType\": \"<string>\",\n          \"Id\": \"<string>\",\n          \"AccountKey\": \"<string>\",\n          \"ResidentialStreet1\": \"<string>\",\n          \"ResidentialStreet2\": \"<string>\",\n          \"ResidentialCity\": \"<string>\",\n          \"ResidentialState\": \"<string>\",\n          \"ResidentialZip\": \"<string>\",\n          \"MailingStreet1\": \"<string>\",\n          \"MailingStreet2\": \"<string>\",\n          \"MailingCity\": \"<string>\",\n          \"MailingState\": \"<string>\",\n          \"MailingZip\": \"<string>\"\n        },\n        {\n          \"OwnerType\": \"<string>\",\n          \"OwnerRelation\": \"<string>\",\n          \"BusinessName\": \"<string>\",\n          \"FirstName\": \"<string>\",\n          \"LastName\": \"<string>\",\n          \"MiddleInitial\": \"<string>\",\n          \"DateOfBirth\": \"<string>\",\n          \"IdType\": \"<string>\",\n          \"Id\": \"<string>\",\n          \"AccountKey\": \"<string>\",\n          \"ResidentialStreet1\": \"<string>\",\n          \"ResidentialStreet2\": \"<string>\",\n          \"ResidentialCity\": \"<string>\",\n          \"ResidentialState\": \"<string>\",\n          \"ResidentialZip\": \"<string>\",\n          \"MailingStreet1\": \"<string>\",\n          \"MailingStreet2\": \"<string>\",\n          \"MailingCity\": \"<string>\",\n          \"MailingState\": \"<string>\",\n          \"MailingZip\": \"<string>\"\n        }\n      ],\n      \"RegistrationInformation\": [\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<double>\",\n          \"DGVW\": \"<double>\",\n          \"EmsFlag\": \"<boolean>\",\n          \"EmsYearDue\": \"<double>\",\n          \"FirstYearRegistration\": \"<double>\",\n          \"FleetId\": \"<double>\",\n          \"NLETPlateCode\": \"<string>\",\n          \"NMMVDPlateCode\": \"<string>\",\n          \"NonUse\": \"<string>\",\n          \"PlateType\": \"<string>\",\n          \"PlateTypeImage\": \"<string>\",\n          \"PlateIssued\": \"<string>\",\n          \"PlateNumber\": \"<string>\",\n          \"PlateStatus\": \"<string>\",\n          \"PlateInactiveDate\": \"<string>\",\n          \"InactivePlateNumber\": \"<string>\",\n          \"RegistrationDate\": \"<string>\",\n          \"RegistrationExpireDate\": \"<string>\",\n          \"RegistrationStatus\": \"<string>\",\n          \"RegistrationStatusDescription\": \"<string>\",\n          \"RegistrationSuspensionDate\": \"<string>\",\n          \"RegistrationType\": \"<string>\",\n          \"RegistrationTypeDescription\": \"<string>\",\n          \"SpecialPlate\": \"<string>\",\n          \"VehicleCMVIndicator\": \"<double>\",\n          \"VINSuffix\": \"<double>\"\n        },\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<double>\",\n          \"DGVW\": \"<double>\",\n          \"EmsFlag\": \"<boolean>\",\n          \"EmsYearDue\": \"<double>\",\n          \"FirstYearRegistration\": \"<double>\",\n          \"FleetId\": \"<double>\",\n          \"NLETPlateCode\": \"<string>\",\n          \"NMMVDPlateCode\": \"<string>\",\n          \"NonUse\": \"<string>\",\n          \"PlateType\": \"<string>\",\n          \"PlateTypeImage\": \"<string>\",\n          \"PlateIssued\": \"<string>\",\n          \"PlateNumber\": \"<string>\",\n          \"PlateStatus\": \"<string>\",\n          \"PlateInactiveDate\": \"<string>\",\n          \"InactivePlateNumber\": \"<string>\",\n          \"RegistrationDate\": \"<string>\",\n          \"RegistrationExpireDate\": \"<string>\",\n          \"RegistrationStatus\": \"<string>\",\n          \"RegistrationStatusDescription\": \"<string>\",\n          \"RegistrationSuspensionDate\": \"<string>\",\n          \"RegistrationType\": \"<string>\",\n          \"RegistrationTypeDescription\": \"<string>\",\n          \"SpecialPlate\": \"<string>\",\n          \"VehicleCMVIndicator\": \"<double>\",\n          \"VINSuffix\": \"<double>\"\n        }\n      ],\n      \"TitleInformation\": [\n        {\n          \"DuplicateFlag\": \"<string>\",\n          \"NumberOfLiens\": \"<double>\",\n          \"OdometerCode\": \"<string>\",\n          \"OdometerReading\": \"<double>\",\n          \"TitleNumber\": \"<string>\",\n          \"TitleIssueDate\": \"<string>\",\n          \"TitleOnly\": \"<string>\",\n          \"TitlePurchaseDate\": \"<string>\",\n          \"TitleStatus\": \"<string>\",\n          \"TitleStatusDescription\": \"<string>\",\n          \"TitleUse\": \"<string>\",\n          \"TitleAssignment\": \"<string>\"\n        },\n        {\n          \"DuplicateFlag\": \"<string>\",\n          \"NumberOfLiens\": \"<double>\",\n          \"OdometerCode\": \"<string>\",\n          \"OdometerReading\": \"<double>\",\n          \"TitleNumber\": \"<string>\",\n          \"TitleIssueDate\": \"<string>\",\n          \"TitleOnly\": \"<string>\",\n          \"TitlePurchaseDate\": \"<string>\",\n          \"TitleStatus\": \"<string>\",\n          \"TitleStatusDescription\": \"<string>\",\n          \"TitleUse\": \"<string>\",\n          \"TitleAssignment\": \"<string>\"\n        }\n      ]\n    },\n    {\n      \"Vehicle\": {\n        \"Body\": \"<string>\",\n        \"VehicleClass\": \"<string>\",\n        \"ClassDescription\": \"<string>\",\n        \"Cylinders\": \"<double>\",\n        \"Fuel\": \"<string>\",\n        \"Make\": \"<string>\",\n        \"Model\": \"<string>\",\n        \"ModelYear\": \"<double>\",\n        \"NumberDoors\": \"<double>\",\n        \"VehicleStatus\": \"<string>\",\n        \"VehicleStatusIndicatorDescription\": \"<string>\",\n        \"PurchasePrice\": \"<string>\",\n        \"VIN\": \"<string>\",\n        \"Weight\": \"<double>\",\n        \"PrimaryColor\": \"<string>\",\n        \"SecondaryColor\": \"<string>\",\n        \"PassengerSafeQuantity\": \"<double>\",\n        \"VehicleType\": \"<string>\",\n        \"Liencount\": \"<double>\",\n        \"LienHistoryCount\": \"<double>\",\n        \"BrandCount\": \"<double>\",\n        \"BrandHistoryCount\": \"<double>\",\n        \"InsuranceStatus\": \"<string>\",\n        \"Surety\": \"<boolean>\"\n      },\n      \"Liens\": [\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        },\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        }\n      ],\n      \"LienHistory\": [\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        },\n        {\n          \"FileDate\": \"<string>\",\n          \"LienHolderName\": \"<string>\",\n          \"MaturityDate\": \"<string>\",\n          \"Street1\": \"<string>\",\n          \"Street2\": \"<string>\",\n          \"City\": \"<string>\",\n          \"State\": \"<string>\",\n          \"Zip\": \"<string>\"\n        }\n      ],\n      \"BrandInformation\": [\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        },\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        }\n      ],\n      \"BrandHistoryInformation\": [\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        },\n        {\n          \"BrandDate\": \"<string>\",\n          \"BrandCode\": \"<string>\",\n          \"BrandDescription\": \"<string>\",\n          \"BrandJurisdiction\": \"<string>\"\n        }\n      ],\n      \"MobileHomeInformation\": [\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<string>\",\n          \"Length\": \"<double>\",\n          \"Width\": \"<double>\",\n          \"Location\": \"<string>\",\n          \"Plate1\": \"<string>\",\n          \"Plate2\": \"<string>\",\n          \"Plate3\": \"<string>\",\n          \"VINs\": [\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            },\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            }\n          ],\n          \"TitleAssignment\": \"<string>\"\n        },\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<string>\",\n          \"Length\": \"<double>\",\n          \"Width\": \"<double>\",\n          \"Location\": \"<string>\",\n          \"Plate1\": \"<string>\",\n          \"Plate2\": \"<string>\",\n          \"Plate3\": \"<string>\",\n          \"VINs\": [\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            },\n            {\n              \"VIN\": \"<string>\",\n              \"VINNumber\": \"<string>\"\n            }\n          ],\n          \"TitleAssignment\": \"<string>\"\n        }\n      ],\n      \"Owners\": [\n        {\n          \"OwnerType\": \"<string>\",\n          \"OwnerRelation\": \"<string>\",\n          \"BusinessName\": \"<string>\",\n          \"FirstName\": \"<string>\",\n          \"LastName\": \"<string>\",\n          \"MiddleInitial\": \"<string>\",\n          \"DateOfBirth\": \"<string>\",\n          \"IdType\": \"<string>\",\n          \"Id\": \"<string>\",\n          \"AccountKey\": \"<string>\",\n          \"ResidentialStreet1\": \"<string>\",\n          \"ResidentialStreet2\": \"<string>\",\n          \"ResidentialCity\": \"<string>\",\n          \"ResidentialState\": \"<string>\",\n          \"ResidentialZip\": \"<string>\",\n          \"MailingStreet1\": \"<string>\",\n          \"MailingStreet2\": \"<string>\",\n          \"MailingCity\": \"<string>\",\n          \"MailingState\": \"<string>\",\n          \"MailingZip\": \"<string>\"\n        },\n        {\n          \"OwnerType\": \"<string>\",\n          \"OwnerRelation\": \"<string>\",\n          \"BusinessName\": \"<string>\",\n          \"FirstName\": \"<string>\",\n          \"LastName\": \"<string>\",\n          \"MiddleInitial\": \"<string>\",\n          \"DateOfBirth\": \"<string>\",\n          \"IdType\": \"<string>\",\n          \"Id\": \"<string>\",\n          \"AccountKey\": \"<string>\",\n          \"ResidentialStreet1\": \"<string>\",\n          \"ResidentialStreet2\": \"<string>\",\n          \"ResidentialCity\": \"<string>\",\n          \"ResidentialState\": \"<string>\",\n          \"ResidentialZip\": \"<string>\",\n          \"MailingStreet1\": \"<string>\",\n          \"MailingStreet2\": \"<string>\",\n          \"MailingCity\": \"<string>\",\n          \"MailingState\": \"<string>\",\n          \"MailingZip\": \"<string>\"\n        }\n      ],\n      \"RegistrationInformation\": [\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<double>\",\n          \"DGVW\": \"<double>\",\n          \"EmsFlag\": \"<boolean>\",\n          \"EmsYearDue\": \"<double>\",\n          \"FirstYearRegistration\": \"<double>\",\n          \"FleetId\": \"<double>\",\n          \"NLETPlateCode\": \"<string>\",\n          \"NMMVDPlateCode\": \"<string>\",\n          \"NonUse\": \"<string>\",\n          \"PlateType\": \"<string>\",\n          \"PlateTypeImage\": \"<string>\",\n          \"PlateIssued\": \"<string>\",\n          \"PlateNumber\": \"<string>\",\n          \"PlateStatus\": \"<string>\",\n          \"PlateInactiveDate\": \"<string>\",\n          \"InactivePlateNumber\": \"<string>\",\n          \"RegistrationDate\": \"<string>\",\n          \"RegistrationExpireDate\": \"<string>\",\n          \"RegistrationStatus\": \"<string>\",\n          \"RegistrationStatusDescription\": \"<string>\",\n          \"RegistrationSuspensionDate\": \"<string>\",\n          \"RegistrationType\": \"<string>\",\n          \"RegistrationTypeDescription\": \"<string>\",\n          \"SpecialPlate\": \"<string>\",\n          \"VehicleCMVIndicator\": \"<double>\",\n          \"VINSuffix\": \"<double>\"\n        },\n        {\n          \"CountyDescription\": \"<string>\",\n          \"CountyNumber\": \"<double>\",\n          \"DGVW\": \"<double>\",\n          \"EmsFlag\": \"<boolean>\",\n          \"EmsYearDue\": \"<double>\",\n          \"FirstYearRegistration\": \"<double>\",\n          \"FleetId\": \"<double>\",\n          \"NLETPlateCode\": \"<string>\",\n          \"NMMVDPlateCode\": \"<string>\",\n          \"NonUse\": \"<string>\",\n          \"PlateType\": \"<string>\",\n          \"PlateTypeImage\": \"<string>\",\n          \"PlateIssued\": \"<string>\",\n          \"PlateNumber\": \"<string>\",\n          \"PlateStatus\": \"<string>\",\n          \"PlateInactiveDate\": \"<string>\",\n          \"InactivePlateNumber\": \"<string>\",\n          \"RegistrationDate\": \"<string>\",\n          \"RegistrationExpireDate\": \"<string>\",\n          \"RegistrationStatus\": \"<string>\",\n          \"RegistrationStatusDescription\": \"<string>\",\n          \"RegistrationSuspensionDate\": \"<string>\",\n          \"RegistrationType\": \"<string>\",\n          \"RegistrationTypeDescription\": \"<string>\",\n          \"SpecialPlate\": \"<string>\",\n          \"VehicleCMVIndicator\": \"<double>\",\n          \"VINSuffix\": \"<double>\"\n        }\n      ],\n      \"TitleInformation\": [\n        {\n          \"DuplicateFlag\": \"<string>\",\n          \"NumberOfLiens\": \"<double>\",\n          \"OdometerCode\": \"<string>\",\n          \"OdometerReading\": \"<double>\",\n          \"TitleNumber\": \"<string>\",\n          \"TitleIssueDate\": \"<string>\",\n          \"TitleOnly\": \"<string>\",\n          \"TitlePurchaseDate\": \"<string>\",\n          \"TitleStatus\": \"<string>\",\n          \"TitleStatusDescription\": \"<string>\",\n          \"TitleUse\": \"<string>\",\n          \"TitleAssignment\": \"<string>\"\n        },\n        {\n          \"DuplicateFlag\": \"<string>\",\n          \"NumberOfLiens\": \"<double>\",\n          \"OdometerCode\": \"<string>\",\n          \"OdometerReading\": \"<double>\",\n          \"TitleNumber\": \"<string>\",\n          \"TitleIssueDate\": \"<string>\",\n          \"TitleOnly\": \"<string>\",\n          \"TitlePurchaseDate\": \"<string>\",\n          \"TitleStatus\": \"<string>\",\n          \"TitleStatusDescription\": \"<string>\",\n          \"TitleUse\": \"<string>\",\n          \"TitleAssignment\": \"<string>\"\n        }\n      ]\n    }\n  ],\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "0bd5fe57-1e6f-429f-a9bf-7f9cf27e98a2"
+		},
+		{
+			"name": "ManufacturedHomeSearch",
+			"item": [
+				{
+					"name": "NMI Manufactured Home Search",
+					"id": "8a3a982d-e88a-4d28-93a0-c03dc76d7577",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"Year\": \"<string>\",\n  \"Make\": \"<string>\",\n  \"VIN\": \"<string>\",\n  \"PartialVINSearch\": \"<boolean>\",\n  \"CountyCode\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/ManufacturedHomeSearch",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ManufacturedHomeSearch"
+							]
+						},
+						"description": "NMI service that returns manufactured home information."
+					},
+					"response": [
+						{
+							"id": "9ab14695-a22f-4756-b4e7-c8c60c35561f",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"Year\": \"<string>\",\n  \"Make\": \"<string>\",\n  \"VIN\": \"<string>\",\n  \"PartialVINSearch\": \"<boolean>\",\n  \"CountyCode\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ManufacturedHomeSearch",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ManufacturedHomeSearch"
+									]
+								},
+								"description": "NMI service that returns manufactured home information."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "84d8b531-7c6e-47b6-b599-46b5bcaf3a96"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": [\n    {\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"Year\": \"<string>\",\n      \"Owner\": \"<string>\",\n      \"CountyDescription\": \"<string>\",\n      \"Location\": \"<string>\",\n      \"CountyNumber\": \"<string>\",\n      \"Length\": \"<double>\",\n      \"Width\": \"<double>\",\n      \"Plate1\": \"<string>\",\n      \"Plate2\": \"<string>\",\n      \"Plate3\": \"<string>\",\n      \"VINs\": [\n        {\n          \"VIN\": \"<string>\",\n          \"VINNumber\": \"<string>\"\n        },\n        {\n          \"VIN\": \"<string>\",\n          \"VINNumber\": \"<string>\"\n        }\n      ]\n    },\n    {\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"Year\": \"<string>\",\n      \"Owner\": \"<string>\",\n      \"CountyDescription\": \"<string>\",\n      \"Location\": \"<string>\",\n      \"CountyNumber\": \"<string>\",\n      \"Length\": \"<double>\",\n      \"Width\": \"<double>\",\n      \"Plate1\": \"<string>\",\n      \"Plate2\": \"<string>\",\n      \"Plate3\": \"<string>\",\n      \"VINs\": [\n        {\n          \"VIN\": \"<string>\",\n          \"VINNumber\": \"<string>\"\n        },\n        {\n          \"VIN\": \"<string>\",\n          \"VINNumber\": \"<string>\"\n        }\n      ]\n    }\n  ],\n  \"ResultsCount\": \"<double>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "43f41178-1f40-4bf4-a3e6-f19cb085d04f"
+		},
+		{
+			"name": "NameDOBSearch",
+			"item": [
+				{
+					"name": "NMI Name DOB Search",
+					"id": "cd5c421b-ea6d-4a76-b1d8-f764c6e16abf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FirstName\": \"<string>\",\n  \"MiddleInitial\": \"<string>\",\n  \"LastName\": \"<string>\",\n  \"Suffix\": \"<string>\",\n  \"DOB\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/NameDOBSearch",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"NameDOBSearch"
+							]
+						},
+						"description": "NMI service to perform search on first/last name and DOB inputs."
+					},
+					"response": [
+						{
+							"id": "d10b7f5c-d6d0-4070-a7f6-b6ce953a6623",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FirstName\": \"<string>\",\n  \"MiddleInitial\": \"<string>\",\n  \"LastName\": \"<string>\",\n  \"Suffix\": \"<string>\",\n  \"DOB\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/NameDOBSearch",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"NameDOBSearch"
+									]
+								},
+								"description": "NMI service to perform search on first/last name and DOB inputs."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "7c60410b-c8d6-4e09-afca-0cef2ab82622"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": [\n    {\n      \"AccountKey\": \"<double>\",\n      \"DLN\": \"<string>\",\n      \"LicenseState\": \"<string>\"\n    },\n    {\n      \"AccountKey\": \"<double>\",\n      \"DLN\": \"<string>\",\n      \"LicenseState\": \"<string>\"\n    }\n  ],\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "76cea9e7-eb08-413f-b1a4-4dc5b5593f3f"
+		},
+		{
+			"name": "PartialSSNSearch",
+			"item": [
+				{
+					"name": "NMI Partial SSN Search",
+					"id": "2e88da39-e44b-430d-bb51-9ee88fd49657",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"ID\": \"<string>\",\n  \"IDType\": \"<string>\",\n  \"DOB\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/PartialSSNSearch",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"PartialSSNSearch"
+							]
+						},
+						"description": "NMI service that searches on partial SSN (or DLN) provided."
+					},
+					"response": [
+						{
+							"id": "6e5c6d84-6820-4e1f-a03c-38b3df8ee116",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"ID\": \"<string>\",\n  \"IDType\": \"<string>\",\n  \"DOB\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/PartialSSNSearch",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"PartialSSNSearch"
+									]
+								},
+								"description": "NMI service that searches on partial SSN (or DLN) provided."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "41625836-7059-4237-bcd9-c8f1576e1006"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": [\n    {\n      \"FullSSN\": \"<string>\",\n      \"DLN\": \"<string>\",\n      \"FirstName\": \"<string>\",\n      \"MiddleName\": \"<string>\",\n      \"LastName\": \"<string>\",\n      \"Street1\": \"<string>\",\n      \"Street2\": \"<string>\",\n      \"City\": \"<string>\",\n      \"State\": \"<string>\",\n      \"Zip\": \"<string>\",\n      \"Photo\": \"<string>\",\n      \"SignaturePhoto\": \"<string>\"\n    },\n    {\n      \"FullSSN\": \"<string>\",\n      \"DLN\": \"<string>\",\n      \"FirstName\": \"<string>\",\n      \"MiddleName\": \"<string>\",\n      \"LastName\": \"<string>\",\n      \"Street1\": \"<string>\",\n      \"Street2\": \"<string>\",\n      \"City\": \"<string>\",\n      \"State\": \"<string>\",\n      \"Zip\": \"<string>\",\n      \"Photo\": \"<string>\",\n      \"SignaturePhoto\": \"<string>\"\n    }\n  ],\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "9d89df93-9cea-444c-bd0b-cebd250851ca"
+		},
+		{
+			"name": "PlacardInquiry",
+			"item": [
+				{
+					"name": "NMI Placard Inquiry",
+					"id": "331ef640-c231-4abb-b496-cf50dca889ee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeesCharged\": \"<double>\",\n  \"PlacardNumber\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/PlacardInquiry",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"PlacardInquiry"
+							]
+						},
+						"description": "NMI service to retrieve placard data for a given placard number."
+					},
+					"response": [
+						{
+							"id": "7dca7983-bd3a-4c7f-a732-2d3d550cac85",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeesCharged\": \"<double>\",\n  \"PlacardNumber\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/PlacardInquiry",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"PlacardInquiry"
+									]
+								},
+								"description": "NMI service to retrieve placard data for a given placard number."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "0406d702-c4b5-4ede-ba09-53d39be5f026"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"LastName\": \"<string>\",\n  \"FirstName\": \"<string>\",\n  \"PlacardField1\": \"<string>\",\n  \"PlacardField2\": \"<string>\",\n  \"PlacardStatus\": \"<string>\",\n  \"Street1\": \"<string>\",\n  \"Street2\": \"<string>\",\n  \"City\": \"<string>\",\n  \"State\": \"<string>\",\n  \"Zip\": \"<string>\",\n  \"Permanent\": \"<boolean>\",\n  \"IssuedDate\": \"<string>\",\n  \"ExpirationDate\": \"<string>\",\n  \"BillableResponseKey\": \"<double>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "336650aa-0307-4eef-b775-13d478265772"
+		},
+		{
+			"name": "SearchVehicle",
+			"item": [
+				{
+					"name": "NMI Vehicle Search",
+					"id": "a8b58d67-0025-43cb-a1b4-e1031765a5d0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeesCharged\": \"<number>\",\n  \"VIN\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/SearchVehicle",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"SearchVehicle"
+							]
+						},
+						"description": "NMI service to search for a vehicle by VIN."
+					},
+					"response": [
+						{
+							"id": "32eae11f-f868-4a91-84a1-82151ce5ce40",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"FeesCharged\": \"<number>\",\n  \"VIN\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/SearchVehicle",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"SearchVehicle"
+									]
+								},
+								"description": "NMI service to search for a vehicle by VIN."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "9480d374-3d49-4d1e-872c-30bf27965445"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"TaxLienFound\": \"<boolean>\",\n  \"VehicleFound\": \"<boolean>\",\n  \"BillableResponseKey\": \"<double>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "7f9c0213-7290-4f60-9cd9-919705f6d7bd"
+		},
+		{
+			"name": "SSNSearch",
+			"item": [
+				{
+					"name": "NMI SSN Search",
+					"id": "d8e18dac-772f-4871-92f0-0588e8eda947",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"SSN\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/SSNSearch",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"SSNSearch"
+							]
+						},
+						"description": "NMI service to retrieve customer information from SSN input."
+					},
+					"response": [
+						{
+							"id": "3acb819a-5bf2-48db-bf75-6ba3e46b19a2",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"SSN\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/SSNSearch",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"SSNSearch"
+									]
+								},
+								"description": "NMI service to retrieve customer information from SSN input."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "ed907a71-1258-4986-9ce9-237322bb5ffd"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": [\n    {\n      \"AccountKey\": \"<double>\",\n      \"DLN\": \"<string>\",\n      \"LicenseState\": \"<string>\",\n      \"DOB\": \"<string>\",\n      \"FirstName\": \"<string>\",\n      \"LastName\": \"<string>\",\n      \"MiddleInitial\": \"<string>\",\n      \"Suffix\": \"<string>\",\n      \"AccountType\": \"<string>\"\n    },\n    {\n      \"AccountKey\": \"<double>\",\n      \"DLN\": \"<string>\",\n      \"LicenseState\": \"<string>\",\n      \"DOB\": \"<string>\",\n      \"FirstName\": \"<string>\",\n      \"LastName\": \"<string>\",\n      \"MiddleInitial\": \"<string>\",\n      \"Suffix\": \"<string>\",\n      \"AccountType\": \"<string>\"\n    }\n  ],\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "ee97b2b4-bb35-4a01-963d-386befdfdc3d"
+		},
+		{
+			"name": "TheftCheckByToken",
+			"item": [
+				{
+					"name": "NMI Theft Check By Token",
+					"id": "7809e7c3-cac9-4428-a3e1-3a359e20d066",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"TheftToken\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/TheftCheckByToken",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"TheftCheckByToken"
+							]
+						},
+						"description": "NMI REST service to perform a theft inquiry for a given token."
+					},
+					"response": [
+						{
+							"id": "3aef86cb-04cb-4f1d-b245-5dd920b2e9f6",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"TheftToken\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/TheftCheckByToken",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"TheftCheckByToken"
+									]
+								},
+								"description": "NMI REST service to perform a theft inquiry for a given token."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "b214775e-8396-4010-8d83-36705e05e26a"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Theft\": \"<boolean>\",\n  \"ResponseRecieved\": \"<boolean>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "502665c3-138a-4136-8e6e-09b56a0481a0"
+		},
+		{
+			"name": "TheftCheckByVIN",
+			"item": [
+				{
+					"name": "NMI Theft Check By VIN",
+					"id": "14e550c2-7c00-4567-8326-e79b2bde3b0d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"VIN\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/TheftCheckByVIN",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"TheftCheckByVIN"
+							]
+						},
+						"description": "NMI REST service to perform a theft check for a given VIN."
+					},
+					"response": [
+						{
+							"id": "d66c8d85-7f79-4b23-9a5d-7cbc9139c775",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"VIN\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/TheftCheckByVIN",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"TheftCheckByVIN"
+									]
+								},
+								"description": "NMI REST service to perform a theft check for a given VIN."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "ef6b7dcd-5d96-4922-adfb-d82699545d95"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"TheftToken\": \"<string>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "4ac8e45c-78d7-4680-b8d1-c77b6762fc98"
+		},
+		{
+			"name": "VehicleByAddress",
+			"item": [
+				{
+					"name": "NMI Vehicle By Address",
+					"id": "ff20eff1-cad3-44b8-99ba-d22f1f64e254",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"Street1\": \"<string>\",\n  \"Street2\": \"<string>\",\n  \"City\": \"<string>\",\n  \"State\": \"<string>\",\n  \"Zip\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/VehicleByAddress",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VehicleByAddress"
+							]
+						},
+						"description": "NMI RESTful service that retrieves vehicle data for given address."
+					},
+					"response": [
+						{
+							"id": "95365763-c52f-4db9-b6d0-36ea8f599f8c",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"Street1\": \"<string>\",\n  \"Street2\": \"<string>\",\n  \"City\": \"<string>\",\n  \"State\": \"<string>\",\n  \"Zip\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/VehicleByAddress",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VehicleByAddress"
+									]
+								},
+								"description": "NMI RESTful service that retrieves vehicle data for given address."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "e44939b3-2c39-4ebf-9383-ce7b9393fceb"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": [\n    {\n      \"City\": \"<string>\",\n      \"Street1\": \"<string>\",\n      \"Street2\": \"<string>\",\n      \"Zip\": \"<string>\",\n      \"State\": \"<string>\",\n      \"OwnerNames\": \"<string>\",\n      \"PlateNumber\": \"<string>\",\n      \"VIN\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"Year\": \"<string>\",\n      \"CustomerKey\": \"<string>\"\n    },\n    {\n      \"City\": \"<string>\",\n      \"Street1\": \"<string>\",\n      \"Street2\": \"<string>\",\n      \"Zip\": \"<string>\",\n      \"State\": \"<string>\",\n      \"OwnerNames\": \"<string>\",\n      \"PlateNumber\": \"<string>\",\n      \"VIN\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"Year\": \"<string>\",\n      \"CustomerKey\": \"<string>\"\n    }\n  ],\n  \"ResultsCount\": \"<double>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "524f7837-94c4-4f21-92b9-a6c94c938cb2"
+		},
+		{
+			"name": "VehicleByAdvancedAttributes",
+			"item": [
+				{
+					"name": "NMI Vehicle By Advanced Attributes",
+					"id": "5540ed0c-2e02-43df-9a73-8f2c55e37240",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"Year\": \"<string>\",\n  \"Make\": \"<string>\",\n  \"Model\": \"<string>\",\n  \"Color\": \"<string>\",\n  \"PlateType\": \"<string>\",\n  \"PlateNumber\": \"<string>\",\n  \"PartialPlateSearch\": \"<boolean>\",\n  \"CountyCode\": \"<string>\",\n  \"ZipCode\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/VehicleByAdvancedAttributes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VehicleByAdvancedAttributes"
+							]
+						},
+						"description": "NMI service that returns vehicle information based on advanced vehicle attributes provided."
+					},
+					"response": [
+						{
+							"id": "2a921156-af29-4e72-83d0-b73ed8503db2",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"Year\": \"<string>\",\n  \"Make\": \"<string>\",\n  \"Model\": \"<string>\",\n  \"Color\": \"<string>\",\n  \"PlateType\": \"<string>\",\n  \"PlateNumber\": \"<string>\",\n  \"PartialPlateSearch\": \"<boolean>\",\n  \"CountyCode\": \"<string>\",\n  \"ZipCode\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/VehicleByAdvancedAttributes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VehicleByAdvancedAttributes"
+									]
+								},
+								"description": "NMI service that returns vehicle information based on advanced vehicle attributes provided."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "be40618f-9220-4173-b98e-d167842c7f5c"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"ResultsCount\": \"<double>\",\n  \"Results\": [\n    {\n      \"OwnerNames\": \"<string>\",\n      \"Street1\": \"<string>\",\n      \"Street2\": \"<string>\",\n      \"City\": \"<string>\",\n      \"State\": \"<string>\",\n      \"Zip\": \"<string>\",\n      \"PlateNumber\": \"<string>\",\n      \"VIN\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"Year\": \"<string>\",\n      \"CustomerKey\": \"<string>\"\n    },\n    {\n      \"OwnerNames\": \"<string>\",\n      \"Street1\": \"<string>\",\n      \"Street2\": \"<string>\",\n      \"City\": \"<string>\",\n      \"State\": \"<string>\",\n      \"Zip\": \"<string>\",\n      \"PlateNumber\": \"<string>\",\n      \"VIN\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"Year\": \"<string>\",\n      \"CustomerKey\": \"<string>\"\n    }\n  ],\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "dc265f4c-67e2-48e8-a219-fe74295b024a"
+		},
+		{
+			"name": "VehicleByAttributes",
+			"item": [
+				{
+					"name": "NMI Vehicle By Attributes",
+					"id": "cc9340bd-9f35-4c96-96bc-8ec50db0a9b6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"VIN\": \"<string>\",\n  \"PartialVINSearch\": \"<boolean>\",\n  \"PlateType\": \"<string>\",\n  \"PlateNumber\": \"<string>\",\n  \"PartialPlateSearch\": \"<boolean>\",\n  \"FirstName\": \"<string>\",\n  \"LastName\": \"<string>\",\n  \"Age\": \"<string>\",\n  \"DOB\": \"<string>\",\n  \"MiddleInitial\": \"<string>\",\n  \"Make\": \"<string>\",\n  \"Model\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/VehicleByAttributes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VehicleByAttributes"
+							]
+						},
+						"description": "NMI service that retrieves vehicle information for provided attributes like plate number, VIN, and owner name."
+					},
+					"response": [
+						{
+							"id": "ee317471-39c9-4f7d-91c9-99b354288103",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"VIN\": \"<string>\",\n  \"PartialVINSearch\": \"<boolean>\",\n  \"PlateType\": \"<string>\",\n  \"PlateNumber\": \"<string>\",\n  \"PartialPlateSearch\": \"<boolean>\",\n  \"FirstName\": \"<string>\",\n  \"LastName\": \"<string>\",\n  \"Age\": \"<string>\",\n  \"DOB\": \"<string>\",\n  \"MiddleInitial\": \"<string>\",\n  \"Make\": \"<string>\",\n  \"Model\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/VehicleByAttributes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VehicleByAttributes"
+									]
+								},
+								"description": "NMI service that retrieves vehicle information for provided attributes like plate number, VIN, and owner name."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "59bd32e1-bfaf-4b3a-9811-7c6b344e104b"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": [\n    {\n      \"City\": \"<string>\",\n      \"Street1\": \"<string>\",\n      \"Street2\": \"<string>\",\n      \"Zip\": \"<string>\",\n      \"State\": \"<string>\",\n      \"OwnerNames\": \"<string>\",\n      \"PlateNumber\": \"<string>\",\n      \"VIN\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"Year\": \"<string>\",\n      \"CustomerKey\": \"<string>\"\n    },\n    {\n      \"City\": \"<string>\",\n      \"Street1\": \"<string>\",\n      \"Street2\": \"<string>\",\n      \"Zip\": \"<string>\",\n      \"State\": \"<string>\",\n      \"OwnerNames\": \"<string>\",\n      \"PlateNumber\": \"<string>\",\n      \"VIN\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"Year\": \"<string>\",\n      \"CustomerKey\": \"<string>\"\n    }\n  ],\n  \"ResultsCount\": \"<double>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "a533005d-36ee-4c59-b8c1-3802d0781cb9"
+		},
+		{
+			"name": "VesselSearch",
+			"item": [
+				{
+					"name": "NMI Vessel Search",
+					"id": "c08cb864-382f-4f7f-b9b9-4b8849440ae7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"HIN\": \"<string>\",\n  \"RegistrationNumber\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/VesselSearch",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VesselSearch"
+							]
+						},
+						"description": "NMI service that returns vessel information for a given HIN or Reg Number. Contains less data than the vessel record search."
+					},
+					"response": [
+						{
+							"id": "0b10a67a-1d49-45ad-ae49-18d0f2f29c41",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"HIN\": \"<string>\",\n  \"RegistrationNumber\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/VesselSearch",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VesselSearch"
+									]
+								},
+								"description": "NMI service that returns vessel information for a given HIN or Reg Number. Contains less data than the vessel record search."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "5b4985a9-9984-4b94-b923-ce97da738625"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": [\n    {\n      \"HIN\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"AccountKey\": \"<string>\"\n    },\n    {\n      \"HIN\": \"<string>\",\n      \"Make\": \"<string>\",\n      \"Model\": \"<string>\",\n      \"AccountKey\": \"<string>\"\n    }\n  ],\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "f4ed3da6-9d43-4d0d-b773-da2c55ba1255"
+		},
+		{
+			"name": "YouthfulIndexQuery",
+			"item": [
+				{
+					"name": "NMI Youthful Index Query",
+					"id": "23ebd3d2-0c26-4917-a56a-ff44de572ac5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"RunDate\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/YouthfulIndexQuery",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"YouthfulIndexQuery"
+							]
+						},
+						"description": "NMI service that generates the Youthful Index flat file."
+					},
+					"response": [
+						{
+							"id": "620b5713-5a27-4980-a329-49cbcfd46a26",
+							"name": " ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestorName\": \"<string>\",\n  \"ApplicationName\": \"<string>\",\n  \"PermissableUse\": \"<string>\",\n  \"RunDate\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/YouthfulIndexQuery",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"YouthfulIndexQuery"
+									]
+								},
+								"description": "NMI service that generates the Youthful Index flat file."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "6a334da3-4430-4188-95c4-660678272a08"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Results\": \"<string>\",\n  \"ExceptionMessageField\": \"<string>\",\n  \"ExceptionMessageType\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "f726ccdc-092e-4fc7-bf0d-6f6ddcafb4fa"
+		}
+	],
+	"variable": [
+		{
+			"id": "06f2a17c-bdf2-480b-a302-303020b7c182",
+			"key": "baseUrl",
+			"value": "https://mvrollout.trd.state.nm.us/services/nmi"
+		}
+	]
+}
