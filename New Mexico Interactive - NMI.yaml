@@ -1,0 +1,4363 @@
+swagger: '2.0'
+info: 
+  title: 'New Mexico Interactive - NMI'
+  description: New Mexico Interactive(NMI) High Volume Data Sales Rest API Interface. Tyler Technologies
+  version: "1.0"
+host: mvrollout.trd.state.nm.us
+basePath: /services/nmi/
+schemes: 
+  - https
+paths: 
+  /AdditionalFeesCharged: 
+    post: 
+      tags: 
+        - NMI Additional Fees
+      summary: NMI Additional Fees
+      description: NMI additional fees charged web service.
+      operationId: AdditionalFeesChargedPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/AdditionalFeesCharged_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/AdditionalFeesCharged_POST_Response'
+  /AddressSearch: 
+    post: 
+      tags: 
+        - NMI Address Search
+      summary: NMI Address Search
+      description: NMI service that retrieves customer info base on given address.
+      operationId: AddressSearchPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/AddressSearch_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/AddressSearch_POST_Response'
+  /CitationActionCount: 
+    post: 
+      tags: 
+        - NMI Citation Add Count
+      summary: NMI Citation Add Count
+      description: NMI service to retrieve the number of citations added to a given DLN.
+      operationId: CitationActionCountPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/CitationActionCount_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/CitationActionCount_POST_Response'
+  /CountLiensForVIN: 
+    post: 
+      tags: 
+        - NMI Lien Count By VIN
+      summary: NMI Lien Count By VIN
+      description: NMI service to count the number of liens associated with a given VIN.
+      operationId: CountLiensForVINPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/CountLiensForVIN_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/CountLiensForVIN_POST_Response'
+  /DLRDetail: 
+    post: 
+      tags: 
+        - NMI DLR Detail
+      summary: NMI DLR Detail
+      description: NMI service to retrieve DLR data for a given accountkey/DLN.
+      operationId: DLRDetailPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/DLRDetail_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/DLRDetail_POST_Response'
+  /DLRStatusChange: 
+    post: 
+      tags: 
+        - NMI DLR Status Change
+      summary: NMI DLR Status Change
+      description: NMI service to retrieve DLR status change information for a given DLN.
+      operationId: DLRStatusChangePOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/DLRStatusChange_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/DLRStatusChange_POST_Response'
+  /FeesCharged: 
+    post: 
+      tags: 
+        - NMI Fees Charged
+      summary: NMI Fees Charged
+      description: NMI service that updates the fees charged in the NMI web service tracking table.
+      operationId: FeesChargedPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/FeesCharged_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/FeesCharged_POST_Response'
+  /GetBriefVehicleInfo: 
+    post: 
+      tags: 
+        - NMI Brief Vehicle Info
+      summary: NMI Brief Vehicle Info
+      description: NMI service that returns brief information about a vehicle based on the VIN provided.
+      operationId: GetBriefVehicleInfoPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/GetBriefVehicleInfo_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/GetBriefVehicleInfo_POST_Response'
+  /GetBriefVesselInformation: 
+    post: 
+      tags: 
+        - NMI Brief Vessel Info
+      summary: NMI Brief Vessel Info
+      description: NMI service that returns brief vessel information for a given hull ID.
+      operationId: GetBriefVesselInformationPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/GetBriefVesselInformation_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/GetBriefVesselInformation_POST_Response'
+  /GetDealers: 
+    post: 
+      tags: 
+        - NMI Dealer Lookup
+      summary: NMI Dealer Lookup
+      description: NMI service that returns dealer information for all dealers active within the last year.
+      operationId: GetDealersPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/GetDealers_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/GetDealers_POST_Response'
+  /GetVehicleCount: 
+    post: 
+      tags: 
+        - NMI Vehicle Count By VIN
+      summary: NMI Vehicle Count By VIN
+      description: NMI service to count the number of vehicles for a given VIN.
+      operationId: GetVehicleCountPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/GetVehicleCount_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/GetVehicleCount_POST_Response'
+  /GetVehicleOwnerByVIN: 
+    post: 
+      tags: 
+        - NMI VIN Owner Search
+      summary: NMI VIN Owner Search
+      description: NMI service to retrieve owner data for a VIN.
+      operationId: GetVehicleOwnerByVINPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/GetVehicleOwnerByVIN_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/GetVehicleOwnerByVIN_POST_Response'
+  /GetVehicleRecord: 
+    post: 
+      tags: 
+        - NMI Vehicle Record Search
+      summary: NMI Vehicle Record Search
+      description: 'NMI service used to retrieve vehicle, lien, brand, owner, registration, and title data for a given customer key.'
+      operationId: GetVehicleRecordPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/GetVehicleRecord_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/GetVehicleRecord_POST_Response'
+  /GetVesselCountByHullId: 
+    post: 
+      tags: 
+        - NMI Vessel Count By Hull ID
+      summary: NMI Vessel Count By Hull ID
+      description: NMI service that returns the number of vessels for a provided hull ID.
+      operationId: GetVesselCountByHullIdPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/GetVesselCountByHullId_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/GetVesselCountByHullId_POST_Response'
+  /GetVesselCountByRegNumber: 
+    post: 
+      tags: 
+        - NMI Vessel Count By Registration Number
+      summary: NMI Vessel Count By Registration Number
+      description: NMI service that returns the number of vessels for a given registration number.
+      operationId: GetVesselCountByRegNumberPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/GetVesselCountByRegNumber_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/GetVesselCountByRegNumber_POST_Response'
+  /GetVesselRecord: 
+    post: 
+      tags: 
+        - NMI Vessel Record Search
+      summary: NMI Vessel Record Search
+      description: NMI service to retrieve vessel record information.
+      operationId: GetVesselRecordPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/GetVesselRecord_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/GetVesselRecord_POST_Response'
+  /ListVehicleRecordsByOwner: 
+    post: 
+      tags: 
+        - NMI Vehicle Records By Owner
+      summary: NMI Vehicle Records By Owner
+      description: NMI service to retrieve vehicle record(s) by owner name/age/DOB.
+      operationId: ListVehicleRecordsByOwnerPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/ListVehicleRecordsByOwner_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/ListVehicleRecordsByOwner_POST_Response'
+  /ListVehicleRecordsByPlate: 
+    post: 
+      tags: 
+        - NMI Vehicle Record By Plate
+      summary: NMI Vehicle Record By Plate
+      description: NMI service to retrieve vehicle record(s) by plate number and plate type.
+      operationId: ListVehicleRecordsByPlatePOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/ListVehicleRecordsByPlate_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/ListVehicleRecordsByPlate_POST_Response'
+  /ManufacturedHomeSearch: 
+    post: 
+      tags: 
+        - NMI Manufactured Home Search
+      summary: NMI Manufactured Home Search
+      description: NMI service that returns manufactured home information.
+      operationId: ManufacturedHomeSearchPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/ManufacturedHomeSearch_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/ManufacturedHomeSearch_POST_Response'
+  /NameDOBSearch: 
+    post: 
+      tags: 
+        - NMI Name DOB Search
+      summary: NMI Name DOB Search
+      description: NMI service to perform search on first/last name and DOB inputs.
+      operationId: NameDOBSearchPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/NameDOBSearch_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/NameDOBSearch_POST_Response'
+  /PartialSSNSearch: 
+    post: 
+      tags: 
+        - NMI Partial SSN Search
+      summary: NMI Partial SSN Search
+      description: NMI service that searches on partial SSN (or DLN) provided.
+      operationId: PartialSSNSearchPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/PartialSSNSearch_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/PartialSSNSearch_POST_Response'
+  /PlacardInquiry: 
+    post: 
+      tags: 
+        - NMI Placard Inquiry
+      summary: NMI Placard Inquiry
+      description: NMI service to retrieve placard data for a given placard number.
+      operationId: PlacardInquiryPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/PlacardInquiry_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/PlacardInquiry_POST_Response'
+  /SearchVehicle: 
+    post: 
+      tags: 
+        - NMI Vehicle Search
+      summary: NMI Vehicle Search
+      description: NMI service to search for a vehicle by VIN.
+      operationId: SearchVehiclePOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/SearchVehicle_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/SearchVehicle_POST_Response'
+  /SSNSearch: 
+    post: 
+      tags: 
+        - NMI SSN Search
+      summary: NMI SSN Search
+      description: NMI service to retrieve customer information from SSN input.
+      operationId: SSNSearchPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/SSNSearch_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/SSNSearch_POST_Response'
+  /TheftCheckByToken: 
+    post: 
+      tags: 
+        - NMI Theft Check By Token
+      summary: NMI Theft Check By Token
+      description: NMI REST service to perform a theft inquiry for a given token.
+      operationId: TheftCheckByTokenPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/TheftCheckByToken_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/TheftCheckByToken_POST_Response'
+  /TheftCheckByVIN: 
+    post: 
+      tags: 
+        - NMI Theft Check By VIN
+      summary: NMI Theft Check By VIN
+      description: NMI REST service to perform a theft check for a given VIN.
+      operationId: TheftCheckByVINPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/TheftCheckByVIN_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/TheftCheckByVIN_POST_Response'
+  /VehicleByAddress: 
+    post: 
+      tags: 
+        - NMI Vehicle By Address
+      summary: NMI Vehicle By Address
+      description: NMI RESTful service that retrieves vehicle data for given address.
+      operationId: VehicleByAddressPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/VehicleByAddress_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/VehicleByAddress_POST_Response'
+  /VehicleByAdvancedAttributes: 
+    post: 
+      tags: 
+        - NMI Vehicle By Advanced Attributes
+      summary: NMI Vehicle By Advanced Attributes
+      description: NMI service that returns vehicle information based on advanced vehicle attributes provided.
+      operationId: VehicleByAdvancedAttributesPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/VehicleByAdvancedAttributes_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/VehicleByAdvancedAttributes_POST_Response'
+  /VehicleByAttributes: 
+    post: 
+      tags: 
+        - NMI Vehicle By Attributes
+      summary: NMI Vehicle By Attributes
+      description: 'NMI service that retrieves vehicle information for provided attributes like plate number, VIN, and owner name.'
+      operationId: VehicleByAttributesPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/VehicleByAttributes_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/VehicleByAttributes_POST_Response'
+  /VesselSearch: 
+    post: 
+      tags: 
+        - NMI Vessel Search
+      summary: NMI Vessel Search
+      description: NMI service that returns vessel information for a given HIN or Reg Number. Contains less data than the vessel record search.
+      operationId: VesselSearchPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/VesselSearch_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/VesselSearch_POST_Response'
+  /YouthfulIndexQuery: 
+    post: 
+      tags: 
+        - NMI Youthful Index Query
+      summary: NMI Youthful Index Query
+      description: NMI service that generates the Youthful Index flat file.
+      operationId: YouthfulIndexQueryPOST
+      consumes: 
+        - application/json
+      produces: 
+        - application/json
+      parameters: 
+        - name: body
+          in: body
+          required: true
+          schema: 
+            $ref: '#/definitions/YouthfulIndexQuery_POST_Request'
+      responses: 
+        default: 
+          description: ' '
+          schema: 
+            $ref: '#/definitions/YouthfulIndexQuery_POST_Response'
+definitions: 
+  AdditionalFeesCharged_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      FeeAmount: 
+        type: number
+        description: Fee amount
+  AddressSearch_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      Street1: 
+        type: string
+        description: Address street 1
+      Street2: 
+        type: string
+        description: Address street 2
+      City: 
+        type: string
+        description: City
+      State: 
+        type: string
+        description: State
+      Zip: 
+        type: string
+        description: Zipcode
+  CitationActionCount_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      FeesCharged: 
+        type: number
+        description: Fees charged
+      DLN: 
+        type: string
+        description: Driver's license number
+      StartDate: 
+        type: string
+        description: Start date
+      EndDate: 
+        type: string
+        description: End date
+  CountLiensForVIN_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      VIN: 
+        type: string
+        description: VIN
+  DLRDetail_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      FeesCharged: 
+        type: number
+        description: Fees charged
+      DLN: 
+        type: string
+        description: Driver's license number
+      AccountKey: 
+        type: string
+        description: Account key
+      RequestPhoto: 
+        type: boolean
+        description: Include photo data in response
+      RequestSignature: 
+        type: boolean
+        description: Include signature data in response
+  DLRStatusChange_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      FeesCharged: 
+        type: number
+        description: Fees charged
+      DLN: 
+        type: string
+        description: Driver's license number
+      StartDate: 
+        type: string
+        description: Start date
+      EndDate: 
+        type: string
+        description: End date
+  FeesCharged_POST_Request: 
+    type: object
+    properties: 
+      BillableResponseKey: 
+        type: string
+        description: Billable response key
+      AmountCharged: 
+        type: number
+        description: Amount charged
+      Comment: 
+        type: string
+        description: Comment
+  GetBriefVehicleInfo_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      VIN: 
+        type: string
+        description: VIN
+  GetBriefVesselInformation_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      HullId: 
+        type: string
+        description: Hull ID
+  GetDealers_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Requestor Name
+      ApplicationName: 
+        type: string
+        description: Name of application calling web service
+      PermissableUse: 
+        type: string
+        description: Permissable use
+  GetVehicleCount_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      VIN: 
+        type: string
+        description: VIN
+  GetVehicleOwnerByVIN_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      VIN: 
+        type: string
+        description: VIN
+  GetVehicleRecord_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      FeesCharged: 
+        type: number
+        description: Fees charged
+      CustomerKey: 
+        type: string
+        description: Customer key
+  GetVesselCountByHullId_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      HullId: 
+        type: string
+        description: Hull ID
+  GetVesselCountByRegNumber_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      RegistrationNumber: 
+        type: string
+        description: Vessel registration number
+  GetVesselRecord_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      FeesCharged: 
+        type: number
+        description: Fees charged
+      AccountKey: 
+        type: string
+        description: Account key
+  ListVehicleRecordsByOwner_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      FirstName: 
+        type: string
+        description: Owner first name
+      LastName: 
+        type: string
+        description: Owner last name
+      MiddleName: 
+        type: string
+        description: Owner middle name
+      Suffix: 
+        type: string
+        description: Owner suffix
+      Age: 
+        type: string
+        description: Owner age
+      DOB: 
+        type: string
+        description: Owner date of birth
+      BusinessName: 
+        type: string
+        description: Business name
+  ListVehicleRecordsByPlate_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      PlateNumber: 
+        type: string
+        description: Customer key
+      PlateType: 
+        type: string
+        description: Permissable Use
+  ManufacturedHomeSearch_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      Year: 
+        type: string
+        description: Year
+      Make: 
+        type: string
+        description: Make
+      VIN: 
+        type: string
+        description: VIN
+      PartialVINSearch: 
+        type: boolean
+        description: Partial VIN search
+      CountyCode: 
+        type: string
+        description: County code
+  NameDOBSearch_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      FirstName: 
+        type: string
+        description: First name
+      MiddleInitial: 
+        type: string
+        description: Middle initial
+      LastName: 
+        type: string
+        description: Last name
+      Suffix: 
+        type: string
+        description: Suffix
+      DOB: 
+        type: string
+        description: DOB
+  PartialSSNSearch_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      ID: 
+        type: string
+        description: ID
+      IDType: 
+        type: string
+        description: ID type
+      DOB: 
+        type: string
+        description: Date of birth
+  PlacardInquiry_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      FeesCharged: 
+        type: number
+        format: double
+        description: Fees charged
+      PlacardNumber: 
+        type: string
+        description: Placard number
+  SearchVehicle_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      FeesCharged: 
+        type: number
+        description: Fees charged
+      VIN: 
+        type: string
+        description: VIN
+  SSNSearch_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      SSN: 
+        type: string
+        description: SSN
+  TheftCheckByToken_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      TheftToken: 
+        type: string
+        description: Theft token
+  TheftCheckByVIN_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      VIN: 
+        type: string
+        description: VIN
+  VehicleByAddress_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      Street1: 
+        type: string
+        description: 'Owner address - street 1'
+      Street2: 
+        type: string
+        description: 'Owner address - street 2'
+      City: 
+        type: string
+        description: 'Owner address - city'
+      State: 
+        type: string
+        description: 'Owner address - state'
+      Zip: 
+        type: string
+        description: 'Owner address - zip code'
+  VehicleByAdvancedAttributes_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      Year: 
+        type: string
+        description: Vehicle year
+      Make: 
+        type: string
+        description: Vehicle make
+      Model: 
+        type: string
+        description: Model
+      Color: 
+        type: string
+        description: Vehicle color
+      PlateType: 
+        type: string
+        description: Plate type
+      PlateNumber: 
+        type: string
+        description: Plate number
+      PartialPlateSearch: 
+        type: boolean
+        description: Partial plate search
+      CountyCode: 
+        type: string
+        description: County code
+      ZipCode: 
+        type: string
+        description: Zip code
+  VehicleByAttributes_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      VIN: 
+        type: string
+        description: VIN
+      PartialVINSearch: 
+        type: boolean
+        description: Partial VIN search flag
+      PlateType: 
+        type: string
+        description: Plate type
+      PlateNumber: 
+        type: string
+        description: Plate number
+      PartialPlateSearch: 
+        type: boolean
+        description: Partial plate search flag
+      FirstName: 
+        type: string
+        description: First name
+      LastName: 
+        type: string
+        description: Last name
+      Age: 
+        type: string
+        description: Age
+      DOB: 
+        type: string
+        description: Date of birth
+      MiddleInitial: 
+        type: string
+        description: Middle initial
+      Make: 
+        type: string
+        description: Vehicle make
+      Model: 
+        type: string
+        description: Vehicle model
+  VesselSearch_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      HIN: 
+        type: string
+        description: HIN
+      RegistrationNumber: 
+        type: string
+        description: Registration number
+  YouthfulIndexQuery_POST_Request: 
+    type: object
+    properties: 
+      RequestorName: 
+        type: string
+        description: Name of service requestor
+      ApplicationName: 
+        type: string
+        description: Name of application that is calling
+      PermissableUse: 
+        type: string
+        description: Permissable Use
+      RunDate: 
+        type: string
+        description: RunDate
+  AdditionalFeesCharged_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: object
+        description: Result Object
+        properties: 
+          BillableResponseKey: 
+            type: number
+            format: double
+            description: Billable response key
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  AddressSearch_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            AccountKey: 
+              type: string
+              description: Account key
+            DLN: 
+              type: string
+              description: Driver's license number
+            LicenseState: 
+              type: string
+              description: License state
+            DOB: 
+              type: string
+              description: Date of birth
+            FirstName: 
+              type: string
+              description: First name
+            LastName: 
+              type: string
+              description: Last name
+            MiddleInitial: 
+              type: string
+              description: Middle initial
+            Suffix: 
+              type: string
+              description: Suffix
+            Street1: 
+              type: string
+              description: Street line 1
+            Street2: 
+              type: string
+              description: Street line 2
+            City: 
+              type: string
+              description: City
+            State: 
+              type: string
+              description: State
+            Zip: 
+              type: string
+              description: Zip
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  CitationActionCount_POST_Response: 
+    type: object
+    properties: 
+      Exists: 
+        type: boolean
+        description: Citation exists
+      CitationCount: 
+        type: number
+        format: double
+        description: Citation count
+      ActionCount: 
+        type: number
+        format: double
+        description: Action count
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+      BillableResponseKey: 
+        type: number
+        format: double
+        description: Billable response key
+  CountLiensForVIN_POST_Response: 
+    type: object
+    properties: 
+      LienCount: 
+        type: number
+        format: double
+        description: Lien count
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  DLRDetail_POST_Response: 
+    type: object
+    properties: 
+      Driver: 
+        type: object
+        description: Driver object
+        properties: 
+          UniqueId: 
+            type: string
+            description: Unique ID
+          AccountKey: 
+            type: string
+            description: Account key
+          DLN: 
+            type: string
+            description: DLN
+          DOB: 
+            type: string
+            description: Date of birth
+          EyeColor: 
+            type: string
+            description: Eye color
+          FirstName: 
+            type: string
+            description: First name
+          LastName: 
+            type: string
+            description: Last name
+          Height: 
+            type: string
+            description: Height
+          Weight: 
+            type: string
+            description: Weight
+          Sex: 
+            type: string
+            description: Sex
+          OrganDonor: 
+            type: boolean
+            description: Organ donor
+          LicenseMessage: 
+            type: string
+            description: License message
+          LicenseNCLStatus: 
+            type: string
+            description: NCL status
+          LicenseCDLStatus: 
+            type: string
+            description: CDL Status
+          LicenseNCLSurrenderDate: 
+            type: string
+            description: NCL surrender date
+          LicenseCDLSurrenderDate: 
+            type: string
+            description: CDL surrender date
+          LicenseMessageColor: 
+            type: string
+            description: License message color
+          LicenseNCLColor: 
+            type: string
+            description: NCL color
+          LicenseCDLColor: 
+            type: string
+            description: CDL color
+          MedCertCDLISPostedDate: 
+            type: string
+            description: CDL medical certificate CDLIS posted date
+          MedCertExpDate: 
+            type: string
+            description: CDL medical certificate expiration date
+          MedCertReceivedDate: 
+            type: string
+            description: CDL medical certificate received date
+          MedCertIssueDate: 
+            type: string
+            description: CDL medical certificate issue date
+          MedCertSpeIssueDate: 
+            type: string
+            description: CDL medical certificate SPE issue date
+          MedCertSPEExpDate: 
+            type: string
+            description: CDL medical certificate SPE expiration date
+          MedCertWaiverDate: 
+            type: string
+            description: CDL medical certificate waiver date
+          MedCertVarianceExpDate: 
+            type: string
+            description: CDL medical certificate variance expiration date
+          MedCertExaminerDesignation: 
+            type: string
+            description: CDL medical certificate examiner designation
+          MedCertExaminerFirstName: 
+            type: string
+            description: CDL medical certificate examiner first name
+          MedCertExaminerLastName: 
+            type: string
+            description: CDL medical certificate examiner last name
+          MedCertExaminerLicenceNumber: 
+            type: string
+            description: CDL medical certificate examiner license number
+          MedCertExaminerLicenceState: 
+            type: string
+            description: CDL medical certificate examiner license state
+          MedCertExaminerPhone: 
+            type: string
+            description: CDL medical certificate examiner phone
+          MedCertSelfCertified: 
+            type: string
+            description: CDL medical certificate certified
+          MedCertExaminerRegNumber: 
+            type: string
+            description: CDL medical certificate examiner registration number
+          MedCertRestrictions: 
+            type: string
+            description: CDL medical certificate restrictions
+          MedCertStatus: 
+            type: string
+            description: CDL medical certificate status
+          MiddleName: 
+            type: string
+            description: Driver middle name
+          NameSuffix: 
+            type: string
+            description: Driver name suffix
+          NonDriverFlag: 
+            type: boolean
+            description: Non driver flag
+          Photo: 
+            type: string
+            description: Driver photo data
+          Street1: 
+            type: string
+            description: Street 1
+          Street2: 
+            type: string
+            description: Street 2
+          City: 
+            type: string
+            description: City
+          State: 
+            type: string
+            description: State
+          Zip: 
+            type: string
+            description: Zip code
+          ResStreet1: 
+            type: string
+            description: Residential street 1
+          ResStreet2: 
+            type: string
+            description: Residential street 2
+          ResCity: 
+            type: string
+            description: Residential city
+          ResState: 
+            type: string
+            description: Residential state
+          ResZip: 
+            type: string
+            description: Residential zip code
+          MailingStreet1: 
+            type: string
+            description: Mailing street 1
+          MailingStreet2: 
+            type: string
+            description: Mailing street 2
+          MailingCity: 
+            type: string
+            description: Mailing city
+          MailingState: 
+            type: string
+            description: Mailing state
+          MailingZip: 
+            type: string
+            description: Mailing zip code
+      DLSigPhoto: 
+        type: string
+        description: Driver signature photo data
+      Licenses: 
+        type: array
+        description: Driver's license array
+        items: 
+          type: object
+          description: Driver's license object
+          properties: 
+            LicenseClass: 
+              type: string
+              description: License class
+            LicenseType: 
+              type: string
+              description: License type
+            NonDomiciled: 
+              type: boolean
+              description: 'Non-domiciled flag'
+            LicenseRealID: 
+              type: boolean
+              description: License Real ID flag
+            Endorsements: 
+              type: array
+              description: Endorsements array
+              items: 
+                type: object
+                description: Endorsements object
+                properties: 
+                  EndorsementCode: 
+                    type: string
+                    description: Endorsement code
+                  EndorsementDescription: 
+                    type: string
+                    description: Endorsement description
+            LicenseExpireDate: 
+              type: string
+              description: License expiration date
+            LicenseIssueDate: 
+              type: string
+              description: License issue date
+            Restrictions: 
+              type: array
+              description: Restrictions array
+              items: 
+                type: object
+                description: Restrictions object
+                properties: 
+                  RestrictionCode: 
+                    type: string
+                    description: Restriction code
+                  RestrictionDescription: 
+                    type: string
+                    description: Restriction description
+      LicenseHistory: 
+        type: array
+        description: Driver's license history array
+        items: 
+          type: object
+          description: Driver's license history object
+          properties: 
+            LicenseClass: 
+              type: string
+              description: License class
+            LicenseType: 
+              type: string
+              description: License type
+            NonDomiciled: 
+              type: boolean
+              description: 'Non-domiciled flag'
+            LicenseRealID: 
+              type: boolean
+              description: Real ID flag
+            Endorsements: 
+              type: array
+              description: Endorsements array
+              items: 
+                type: object
+                description: Endorsements object
+                properties: 
+                  EndorsementCode: 
+                    type: string
+                    description: Endorsement code
+                  EndorsementDescription: 
+                    type: string
+                    description: Endorsement description
+            LicenseExpireDate: 
+              type: string
+              description: License expiration date
+            LicenseIssueDate: 
+              type: string
+              description: License issue date
+            Restrictions: 
+              type: array
+              description: Restrictions array
+              items: 
+                type: object
+                description: Restrictions object
+                properties: 
+                  RestrictionCode: 
+                    type: string
+                    description: Restriction code
+                  RestrictionDescription: 
+                    type: string
+                    description: Restriction description
+      Citations: 
+        type: array
+        description: Citations array
+        items: 
+          type: object
+          description: Citations object
+          properties: 
+            CitationACDCode: 
+              type: string
+              description: ACD Code
+            CitationCommercialVehicle: 
+              type: boolean
+              description: Commercial vehicle flag
+            CitationConstructionZone: 
+              type: boolean
+              description: Construction zone flag
+            CitationCountyIssuedCode: 
+              type: string
+              description: County issued code
+            CitationCountyIssuedCodeDescription: 
+              type: string
+              description: County code description
+            CitationCourtCode: 
+              type: string
+              description: Court code
+            CitationCourtDate: 
+              type: string
+              description: Court date
+            CitationCourtDescription: 
+              type: string
+              description: Court description
+            CitationViolationCode: 
+              type: string
+              description: Violation code
+            CitationViolationDescription: 
+              type: string
+              description: Violation description
+            CitationHazmat: 
+              type: boolean
+              description: Hazardous materials flag
+            CitationJurisdiction: 
+              type: string
+              description: Jurisdiction
+            CitationNumber: 
+              type: string
+              description: Citation number
+            CitationPoints: 
+              type: number
+              format: double
+              description: Points
+            CitationPostDate: 
+              type: string
+              description: Post date
+            CitationPaymentPostDate: 
+              type: string
+              description: Payment post date
+            CitationPaymentAmount: 
+              type: number
+              description: Payment amount
+            CitationPaymentMethod: 
+              type: string
+              description: Payment method
+            CitationPostedSpeed: 
+              type: number
+              format: double
+              description: Posted speed
+            CitationRuralHighway: 
+              type: boolean
+              description: Rural highway
+            CitationStatute: 
+              type: string
+              description: Statute
+            CitationViolationDate: 
+              type: string
+              description: Violation date
+            CitationViolationSpeed: 
+              type: number
+              format: double
+              description: Violation speed
+            CitationPass16: 
+              type: boolean
+              description: Pass 16
+            CitationAgencyCode: 
+              type: string
+              description: Agency code
+            CitationAgencyDescription: 
+              type: string
+              description: Agency description
+      Actions: 
+        type: array
+        description: Actions array
+        items: 
+          type: object
+          description: Actions object
+          properties: 
+            ActionACDCode: 
+              type: string
+              description: ACD Code
+            ActionBeginDate: 
+              type: string
+              description: Begin date
+            ActionEndDate: 
+              type: string
+              description: End date
+            ActionJurisdiction: 
+              type: string
+              description: Jurisdiction
+            ActionPostDate: 
+              type: string
+              description: Post date
+            ActionAmountDue: 
+              type: number
+              description: Amount due
+            ActionCitationNumber: 
+              type: string
+              description: Citation number
+            ActionTransactionCode: 
+              type: string
+              description: Transaction code
+            ActionTransactionCodeDescription: 
+              type: string
+              description: Transaction code description
+            ActionViolationCode: 
+              type: string
+              description: Violation code
+            ActionViolationCodeDescription: 
+              type: string
+              description: Violation code description
+            ActionAgencyCode: 
+              type: string
+              description: Agency code
+            ActionAgencyDescription: 
+              type: string
+              description: Agency description
+            ActionCourtDescription: 
+              type: string
+              description: Court description
+            ActionHSDCaseNumber: 
+              type: string
+              description: HSD case number
+      BillableResponseKey: 
+        type: number
+        format: double
+        description: Billable response key
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  DLRStatusChange_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            CDLStatusChange: 
+              type: boolean
+              description: CDL status change
+            LicenseCDLStatus: 
+              type: string
+              description: CDL status
+            NonCDLStatusChange: 
+              type: boolean
+              description: Non CDL Status Change
+            LicenseNCLStatus: 
+              type: string
+              description: NCL license status
+            MedCertChange: 
+              type: boolean
+              description: Medical certificate change
+            MedCertStatus: 
+              type: string
+              description: Medical certificate status
+            DriverClassChange: 
+              type: boolean
+              description: Driver class change
+            LicenseClass: 
+              type: string
+              description: License class
+            Exists: 
+              type: boolean
+              description: Exists
+            CitationCount: 
+              type: number
+              format: double
+              description: Citation count
+            ActionCount: 
+              type: number
+              format: double
+              description: Action Count
+            DACHChangeDate: 
+              type: number
+              format: double
+              description: DACH Change Date
+      HistoryResults: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            HullId: 
+              type: string
+              description: Hull ID
+            RegistrationNumber: 
+              type: string
+              description: Boat registration number
+            OwnerName: 
+              type: string
+              description: Name of owner
+            Make: 
+              type: string
+              description: Make
+            Model: 
+              type: string
+              description: Model of boat
+            VesselClass: 
+              type: string
+              description: Vessel class
+            AccountKey: 
+              type: string
+              description: Account key
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+      BillableResponseKey: 
+        type: number
+        format: double
+        description: Billable response key
+  FeesCharged_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: object
+        description: Result object
+        properties: 
+          FeesChargedAccepted: 
+            type: boolean
+            description: Charge accepted
+  GetBriefVehicleInfo_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            Make: 
+              type: string
+              description: Make
+            PlateNumber: 
+              type: string
+              description: Plate number
+            SeriesModel: 
+              type: string
+              description: Series model
+            VIN: 
+              type: string
+              description: VIN
+            OwnerName: 
+              type: string
+              description: Owner name
+            CustomerKey: 
+              type: string
+              description: Customer key
+      HistoryResults: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            Make: 
+              type: string
+              description: Make
+            PlateNumber: 
+              type: string
+              description: Plate number
+            SeriesModel: 
+              type: string
+              description: Series model
+            VIN: 
+              type: string
+              description: VIN
+            OwnerName: 
+              type: string
+              description: Owner name
+            CustomerKey: 
+              type: string
+              description: Customer key
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  GetBriefVesselInformation_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            HullId: 
+              type: string
+              description: Hull ID
+            RegistrationNumber: 
+              type: string
+              description: Boat registration number
+            OwnerName: 
+              type: string
+              description: Name of owner
+            Make: 
+              type: string
+              description: Make
+            Model: 
+              type: string
+              description: Model of boat
+            VesselClass: 
+              type: string
+              description: Vessel class
+            AccountKey: 
+              type: string
+              description: Account key
+      HistoryResults: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            HullId: 
+              type: string
+              description: Hull ID
+            RegistrationNumber: 
+              type: string
+              description: Boat registration number
+            OwnerName: 
+              type: string
+              description: Name of owner
+            Make: 
+              type: string
+              description: Make
+            Model: 
+              type: string
+              description: Model of boat
+            VesselClass: 
+              type: string
+              description: Vessel class
+            AccountKey: 
+              type: string
+              description: Account key
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  GetDealers_POST_Response: 
+    type: object
+    required: 
+      - ExceptionMessageField
+      - ExceptionMessageType
+    properties: 
+      Result: 
+        type: object
+        description: Result Object
+        properties: 
+          Dealers: 
+            type: array
+            description: Dealer licenses array
+            items: 
+              type: object
+              properties: 
+                LicenseNumber: 
+                  type: string
+                  description: Start date on license
+                LicenseStart: 
+                  type: string
+                  description: Start date on license
+                LicenseExpiration: 
+                  type: string
+                  description: Date of license expiration
+                LicenseCease: 
+                  type: string
+                  description: Date of license cease
+                Standing: 
+                  type: string
+                  description: Current standing of license
+                DBAName: 
+                  type: string
+                  description: Doing Business As name
+                Street1: 
+                  type: string
+                  description: Address street 1
+                Street2: 
+                  type: string
+                  description: Address street 2
+                UnitType: 
+                  type: string
+                  description: Address unit type
+                Unit: 
+                  type: string
+                  description: Address unit
+                City: 
+                  type: string
+                  description: City
+                State: 
+                  type: string
+                  description: State
+                Zip: 
+                  type: string
+                  description: Zip code
+                County: 
+                  type: string
+                  description: County
+                Commence: 
+                  type: string
+                  description: Address commence date
+                Cease: 
+                  type: string
+                  description: Address cease date
+                IsPrimary: 
+                  type: boolean
+                  description: Is primary address
+                IsFranchised: 
+                  type: boolean
+                  description: Is franchised
+      ExceptionMessageField: 
+        type: string
+        description: Error message if problem occurred
+      ExceptionMessageType: 
+        type: string
+        description: Error message type
+  GetVehicleCount_POST_Response: 
+    type: object
+    properties: 
+      VehicleCount: 
+        type: number
+        format: double
+        description: Vehicle Count
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  GetVehicleOwnerByVIN_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            RegisteredOwner: 
+              type: string
+              description: Registered owner
+            VIN: 
+              type: string
+              description: VIN
+            Year: 
+              type: number
+              format: double
+              description: Vehicle year
+            Make: 
+              type: string
+              description: Vehicle make
+            Model: 
+              type: string
+              description: Vehicle model
+            CustomerKey: 
+              type: number
+              format: double
+              description: Customer key
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  GetVehicleRecord_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: object
+        description: Result Object
+        properties: 
+          Vehicle: 
+            type: object
+            description: Vehicle object
+            properties: 
+              Body: 
+                type: string
+                description: Vehicle body type
+              VehicleClass: 
+                type: string
+                description: Vehicle class
+              ClassDescription: 
+                type: string
+                description: Class description
+              Cylinders: 
+                type: number
+                format: double
+                description: Number of cylinders
+              Fuel: 
+                type: string
+                description: Fuel type
+              Make: 
+                type: string
+                description: Make
+              Model: 
+                type: string
+                description: Model
+              ModelYear: 
+                type: number
+                format: double
+                description: Model year
+              NumberDoors: 
+                type: number
+                format: double
+                description: Number of doors
+              VehicleStatus: 
+                type: string
+                description: Vehicle status
+              VehicleStatusIndicatorDescription: 
+                type: string
+                description: Status indicator description
+              PurchasePrice: 
+                type: string
+                description: Purchase price
+              VIN: 
+                type: string
+                description: VIN
+              Weight: 
+                type: number
+                format: double
+                description: Weight
+              PrimaryColor: 
+                type: string
+                description: Primary color
+              SecondaryColor: 
+                type: string
+                description: Secondary color
+              PassengerSafeQuantity: 
+                type: number
+                format: double
+                description: Passenger capacity
+              VehicleType: 
+                type: string
+                description: Vehicle type
+              Liencount: 
+                type: number
+                format: double
+                description: Number of active liens
+              LienHistoryCount: 
+                type: number
+                format: double
+                description: Number of historic liens
+              BrandCount: 
+                type: number
+                format: double
+                description: Number of active brands
+              BrandHistoryCount: 
+                type: number
+                format: double
+                description: Number of historic brands
+              InsuranceStatus: 
+                type: string
+                description: Insurance status
+              Surety: 
+                type: boolean
+                description: Surety bond vehicle flag
+          Liens: 
+            type: array
+            description: Liens
+            items: 
+              type: object
+              description: Lien object
+              properties: 
+                FileDate: 
+                  type: string
+                  description: Lien file date
+                LienHolderName: 
+                  type: string
+                  description: Lienholder name
+                MaturityDate: 
+                  type: string
+                  description: Maturity date
+                Street1: 
+                  type: string
+                  description: 'Lienholder address - street 1'
+                Street2: 
+                  type: string
+                  description: 'Lienholder address - street 2'
+                City: 
+                  type: string
+                  description: 'Lienholder address - city'
+                State: 
+                  type: string
+                  description: 'Lienholder address - state'
+                Zip: 
+                  type: string
+                  description: 'Lienholder address - zip code'
+          LienHistory: 
+            type: array
+            description: Lien history array
+            items: 
+              type: object
+              description: Lien history object
+              properties: 
+                FileDate: 
+                  type: string
+                  description: Lien file date
+                LienHolderName: 
+                  type: string
+                  description: Lienholder name
+                MaturityDate: 
+                  type: string
+                  description: Maturity date
+                Street1: 
+                  type: string
+                  description: 'Lienholder address - street 1'
+                Street2: 
+                  type: string
+                  description: 'Lienholder address - street 2'
+                City: 
+                  type: string
+                  description: 'Lienholder address - city'
+                State: 
+                  type: string
+                  description: 'Lienholder address - state'
+                Zip: 
+                  type: string
+                  description: 'Lienholder address - zip code'
+          BrandInformation: 
+            type: array
+            description: Brands array
+            items: 
+              type: object
+              description: Brands object
+              properties: 
+                BrandDate: 
+                  type: string
+                  description: Brand date
+                BrandCode: 
+                  type: string
+                  description: Brand code
+                BrandDescription: 
+                  type: string
+                  description: Brand description
+                BrandJurisdiction: 
+                  type: string
+                  description: Brand jurisdiction
+          BrandHistoryInformation: 
+            type: array
+            description: Brands
+            items: 
+              type: object
+              description: Brands object
+              properties: 
+                BrandDate: 
+                  type: string
+                  description: Brand date
+                BrandCode: 
+                  type: string
+                  description: Brand code
+                BrandDescription: 
+                  type: string
+                  description: Brand description
+                BrandJurisdiction: 
+                  type: string
+                  description: Brand jurisdiction
+          MobileHomeInformation: 
+            type: array
+            description: Mobile home array
+            items: 
+              type: object
+              description: Mobile home object
+              properties: 
+                CountyDescription: 
+                  type: string
+                  description: County decode
+                CountyNumber: 
+                  type: string
+                  description: County number
+                Length: 
+                  type: number
+                  format: double
+                  description: Length
+                Width: 
+                  type: number
+                  format: double
+                  description: Width
+                Location: 
+                  type: string
+                  description: Mobile home location
+                Plate1: 
+                  type: string
+                  description: 'Plate number - plate 1'
+                Plate2: 
+                  type: string
+                  description: 'Plate number - plate 2'
+                Plate3: 
+                  type: string
+                  description: 'Plate number - plate 3'
+                VINs: 
+                  type: array
+                  description: Mobile home VIN array
+                  items: 
+                    type: object
+                    description: VIN object
+                    properties: 
+                      VIN: 
+                        type: string
+                        description: VIN
+                      VINNumber: 
+                        type: string
+                        description: 'Number denoting if VIN is primary, secondary, tertiary, etc.'
+                TitleAssignment: 
+                  type: string
+                  description: Title assignment
+          Owners: 
+            type: array
+            description: Owner array
+            items: 
+              type: object
+              description: Owner object
+              properties: 
+                OwnerType: 
+                  type: string
+                  description: Owner type
+                OwnerRelation: 
+                  type: string
+                  description: Owner relation
+                BusinessName: 
+                  type: string
+                  description: Business name (if owner is a business)
+                FirstName: 
+                  type: string
+                  description: First name
+                LastName: 
+                  type: string
+                  description: Last name
+                MiddleInitial: 
+                  type: string
+                  description: Middle initial
+                DateOfBirth: 
+                  type: string
+                  description: Date of birth
+                IdType: 
+                  type: string
+                  description: ID Type
+                Id: 
+                  type: string
+                  description: ID
+                AccountKey: 
+                  type: string
+                  description: Account key
+                ResidentialStreet1: 
+                  type: string
+                  description: 'Residential address - street 1'
+                ResidentialStreet2: 
+                  type: string
+                  description: 'Residential address - street 2'
+                ResidentialCity: 
+                  type: string
+                  description: 'Residential address - city'
+                ResidentialState: 
+                  type: string
+                  description: 'Residential address - state'
+                ResidentialZip: 
+                  type: string
+                  description: 'Residential address - zip code'
+                MailingStreet1: 
+                  type: string
+                  description: 'Mailing address - street 1'
+                MailingStreet2: 
+                  type: string
+                  description: 'Mailing address - street 2'
+                MailingCity: 
+                  type: string
+                  description: 'Mailing address - city'
+                MailingState: 
+                  type: string
+                  description: 'Mailing address - state'
+                MailingZip: 
+                  type: string
+                  description: 'Mailing address - zip code'
+          RegistrationInformation: 
+            type: array
+            description: Registration array
+            items: 
+              type: object
+              description: Registration object
+              properties: 
+                CountyDescription: 
+                  type: string
+                  description: County decode
+                CountyNumber: 
+                  type: number
+                  format: double
+                  description: County number
+                DGVW: 
+                  type: number
+                  format: double
+                  description: Declared gross vehicle weight
+                EmsFlag: 
+                  type: boolean
+                  description: Emissions Flag
+                EmsYearDue: 
+                  type: number
+                  format: double
+                  description: Emissions year due
+                FirstYearRegistration: 
+                  type: number
+                  format: double
+                  description: First year registration
+                FleetId: 
+                  type: number
+                  format: double
+                  description: Fleet ID
+                NLETPlateCode: 
+                  type: string
+                  description: NLETS plate code
+                NMMVDPlateCode: 
+                  type: string
+                  description: NMMVD plate code
+                NonUse: 
+                  type: string
+                  description: Non use
+                PlateType: 
+                  type: string
+                  description: Plate type
+                PlateTypeImage: 
+                  type: string
+                  description: Plate type image string
+                PlateIssued: 
+                  type: string
+                  description: Plate issued date
+                PlateNumber: 
+                  type: string
+                  description: Plate number
+                PlateStatus: 
+                  type: string
+                  description: Plate status
+                PlateInactiveDate: 
+                  type: string
+                  description: Plate inactive date
+                InactivePlateNumber: 
+                  type: string
+                  description: Inactive plate number
+                RegistrationDate: 
+                  type: string
+                  description: Registration date
+                RegistrationExpireDate: 
+                  type: string
+                  description: Registration expiration date
+                RegistrationStatus: 
+                  type: string
+                  description: Registration status
+                RegistrationStatusDescription: 
+                  type: string
+                  description: Registration status description
+                RegistrationSuspensionDate: 
+                  type: string
+                  description: Suspension date
+                RegistrationType: 
+                  type: string
+                  description: Registration type
+                RegistrationTypeDescription: 
+                  type: string
+                  description: Reg type description
+                SpecialPlate: 
+                  type: string
+                  description: Special plate
+                VehicleCMVIndicator: 
+                  type: number
+                  format: double
+                  description: Vehicle CMV indicator
+                VINSuffix: 
+                  type: number
+                  format: double
+                  description: VIN suffix
+          TitleInformation: 
+            type: array
+            description: Title array
+            items: 
+              type: object
+              description: Title object
+              properties: 
+                DuplicateFlag: 
+                  type: string
+                  description: Duplicate flag
+                NumberOfLiens: 
+                  type: number
+                  format: double
+                  description: Number of liens
+                OdometerCode: 
+                  type: string
+                  description: Odometer code
+                OdometerReading: 
+                  type: number
+                  format: double
+                  description: Odometer reading
+                TitleNumber: 
+                  type: string
+                  description: Title number
+                TitleIssueDate: 
+                  type: string
+                  description: Title issue date
+                TitleOnly: 
+                  type: string
+                  description: Title only
+                TitlePurchaseDate: 
+                  type: string
+                  description: Title purchase date
+                TitleStatus: 
+                  type: string
+                  description: Title status
+                TitleStatusDescription: 
+                  type: string
+                  description: Title status description
+                TitleUse: 
+                  type: string
+                  description: Title use
+                TitleAssignment: 
+                  type: string
+                  description: Title Assignment
+      BillableRequestKey: 
+        type: number
+        format: double
+        description: Billable request key
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  GetVesselCountByHullId_POST_Response: 
+    type: object
+    properties: 
+      VesselCount: 
+        type: number
+        format: double
+        description: Vessel Count
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  GetVesselCountByRegNumber_POST_Response: 
+    type: object
+    properties: 
+      VesselCount: 
+        type: number
+        format: double
+        description: Vessel Count
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  GetVesselRecord_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: object
+        description: Result Object
+        properties: 
+          Vessel: 
+            type: object
+            description: Vessel object
+            properties: 
+              FirstYearReg: 
+                type: number
+                format: double
+                description: First year reg flag
+              BeamWidth: 
+                type: number
+                format: double
+                description: Beam width
+              FuelCodeDescription: 
+                type: string
+                description: Fuel code description
+              HorsePower: 
+                type: number
+                format: double
+                description: Horse power
+              HullMaterial: 
+                type: string
+                description: Hull material
+              LengthInFeet: 
+                type: number
+                format: double
+                description: Length in feet
+              Make: 
+                type: string
+                description: Make
+              Model: 
+                type: string
+                description: Model
+              ModelYear: 
+                type: number
+                format: double
+                description: Model year
+              NumberOfPeople: 
+                type: number
+                format: double
+                description: Number of people
+              PropulsionDescription: 
+                type: string
+                description: Propulsion description
+              EngineDriveDescription: 
+                type: string
+                description: Engine driver description
+              RegistrationExpirationDate: 
+                type: string
+                description: Registration expiration date
+              TransomDepth: 
+                type: number
+                format: double
+                description: Transom depth
+              PersonCapacityInPound: 
+                type: number
+                format: double
+                description: Capacity in pounds
+              HullId: 
+                type: string
+                description: Hull ID number
+              EngineNumber: 
+                type: string
+                description: Engine number
+              StateOfUse: 
+                type: string
+                description: State of use
+              TitleDate: 
+                type: string
+                description: Title date
+              TitleNumber: 
+                type: string
+                description: Title number
+              TitleStatusDescription: 
+                type: string
+                description: Title status description
+              OwnerName: 
+                type: string
+                description: Owner name
+              RecordStatusDescription: 
+                type: string
+                description: Record status description
+              RegistrationStatusDescription: 
+                type: string
+                description: Registration status description
+              RegistrationNumber: 
+                type: string
+                description: Registration number
+              POTControlNumber: 
+                type: number
+                format: double
+                description: POT control number
+              TypeOfBoatDescription: 
+                type: string
+                description: Boat type description
+              TypeOfUseDescription: 
+                type: string
+                description: Use type description
+              LienCount: 
+                type: number
+                format: double
+                description: Number of liens
+              LienHistoryCount: 
+                type: number
+                format: double
+                description: Number of historic liens
+          Liens: 
+            type: array
+            description: Liens
+            items: 
+              type: object
+              description: Lien object
+              properties: 
+                FileDate: 
+                  type: string
+                  description: Lien file date
+                LienHolderName: 
+                  type: string
+                  description: Lienholder name
+                MaturityDate: 
+                  type: string
+                  description: Lien maturity date
+                Street1: 
+                  type: string
+                  description: 'Lienholder address - street 1'
+                Street2: 
+                  type: string
+                  description: 'Lienholder address - street 2'
+                City: 
+                  type: string
+                  description: 'Lienholder address - city'
+                State: 
+                  type: string
+                  description: 'Lienholder address - state'
+                Zip: 
+                  type: string
+                  description: 'Lienholder address - zip code'
+          LienHistory: 
+            type: array
+            description: Liens
+            items: 
+              type: object
+              description: Lien History object
+              properties: 
+                FileDate: 
+                  type: string
+                  description: Lien file date
+                LienHolderName: 
+                  type: string
+                  description: Lienholder name
+                MaturityDate: 
+                  type: string
+                  description: Lien maturity date
+                Street1: 
+                  type: string
+                  description: 'Lienholder address - street 1'
+                Street2: 
+                  type: string
+                  description: 'Lienholder address - street 2'
+                City: 
+                  type: string
+                  description: 'Lienholder address - city'
+                State: 
+                  type: string
+                  description: 'Lienholder address - state'
+                Zip: 
+                  type: string
+                  description: 'Lienholder address - zip code'
+          Owners: 
+            type: array
+            description: Owners
+            items: 
+              type: object
+              description: Owners object
+              properties: 
+                OwnerType: 
+                  type: string
+                  description: Owner type
+                OwnerRelation: 
+                  type: string
+                  description: Owner relation
+                BusinessName: 
+                  type: string
+                  description: Business name
+                FirstName: 
+                  type: string
+                  description: First name
+                LastName: 
+                  type: string
+                  description: Last name
+                MiddleInitial: 
+                  type: string
+                  description: Middle initial
+                DateOfBirth: 
+                  type: string
+                  description: Date of birth
+                IdType: 
+                  type: string
+                  description: ID Type
+                Id: 
+                  type: string
+                  description: ID
+                AccountKey: 
+                  type: string
+                  description: Account key
+                ResidentialStreet1: 
+                  type: string
+                  description: 'Residential address - street 1'
+                ResidentialStreet2: 
+                  type: string
+                  description: 'Residential address - street 2'
+                ResidentialCity: 
+                  type: string
+                  description: 'Residential address - city'
+                ResidentialState: 
+                  type: string
+                  description: 'Residential address - state'
+                ResidentialZip: 
+                  type: string
+                  description: 'Residential address - zip code'
+                MailingStreet1: 
+                  type: string
+                  description: 'Mailing address - street 1'
+                MailingStreet2: 
+                  type: string
+                  description: 'Mailing address - street 2'
+                MailingCity: 
+                  type: string
+                  description: 'Mailing address - city'
+                MailingState: 
+                  type: string
+                  description: 'Mailing address - state'
+                MailingZip: 
+                  type: string
+                  description: 'Mailing address - zip code'
+      BillableResponseKey: 
+        type: number
+        format: double
+        description: Billable response key
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  ListVehicleRecordsByOwner_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: array
+        description: Result array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            Vehicle: 
+              type: object
+              description: Vehicle object
+              properties: 
+                Body: 
+                  type: string
+                  description: Body
+                VehicleClass: 
+                  type: string
+                  description: Vehicle class
+                ClassDescription: 
+                  type: string
+                  description: Class description
+                Cylinders: 
+                  type: number
+                  format: double
+                  description: Number of cylinders
+                Fuel: 
+                  type: string
+                  description: Fuel type
+                Make: 
+                  type: string
+                  description: Make
+                Model: 
+                  type: string
+                  description: Model
+                ModelYear: 
+                  type: number
+                  format: double
+                  description: Model year
+                NumberDoors: 
+                  type: number
+                  format: double
+                  description: Number of doors
+                VehicleStatus: 
+                  type: string
+                  description: Vehicle status
+                VehicleStatusIndicatorDescription: 
+                  type: string
+                  description: Status indicator description
+                PurchasePrice: 
+                  type: string
+                  description: Purchase price
+                VIN: 
+                  type: string
+                  description: VIN
+                Weight: 
+                  type: number
+                  format: double
+                  description: Weight
+                PrimaryColor: 
+                  type: string
+                  description: Primary color
+                SecondaryColor: 
+                  type: string
+                  description: Secondary color
+                PassengerSafeQuantity: 
+                  type: number
+                  format: double
+                  description: Passenger capacity
+                VehicleType: 
+                  type: string
+                  description: Vehicle type
+                Liencount: 
+                  type: number
+                  format: double
+                  description: Number of active liens
+                LienHistoryCount: 
+                  type: number
+                  format: double
+                  description: Number of historic liens
+                BrandCount: 
+                  type: number
+                  format: double
+                  description: Number of active brands
+                BrandHistoryCount: 
+                  type: number
+                  format: double
+                  description: Number of historic brands
+                InsuranceStatus: 
+                  type: string
+                  description: Insurance status
+                Surety: 
+                  type: boolean
+                  description: Surety bond flag
+            Liens: 
+              type: array
+              description: Liens
+              items: 
+                type: object
+                description: Lien object
+                properties: 
+                  FileDate: 
+                    type: string
+                    description: File date
+                  LienHolderName: 
+                    type: string
+                    description: Lienholder name
+                  MaturityDate: 
+                    type: string
+                    description: Maturity date
+                  Street1: 
+                    type: string
+                    description: 'Lienholder address - street 1'
+                  Street2: 
+                    type: string
+                    description: 'Lienholder address - street 2'
+                  City: 
+                    type: string
+                    description: 'Lienholder address - city'
+                  State: 
+                    type: string
+                    description: 'Lienholder address - state'
+                  Zip: 
+                    type: string
+                    description: 'Lienholder address - zip code'
+            LienHistory: 
+              type: array
+              description: Lien history array
+              items: 
+                type: object
+                description: Lien object
+                properties: 
+                  FileDate: 
+                    type: string
+                    description: File date
+                  LienHolderName: 
+                    type: string
+                    description: Lienholder name
+                  MaturityDate: 
+                    type: string
+                    description: Maturity date
+                  Street1: 
+                    type: string
+                    description: 'Lienholder address - street 1'
+                  Street2: 
+                    type: string
+                    description: 'Lienholder address - street 2'
+                  City: 
+                    type: string
+                    description: 'Lienholder address - city'
+                  State: 
+                    type: string
+                    description: 'Lienholder address - state'
+                  Zip: 
+                    type: string
+                    description: 'Lienholder address - zip code'
+            BrandInformation: 
+              type: array
+              description: Brands
+              items: 
+                type: object
+                description: Brands object
+                properties: 
+                  BrandDate: 
+                    type: string
+                    description: Brand date
+                  BrandCode: 
+                    type: string
+                    description: Brand code
+                  BrandDescription: 
+                    type: string
+                    description: Brand description
+                  BrandJurisdiction: 
+                    type: string
+                    description: Brand jurisdiction
+            BrandHistoryInformation: 
+              type: array
+              description: Brand history array
+              items: 
+                type: object
+                description: Brands object
+                properties: 
+                  BrandDate: 
+                    type: string
+                    description: Brand date
+                  BrandCode: 
+                    type: string
+                    description: Brand code
+                  BrandDescription: 
+                    type: string
+                    description: Brand description
+                  BrandJurisdiction: 
+                    type: string
+                    description: Brand jurisdiction
+            MobileHomeInformation: 
+              type: array
+              description: Mobile home array
+              items: 
+                type: object
+                description: Mobile home object
+                properties: 
+                  CountyDescription: 
+                    type: string
+                    description: County decode
+                  CountyNumber: 
+                    type: string
+                    description: County number
+                  Length: 
+                    type: number
+                    format: double
+                    description: Length
+                  Width: 
+                    type: number
+                    format: double
+                    description: Width
+                  Location: 
+                    type: string
+                    description: Mobile home location
+                  Plate1: 
+                    type: string
+                    description: 'Plate ID - plate 1'
+                  Plate2: 
+                    type: string
+                    description: 'Plate ID - plate 2'
+                  Plate3: 
+                    type: string
+                    description: 'Plate ID - plate 3'
+                  VINs: 
+                    type: array
+                    description: VIN array
+                    items: 
+                      type: object
+                      description: VIN object
+                      properties: 
+                        VIN: 
+                          type: string
+                          description: VIN
+                        VINNumber: 
+                          type: string
+                          description: 'Denotes if VIN is primary, secondary, tertiary, etc.'
+                  TitleAssignment: 
+                    type: string
+                    description: Title assignment
+            Owners: 
+              type: array
+              description: Owner array
+              items: 
+                type: object
+                description: Owner object
+                properties: 
+                  OwnerType: 
+                    type: string
+                    description: Owner type
+                  OwnerRelation: 
+                    type: string
+                    description: Owner relation
+                  BusinessName: 
+                    type: string
+                    description: Business name
+                  FirstName: 
+                    type: string
+                    description: First name
+                  LastName: 
+                    type: string
+                    description: Last name
+                  MiddleInitial: 
+                    type: string
+                    description: Middle initial
+                  DateOfBirth: 
+                    type: string
+                    description: Date of birth
+                  IdType: 
+                    type: string
+                    description: ID Type
+                  Id: 
+                    type: string
+                    description: ID
+                  AccountKey: 
+                    type: string
+                    description: Account key
+                  ResidentialStreet1: 
+                    type: string
+                    description: 'Residential address - street 1'
+                  ResidentialStreet2: 
+                    type: string
+                    description: 'Residential address - street 2'
+                  ResidentialCity: 
+                    type: string
+                    description: 'Residential address - city'
+                  ResidentialState: 
+                    type: string
+                    description: 'Residential address - state'
+                  ResidentialZip: 
+                    type: string
+                    description: 'Residential address - zip code'
+                  MailingStreet1: 
+                    type: string
+                    description: 'Mailing address - street 1'
+                  MailingStreet2: 
+                    type: string
+                    description: 'Mailing address - street 2'
+                  MailingCity: 
+                    type: string
+                    description: 'Mailing address - city'
+                  MailingState: 
+                    type: string
+                    description: 'Mailing address - state'
+                  MailingZip: 
+                    type: string
+                    description: 'Mailing address - zip code'
+            RegistrationInformation: 
+              type: array
+              description: Registration array
+              items: 
+                type: object
+                description: Registration object
+                properties: 
+                  CountyDescription: 
+                    type: string
+                    description: County decode
+                  CountyNumber: 
+                    type: number
+                    format: double
+                    description: County number
+                  DGVW: 
+                    type: number
+                    format: double
+                    description: Declared gross vehicle weight
+                  EmsFlag: 
+                    type: boolean
+                    description: Emissions flag
+                  EmsYearDue: 
+                    type: number
+                    format: double
+                    description: Emissions year due
+                  FirstYearRegistration: 
+                    type: number
+                    format: double
+                    description: First year of registration
+                  FleetId: 
+                    type: number
+                    format: double
+                    description: Fleet ID
+                  NLETPlateCode: 
+                    type: string
+                    description: NLETS plate code
+                  NMMVDPlateCode: 
+                    type: string
+                    description: NM MVD plate code
+                  NonUse: 
+                    type: string
+                    description: Non use
+                  PlateType: 
+                    type: string
+                    description: Plate type
+                  PlateTypeImage: 
+                    type: string
+                    description: Plate type image
+                  PlateIssued: 
+                    type: string
+                    description: Plate issued date
+                  PlateNumber: 
+                    type: string
+                    description: Plate number
+                  PlateStatus: 
+                    type: string
+                    description: Plate status
+                  PlateInactiveDate: 
+                    type: string
+                    description: Plate inactive date
+                  InactivePlateNumber: 
+                    type: string
+                    description: Inactive plate number
+                  RegistrationDate: 
+                    type: string
+                    description: Registration date
+                  RegistrationExpireDate: 
+                    type: string
+                    description: Registration expiration date
+                  RegistrationStatus: 
+                    type: string
+                    description: Registration status
+                  RegistrationStatusDescription: 
+                    type: string
+                    description: Registration status description
+                  RegistrationSuspensionDate: 
+                    type: string
+                    description: Registration suspension date
+                  RegistrationType: 
+                    type: string
+                    description: Registration type
+                  RegistrationTypeDescription: 
+                    type: string
+                    description: Reg type description
+                  SpecialPlate: 
+                    type: string
+                    description: Special plate
+                  VehicleCMVIndicator: 
+                    type: number
+                    format: double
+                    description: Commercial vehicle indicator
+                  VINSuffix: 
+                    type: number
+                    format: double
+                    description: VIN suffix
+            TitleInformation: 
+              type: array
+              description: Title array
+              items: 
+                type: object
+                description: Title object
+                properties: 
+                  DuplicateFlag: 
+                    type: string
+                    description: Duplicate title flag
+                  NumberOfLiens: 
+                    type: number
+                    format: double
+                    description: Number of liens
+                  OdometerCode: 
+                    type: string
+                    description: Odometer code
+                  OdometerReading: 
+                    type: number
+                    format: double
+                    description: Odomoter reading
+                  TitleNumber: 
+                    type: string
+                    description: Title number
+                  TitleIssueDate: 
+                    type: string
+                    description: Title issued date
+                  TitleOnly: 
+                    type: string
+                    description: Title only
+                  TitlePurchaseDate: 
+                    type: string
+                    description: Title purchase date
+                  TitleStatus: 
+                    type: string
+                    description: Title status
+                  TitleStatusDescription: 
+                    type: string
+                    description: Title status description
+                  TitleUse: 
+                    type: string
+                    description: Title use
+                  TitleAssignment: 
+                    type: string
+                    description: Title Assignment
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  ListVehicleRecordsByPlate_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: array
+        description: Result array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            Vehicle: 
+              type: object
+              description: Vehicle object
+              properties: 
+                Body: 
+                  type: string
+                  description: Body
+                VehicleClass: 
+                  type: string
+                  description: Vehicle class
+                ClassDescription: 
+                  type: string
+                  description: Class description
+                Cylinders: 
+                  type: number
+                  format: double
+                  description: Number of cylinders
+                Fuel: 
+                  type: string
+                  description: Fuel type
+                Make: 
+                  type: string
+                  description: Make
+                Model: 
+                  type: string
+                  description: Model
+                ModelYear: 
+                  type: number
+                  format: double
+                  description: Model year
+                NumberDoors: 
+                  type: number
+                  format: double
+                  description: Number of doors
+                VehicleStatus: 
+                  type: string
+                  description: Vehicle status
+                VehicleStatusIndicatorDescription: 
+                  type: string
+                  description: Status indicator description
+                PurchasePrice: 
+                  type: string
+                  description: Purchase price
+                VIN: 
+                  type: string
+                  description: VIN
+                Weight: 
+                  type: number
+                  format: double
+                  description: Weight
+                PrimaryColor: 
+                  type: string
+                  description: Primary color
+                SecondaryColor: 
+                  type: string
+                  description: Secondary color
+                PassengerSafeQuantity: 
+                  type: number
+                  format: double
+                  description: Passenger capacity
+                VehicleType: 
+                  type: string
+                  description: Vehicle type
+                Liencount: 
+                  type: number
+                  format: double
+                  description: Number of active liens
+                LienHistoryCount: 
+                  type: number
+                  format: double
+                  description: Number of history liens
+                BrandCount: 
+                  type: number
+                  format: double
+                  description: Current brand count
+                BrandHistoryCount: 
+                  type: number
+                  format: double
+                  description: Historic brand count
+                InsuranceStatus: 
+                  type: string
+                  description: Insurance status
+                Surety: 
+                  type: boolean
+                  description: Surety bond flag
+            Liens: 
+              type: array
+              description: Liens
+              items: 
+                type: object
+                description: Lien object
+                properties: 
+                  FileDate: 
+                    type: string
+                    description: File date
+                  LienHolderName: 
+                    type: string
+                    description: Lienholder name
+                  MaturityDate: 
+                    type: string
+                    description: Maturity date
+                  Street1: 
+                    type: string
+                    description: 'Lienholder address - street 1'
+                  Street2: 
+                    type: string
+                    description: 'Lienholder address - street 2'
+                  City: 
+                    type: string
+                    description: 'Lienholder address - city'
+                  State: 
+                    type: string
+                    description: 'Lienholder address - state'
+                  Zip: 
+                    type: string
+                    description: 'Lienholder address - zip code'
+            LienHistory: 
+              type: array
+              description: Liens
+              items: 
+                type: object
+                description: Lien object
+                properties: 
+                  FileDate: 
+                    type: string
+                    description: File date
+                  LienHolderName: 
+                    type: string
+                    description: Lienholder name
+                  MaturityDate: 
+                    type: string
+                    description: Maturity date
+                  Street1: 
+                    type: string
+                    description: 'Lienholder address - street 1'
+                  Street2: 
+                    type: string
+                    description: 'Lienholder address - street 2'
+                  City: 
+                    type: string
+                    description: 'Lienholder address - city'
+                  State: 
+                    type: string
+                    description: 'Lienholder address - state'
+                  Zip: 
+                    type: string
+                    description: 'Lienholder address - zip code'
+            BrandInformation: 
+              type: array
+              description: Brands
+              items: 
+                type: object
+                description: Brands object
+                properties: 
+                  BrandDate: 
+                    type: string
+                    description: Brand date
+                  BrandCode: 
+                    type: string
+                    description: Brand code
+                  BrandDescription: 
+                    type: string
+                    description: Brand description
+                  BrandJurisdiction: 
+                    type: string
+                    description: Brand jurisdiction
+            BrandHistoryInformation: 
+              type: array
+              description: Brands
+              items: 
+                type: object
+                description: Brands object
+                properties: 
+                  BrandDate: 
+                    type: string
+                    description: Brand date
+                  BrandCode: 
+                    type: string
+                    description: Brand code
+                  BrandDescription: 
+                    type: string
+                    description: Brand description
+                  BrandJurisdiction: 
+                    type: string
+                    description: Brand jurisdiction
+            MobileHomeInformation: 
+              type: array
+              description: Mobile home array
+              items: 
+                type: object
+                description: Mobile home object
+                properties: 
+                  CountyDescription: 
+                    type: string
+                    description: County decode
+                  CountyNumber: 
+                    type: string
+                    description: County number
+                  Length: 
+                    type: number
+                    format: double
+                    description: Length
+                  Width: 
+                    type: number
+                    format: double
+                    description: Width
+                  Location: 
+                    type: string
+                    description: Mobile home location
+                  Plate1: 
+                    type: string
+                    description: 'Plate ID - plate 1'
+                  Plate2: 
+                    type: string
+                    description: 'Plate ID - plate 2'
+                  Plate3: 
+                    type: string
+                    description: 'Plate ID - plate 3'
+                  VINs: 
+                    type: array
+                    description: VIN array
+                    items: 
+                      type: object
+                      description: VIN object
+                      properties: 
+                        VIN: 
+                          type: string
+                          description: VIN
+                        VINNumber: 
+                          type: string
+                          description: 'Denotes if VIN is primary, secondary, tertiary, etc'
+                  TitleAssignment: 
+                    type: string
+                    description: Title assignment
+            Owners: 
+              type: array
+              description: Owners array
+              items: 
+                type: object
+                description: Owner object
+                properties: 
+                  OwnerType: 
+                    type: string
+                    description: Owner type
+                  OwnerRelation: 
+                    type: string
+                    description: Owner relation
+                  BusinessName: 
+                    type: string
+                    description: Business name
+                  FirstName: 
+                    type: string
+                    description: First name
+                  LastName: 
+                    type: string
+                    description: Last name
+                  MiddleInitial: 
+                    type: string
+                    description: Middle initial
+                  DateOfBirth: 
+                    type: string
+                    description: Date of birth
+                  IdType: 
+                    type: string
+                    description: ID Type
+                  Id: 
+                    type: string
+                    description: ID
+                  AccountKey: 
+                    type: string
+                    description: Account key
+                  ResidentialStreet1: 
+                    type: string
+                    description: 'Residential address - street 1'
+                  ResidentialStreet2: 
+                    type: string
+                    description: 'Residential address - street 2'
+                  ResidentialCity: 
+                    type: string
+                    description: 'Residential address - city'
+                  ResidentialState: 
+                    type: string
+                    description: 'Residential address - state'
+                  ResidentialZip: 
+                    type: string
+                    description: 'Residential address - zip code'
+                  MailingStreet1: 
+                    type: string
+                    description: 'Mailing address - street 1'
+                  MailingStreet2: 
+                    type: string
+                    description: 'Mailing address - street 2'
+                  MailingCity: 
+                    type: string
+                    description: 'Mailing address - city'
+                  MailingState: 
+                    type: string
+                    description: 'Mailing address - state'
+                  MailingZip: 
+                    type: string
+                    description: 'Mailing address - zip code'
+            RegistrationInformation: 
+              type: array
+              description: Registration array
+              items: 
+                type: object
+                description: Registration object
+                properties: 
+                  CountyDescription: 
+                    type: string
+                    description: County decode
+                  CountyNumber: 
+                    type: number
+                    format: double
+                    description: County number
+                  DGVW: 
+                    type: number
+                    format: double
+                    description: Declared gross vehicle weight
+                  EmsFlag: 
+                    type: boolean
+                    description: Emissions flag
+                  EmsYearDue: 
+                    type: number
+                    format: double
+                    description: Emissions year due
+                  FirstYearRegistration: 
+                    type: number
+                    format: double
+                    description: First year of registration
+                  FleetId: 
+                    type: number
+                    format: double
+                    description: Fleet ID
+                  NLETPlateCode: 
+                    type: string
+                    description: NLETS plate code
+                  NMMVDPlateCode: 
+                    type: string
+                    description: NM MVD plate code
+                  NonUse: 
+                    type: string
+                    description: Non use
+                  PlateType: 
+                    type: string
+                    description: Plate type
+                  PlateTypeImage: 
+                    type: string
+                    description: Plate type image
+                  PlateIssued: 
+                    type: string
+                    description: Plate issued date
+                  PlateNumber: 
+                    type: string
+                    description: Plate number
+                  PlateStatus: 
+                    type: string
+                    description: Plate status
+                  PlateInactiveDate: 
+                    type: string
+                    description: Plate inactive date
+                  InactivePlateNumber: 
+                    type: string
+                    description: Inactive plate number
+                  RegistrationDate: 
+                    type: string
+                    description: Registration date
+                  RegistrationExpireDate: 
+                    type: string
+                    description: Registration expiration date
+                  RegistrationStatus: 
+                    type: string
+                    description: Registration status
+                  RegistrationStatusDescription: 
+                    type: string
+                    description: Registration status description
+                  RegistrationSuspensionDate: 
+                    type: string
+                    description: Registration suspension date
+                  RegistrationType: 
+                    type: string
+                    description: Registration type
+                  RegistrationTypeDescription: 
+                    type: string
+                    description: Registration type description
+                  SpecialPlate: 
+                    type: string
+                    description: Special plate
+                  VehicleCMVIndicator: 
+                    type: number
+                    format: double
+                    description: Commercial vehicle flag
+                  VINSuffix: 
+                    type: number
+                    format: double
+                    description: VIN suffix
+            TitleInformation: 
+              type: array
+              description: Title array
+              items: 
+                type: object
+                description: Title object
+                properties: 
+                  DuplicateFlag: 
+                    type: string
+                    description: Duplicate flag
+                  NumberOfLiens: 
+                    type: number
+                    format: double
+                    description: Number of liens
+                  OdometerCode: 
+                    type: string
+                    description: Odometer code
+                  OdometerReading: 
+                    type: number
+                    format: double
+                    description: Odometer reading
+                  TitleNumber: 
+                    type: string
+                    description: TItle number
+                  TitleIssueDate: 
+                    type: string
+                    description: Title issue date
+                  TitleOnly: 
+                    type: string
+                    description: Title only
+                  TitlePurchaseDate: 
+                    type: string
+                    description: Title purchase date
+                  TitleStatus: 
+                    type: string
+                    description: Title status
+                  TitleStatusDescription: 
+                    type: string
+                    description: Title status description
+                  TitleUse: 
+                    type: string
+                    description: Title use
+                  TitleAssignment: 
+                    type: string
+                    description: Title Assignment
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  ManufacturedHomeSearch_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            Make: 
+              type: string
+              description: Manufactured home make
+            Model: 
+              type: string
+              description: Manufactured home model
+            Year: 
+              type: string
+              description: Year
+            Owner: 
+              type: string
+              description: Owner name
+            CountyDescription: 
+              type: string
+              description: County description
+            Location: 
+              type: string
+              description: Manufactured home location
+            CountyNumber: 
+              type: string
+              description: County number
+            Length: 
+              type: number
+              format: double
+              description: Manufactured home length
+            Width: 
+              type: number
+              format: double
+              description: Manufactured home width
+            Plate1: 
+              type: string
+              description: Manufactured home plate 1
+            Plate2: 
+              type: string
+              description: Manufactured home plate 2
+            Plate3: 
+              type: string
+              description: Manufactured home plate 3
+            VINs: 
+              type: array
+              description: VIN array
+              items: 
+                type: object
+                description: VIN object
+                properties: 
+                  VIN: 
+                    type: string
+                    description: VIN
+                  VINNumber: 
+                    type: string
+                    description: VIN number
+      ResultsCount: 
+        type: number
+        format: double
+        description: Results Count
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  NameDOBSearch_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: array
+        description: Results array
+        items: 
+          type: object
+          description: Results object
+          properties: 
+            AccountKey: 
+              type: number
+              format: double
+              description: Account key
+            DLN: 
+              type: string
+              description: Driver's license number
+            LicenseState: 
+              type: string
+              description: License state
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  PartialSSNSearch_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            FullSSN: 
+              type: string
+              description: Full SSN
+            DLN: 
+              type: string
+              description: DLN
+            FirstName: 
+              type: string
+              description: First Name
+            MiddleName: 
+              type: string
+              description: Middle name
+            LastName: 
+              type: string
+              description: Last name
+            Street1: 
+              type: string
+              description: Street 1
+            Street2: 
+              type: string
+              description: Street 2
+            City: 
+              type: string
+              description: City
+            State: 
+              type: string
+              description: State
+            Zip: 
+              type: string
+              description: Zip code
+            Photo: 
+              type: string
+              description: Photo
+            SignaturePhoto: 
+              type: string
+              description: Signature photo
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  PlacardInquiry_POST_Response: 
+    type: object
+    properties: 
+      LastName: 
+        type: string
+        description: Last name
+      FirstName: 
+        type: string
+        description: First name
+      PlacardField1: 
+        type: string
+        description: Placard field 1
+      PlacardField2: 
+        type: string
+        description: Placard field 2
+      PlacardStatus: 
+        type: string
+        description: Placard status
+      Street1: 
+        type: string
+        description: Street 1
+      Street2: 
+        type: string
+        description: Street 2
+      City: 
+        type: string
+        description: City
+      State: 
+        type: string
+        description: State
+      Zip: 
+        type: string
+        description: Zip code
+      Permanent: 
+        type: boolean
+        description: Permanent placard
+      IssuedDate: 
+        type: string
+        description: Issued date
+      ExpirationDate: 
+        type: string
+        description: Expiration date
+      BillableResponseKey: 
+        type: number
+        format: double
+        description: Billable response key
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  SearchVehicle_POST_Response: 
+    type: object
+    properties: 
+      TaxLienFound: 
+        type: boolean
+        description: Tax lien found
+      VehicleFound: 
+        type: boolean
+        description: Vehicle found
+      BillableResponseKey: 
+        type: number
+        format: double
+        description: Billable response key
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  SSNSearch_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            AccountKey: 
+              type: number
+              format: double
+              description: Account key
+            DLN: 
+              type: string
+              description: DLN
+            LicenseState: 
+              type: string
+              description: License state
+            DOB: 
+              type: string
+              description: Date of birth
+            FirstName: 
+              type: string
+              description: First name
+            LastName: 
+              type: string
+              description: Last name
+            MiddleInitial: 
+              type: string
+              description: Middle initial
+            Suffix: 
+              type: string
+              description: Suffix
+            AccountType: 
+              type: string
+              description: Account type
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  TheftCheckByToken_POST_Response: 
+    type: object
+    properties: 
+      Theft: 
+        type: boolean
+        description: Theft
+      ResponseRecieved: 
+        type: boolean
+        description: Response received
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  TheftCheckByVIN_POST_Response: 
+    type: object
+    properties: 
+      TheftToken: 
+        type: string
+        description: Theft token
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  VehicleByAddress_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            City: 
+              type: string
+              description: 'Owner address - city'
+            Street1: 
+              type: string
+              description: 'Owner address - street 1'
+            Street2: 
+              type: string
+              description: 'Owner address - street 2'
+            Zip: 
+              type: string
+              description: 'Owner address - zip code'
+            State: 
+              type: string
+              description: 'Owner address - state'
+            OwnerNames: 
+              type: string
+              description: Owner names
+            PlateNumber: 
+              type: string
+              description: Plate number
+            VIN: 
+              type: string
+              description: VIN
+            Make: 
+              type: string
+              description: Vehicle make
+            Model: 
+              type: string
+              description: Vehicle model
+            Year: 
+              type: string
+              description: Vehicle year
+            CustomerKey: 
+              type: string
+              description: Customer key
+      ResultsCount: 
+        type: number
+        format: double
+        description: Number of results
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  VehicleByAdvancedAttributes_POST_Response: 
+    type: object
+    properties: 
+      ResultsCount: 
+        type: number
+        format: double
+        description: Number of results found
+      Results: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            OwnerNames: 
+              type: string
+              description: Owner names
+            Street1: 
+              type: string
+              description: Street 1
+            Street2: 
+              type: string
+              description: Street 2
+            City: 
+              type: string
+              description: City
+            State: 
+              type: string
+              description: State
+            Zip: 
+              type: string
+              description: Zip
+            PlateNumber: 
+              type: string
+              description: Plate number
+            VIN: 
+              type: string
+              description: VIN
+            Make: 
+              type: string
+              description: Make
+            Model: 
+              type: string
+              description: Model
+            Year: 
+              type: string
+              description: Year
+            CustomerKey: 
+              type: string
+              description: Customer key
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  VehicleByAttributes_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            City: 
+              type: string
+              description: 'Owner address - City'
+            Street1: 
+              type: string
+              description: 'Owner address - Street 1'
+            Street2: 
+              type: string
+              description: 'Owner address - Street 2'
+            Zip: 
+              type: string
+              description: 'Owner address - Zip code'
+            State: 
+              type: string
+              description: 'Owner address - State'
+            OwnerNames: 
+              type: string
+              description: Owner names
+            PlateNumber: 
+              type: string
+              description: Plate number
+            VIN: 
+              type: string
+              description: VIN
+            Make: 
+              type: string
+              description: Vehicle make
+            Model: 
+              type: string
+              description: Vehicle model
+            Year: 
+              type: string
+              description: Vehicle year
+            CustomerKey: 
+              type: string
+              description: Customer key
+      ResultsCount: 
+        type: number
+        format: double
+        description: Number of results
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  VesselSearch_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: array
+        description: Result Array
+        items: 
+          type: object
+          description: Result Object
+          properties: 
+            HIN: 
+              type: string
+              description: Vessel HIN
+            Make: 
+              type: string
+              description: Vessel Make
+            Model: 
+              type: string
+              description: Vessel Model
+            AccountKey: 
+              type: string
+              description: Vessel Account Key
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
+  YouthfulIndexQuery_POST_Response: 
+    type: object
+    properties: 
+      Results: 
+        type: string
+        description: Results
+      ExceptionMessageField: 
+        type: string
+        description: Exception message field
+      ExceptionMessageType: 
+        type: string
+        description: Exception message type
