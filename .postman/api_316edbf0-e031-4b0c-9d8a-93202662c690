@@ -9,7 +9,6 @@ id = 316edbf0-e031-4b0c-9d8a-93202662c690
 
 [config.relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"36445156-4f9a2183-ae2a-4e1a-a8fe-dc9c39c26975","path":"New Mexico Interactive - NMI Copy.json","metaData":{}}
 files[] = {"id":"36445156-de4f1fef-0863-429d-9506-7a03c896ebe0","path":"New Mexico Interactive - NMI.json","metaData":{}}
 
 [config.relations.collections.metaData]
