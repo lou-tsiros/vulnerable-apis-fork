@@ -11,8 +11,8 @@ paths:
   /AdditionalFeesCharged: 
     post: 
       tags: 
-        - NMI Additional Fees
-      summary: NMI Additional Fees
+        - NMI Additional Fees - Lou
+      summary: NMI Additional Fees - Lou
       description: NMI additional fees charged web service.
       operationId: AdditionalFeesChargedPOST
       consumes: 
