@@ -300,6 +300,19 @@
 			"item": [
 				{
 					"name": "NMI Lien Count By VIN",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dddd403c-b8a3-401c-9940-2507d299c968",
+								"exec": [
+									"pm.variables.get(\"variable_key\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "afa87ca4-f74d-4b8b-be7c-b647352b6df3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
