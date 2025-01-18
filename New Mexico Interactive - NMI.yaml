@@ -1,6 +1,6 @@
 swagger: '2.0'
 info: 
-  title: 'New Mexico Interactive - NMI'
+  title: 'New Mexico Interactive - NMI' - Lou
   description: New Mexico Interactive(NMI) High Volume Data Sales Rest API Interface. Tyler Technologies
   version: "1.0"
 host: mvrollout.trd.state.nm.us

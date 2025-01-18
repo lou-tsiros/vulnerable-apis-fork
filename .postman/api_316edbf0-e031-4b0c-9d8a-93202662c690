@@ -19,4 +19,3 @@ files[] = {"path":"New Mexico Interactive - NMI.yaml","metaData":{}}
 
 [config.relations.apiDefinition.metaData]
 type = openapi:2
-rootFiles[] = New Mexico Interactive - NMI.yaml
