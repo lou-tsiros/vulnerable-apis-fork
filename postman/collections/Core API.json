@@ -1,0 +1,1324 @@
+{
+	"info": {
+		"_postman_id": "cf374c79-778a-4d6c-8e5c-613b0b7c9aae",
+		"name": "Core API",
+		"description": "Core API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "36445156-cf374c79-778a-4d6c-8e5c-613b0b7c9aae"
+	},
+	"item": [
+		{
+			"name": "accounts",
+			"item": [
+				{
+					"name": "info",
+					"item": [
+						{
+							"name": "계정 정보 조회",
+							"id": "59b1d259-df85-4ad9-b24d-25b6e3b729bf",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/accounts/info",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"accounts",
+										"info"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "953b07a4-1be7-4f86-bdcc-3a6719d6534c",
+									"name": "200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/accounts/info",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"accounts",
+												"info"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"uuid": "703fbb50-166f-449d-9977-d61e2d03167b"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"result\": {\n    \"linkedAccounts\": [\n      {\n        \"createdAt\": \"<string>\",\n        \"accountId\": \"<string>\",\n        \"loginId\": \"<string>\",\n        \"platformId\": \"<string>\",\n        \"id\": \"<string>\",\n        \"region\": \"<string>\",\n        \"updatedAt\": \"<string>\"\n      },\n      {\n        \"createdAt\": \"<string>\",\n        \"accountId\": \"<string>\",\n        \"loginId\": \"<string>\",\n        \"platformId\": \"<string>\",\n        \"id\": \"<string>\",\n        \"region\": \"<string>\",\n        \"updatedAt\": \"<string>\"\n      }\n    ],\n    \"account\": {\n      \"membershipPlan\": \"<string>\",\n      \"linkedAccountCnt\": \"<number>\",\n      \"grade\": \"<number>\",\n      \"joinType\": \"<string>\",\n      \"nickname\": \"<string>\",\n      \"id\": \"<string>\",\n      \"region\": \"<string>\",\n      \"accountSettings\": {\n        \"temperature\": \"<string>\",\n        \"timeZone\": \"<string>\",\n        \"language\": \"<string>\"\n      },\n      \"email\": \"<string>\"\n    }\n  },\n  \"success\": \"<boolean>\"\n}"
+								}
+							]
+						}
+					],
+					"id": "9681a3a9-7312-4cce-b85b-eaf0926e7a09"
+				},
+				{
+					"name": "nickname-availability",
+					"item": [
+						{
+							"name": "닉네임 중복",
+							"id": "a1f4d60a-3ab5-4e65-9686-7b59bd9cfc21",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"nickname\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/accounts/nickname-availability",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"accounts",
+										"nickname-availability"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "eaae6c94-8f5a-4cec-b957-2728c85848c0",
+									"name": "200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"nickname\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/accounts/nickname-availability",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"accounts",
+												"nickname-availability"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"uuid": "3461ef95-4958-4e71-9748-d069f8901b39"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"result\": \"<boolean>\",\n  \"success\": \"<boolean>\"\n}"
+								}
+							]
+						}
+					],
+					"id": "a65d2c4e-fe43-4299-b1c1-ecddc34911cd"
+				}
+			],
+			"id": "e9e5ad27-1473-4f5a-bc89-52a8d42e96be"
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "accounts",
+					"item": [
+						{
+							"name": "by-id",
+							"item": [
+								{
+									"name": "ID로 계정 조회 성공",
+									"id": "72e8403a-4fa4-4afe-8b18-0d3f959eaf76",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/admin/accounts/by-id?ids=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"admin",
+												"accounts",
+												"by-id"
+											],
+											"query": [
+												{
+													"key": "ids",
+													"value": "<string>",
+													"description": "(Required) 계정 ID"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "87a836c4-1b39-45f6-b686-d70b0e756cc9",
+											"name": "200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/by-id?ids=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"by-id"
+													],
+													"query": [
+														{
+															"description": "(Required) 계정 ID",
+															"key": "ids",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"uuid": "e8fa0af9-d880-4022-bb95-cdd249b4a268"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"result\": {\n    \"accounts\": [\n      {\n        \"membershipPlan\": \"<string>\",\n        \"linkedAccountCnt\": \"<number>\",\n        \"grade\": \"<number>\",\n        \"joinType\": \"<string>\",\n        \"nickname\": \"<string>\",\n        \"id\": \"<string>\",\n        \"region\": \"<string>\",\n        \"accountSettings\": {\n          \"temperature\": \"<string>\",\n          \"timeZone\": \"<string>\",\n          \"language\": \"<string>\"\n        },\n        \"email\": \"<string>\"\n      },\n      {\n        \"membershipPlan\": \"<string>\",\n        \"linkedAccountCnt\": \"<number>\",\n        \"grade\": \"<number>\",\n        \"joinType\": \"<string>\",\n        \"nickname\": \"<string>\",\n        \"id\": \"<string>\",\n        \"region\": \"<string>\",\n        \"accountSettings\": {\n          \"temperature\": \"<string>\",\n          \"timeZone\": \"<string>\",\n          \"language\": \"<string>\"\n        },\n        \"email\": \"<string>\"\n      }\n    ]\n  },\n  \"success\": \"<boolean>\"\n}"
+										}
+									]
+								}
+							],
+							"id": "ddf605a5-7cf9-46d5-b67a-d0a5f3c8efd7"
+						},
+						{
+							"name": "search",
+							"item": [
+								{
+									"name": "닉네임으로 계정 조회 성공",
+									"id": "ae33964a-7dfd-4a41-8be2-f5f685769bf7",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/admin/accounts/search?nickname=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"admin",
+												"accounts",
+												"search"
+											],
+											"query": [
+												{
+													"key": "nickname",
+													"value": "<string>",
+													"description": "(Required) 닉네임"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "f0d14f9b-45bd-48e9-9fe7-50843327bd05",
+											"name": "200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/search?nickname=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"search"
+													],
+													"query": [
+														{
+															"description": "(Required) 닉네임",
+															"key": "nickname",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"uuid": "fff9063d-3d13-468a-8192-d876c9fd0b45"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"result\": {\n    \"account\": {\n      \"membershipPlan\": \"<string>\",\n      \"linkedAccountCnt\": \"<number>\",\n      \"grade\": \"<number>\",\n      \"joinType\": \"<string>\",\n      \"nickname\": \"<string>\",\n      \"id\": \"<string>\",\n      \"region\": \"<string>\",\n      \"accountSettings\": {\n        \"temperature\": \"<string>\",\n        \"timeZone\": \"<string>\",\n        \"language\": \"<string>\"\n      },\n      \"email\": \"<string>\"\n    }\n  },\n  \"success\": \"<boolean>\"\n}"
+										}
+									]
+								}
+							],
+							"id": "eef2b62e-ceab-4920-bf24-e6d5df9abf63"
+						},
+						{
+							"name": "statistics",
+							"item": [
+								{
+									"name": "active-user",
+									"item": [
+										{
+											"name": "활성화 유저 조회 성공",
+											"id": "d0255b1d-7bf4-429f-947c-4761046410f6",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/statistics/active-user?from=<string>&end=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"statistics",
+														"active-user"
+													],
+													"query": [
+														{
+															"key": "from",
+															"value": "<string>",
+															"description": "(Required) 시작 날짜 (yyyy-MM-dd)"
+														},
+														{
+															"key": "end",
+															"value": "<string>",
+															"description": "(Required) 종료 날짜 (yyyy-MM-dd)"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "5f8d612b-bf15-43c3-8e3e-a59f6510a636",
+													"name": "200",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/statistics/active-user?from=<string>&end=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																"statistics",
+																"active-user"
+															],
+															"query": [
+																{
+																	"description": "(Required) 시작 날짜 (yyyy-MM-dd)",
+																	"key": "from",
+																	"value": "<string>"
+																},
+																{
+																	"description": "(Required) 종료 날짜 (yyyy-MM-dd)",
+																	"key": "end",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json",
+															"uuid": "2c768559-fd8d-4a25-9157-2866f1a26b7f"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"result\": {\n    \"activeUsers\": [\n      {\n        \"date\": \"<string>\",\n        \"mauCount\": \"<number>\",\n        \"dauCount\": \"<number>\"\n      },\n      {\n        \"date\": \"<string>\",\n        \"mauCount\": \"<number>\",\n        \"dauCount\": \"<number>\"\n      }\n    ]\n  },\n  \"success\": \"<boolean>\"\n}"
+												}
+											]
+										}
+									],
+									"id": "ad029813-3c73-4b35-89f6-0964fd2e34c3"
+								},
+								{
+									"name": "all",
+									"item": [
+										{
+											"name": "계정 통계 정보 조회",
+											"id": "9832225e-1c38-4d73-8878-e0bbe9ff7367",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/statistics/all?from=<string>&end=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"statistics",
+														"all"
+													],
+													"query": [
+														{
+															"key": "from",
+															"value": "<string>",
+															"description": "(Required) 시작 날짜 (yyyy-MM-dd)"
+														},
+														{
+															"key": "end",
+															"value": "<string>",
+															"description": "(Required) 종료 날짜 (yyyy-MM-dd)"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "18a0bb42-3376-4e9d-b99e-ba5b416be9a3",
+													"name": "200",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/statistics/all?from=<string>&end=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																"statistics",
+																"all"
+															],
+															"query": [
+																{
+																	"description": "(Required) 시작 날짜 (yyyy-MM-dd)",
+																	"key": "from",
+																	"value": "<string>"
+																},
+																{
+																	"description": "(Required) 종료 날짜 (yyyy-MM-dd)",
+																	"key": "end",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json",
+															"uuid": "23080eec-0fe1-4c35-8842-0821161ba7e8"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"result\": {\n    \"accountStatisticsByDates\": [\n      {\n        \"date\": \"<string>\",\n        \"registrationCount\": \"<number>\",\n        \"totalAccountCount\": \"<number>\"\n      },\n      {\n        \"date\": \"<string>\",\n        \"registrationCount\": \"<number>\",\n        \"totalAccountCount\": \"<number>\"\n      }\n    ],\n    \"totalAccountCount\": \"<number>\"\n  },\n  \"success\": \"<boolean>\"\n}"
+												}
+											]
+										}
+									],
+									"id": "8408612f-e41c-4895-90c9-c78ecc0318d9"
+								},
+								{
+									"name": "dau",
+									"item": [
+										{
+											"name": "DAU ",
+											"id": "e965744c-a9b5-48be-b6cc-cdec0b6a2a26",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/statistics/dau?from=<string>&end=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"statistics",
+														"dau"
+													],
+													"query": [
+														{
+															"key": "from",
+															"value": "<string>",
+															"description": "(Required) 시작 날짜 (yyyy-MM-dd)"
+														},
+														{
+															"key": "end",
+															"value": "<string>",
+															"description": "(Required) 끝 날짜 (yyyy-MM-dd)"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "260a7fa0-7e5f-47c3-9d17-5bfded7fc0a1",
+													"name": "200",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/statistics/dau?from=<string>&end=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																"statistics",
+																"dau"
+															],
+															"query": [
+																{
+																	"description": "(Required) 시작 날짜 (yyyy-MM-dd)",
+																	"key": "from",
+																	"value": "<string>"
+																},
+																{
+																	"description": "(Required) 끝 날짜 (yyyy-MM-dd)",
+																	"key": "end",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json",
+															"uuid": "f15ec628-563a-4774-b5a7-865c8822e84f"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"result\": {\n    \"daus\": [\n      {\n        \"count\": \"<number>\",\n        \"day\": \"<string>\"\n      },\n      {\n        \"count\": \"<number>\",\n        \"day\": \"<string>\"\n      }\n    ]\n  },\n  \"code\": \"<number>\",\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\"\n}"
+												}
+											]
+										}
+									],
+									"id": "7d142af5-c428-42ad-be73-7584cb098184"
+								},
+								{
+									"name": "mau",
+									"item": [
+										{
+											"name": "MAU ",
+											"id": "e0a2981e-2d14-41e5-9fbe-2ab4df55e7c1",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/statistics/mau?from=<string>&end=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"statistics",
+														"mau"
+													],
+													"query": [
+														{
+															"key": "from",
+															"value": "<string>",
+															"description": "(Required) 시작 날짜 (yyyy-MM)"
+														},
+														{
+															"key": "end",
+															"value": "<string>",
+															"description": "(Required) 끝 날짜 (yyyy-MM)"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "9603f280-9029-4aaa-83e0-59e31dea54f8",
+													"name": "200",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/statistics/mau?from=<string>&end=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																"statistics",
+																"mau"
+															],
+															"query": [
+																{
+																	"description": "(Required) 시작 날짜 (yyyy-MM)",
+																	"key": "from",
+																	"value": "<string>"
+																},
+																{
+																	"description": "(Required) 끝 날짜 (yyyy-MM)",
+																	"key": "end",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json",
+															"uuid": "5f537103-5fa2-49ee-bd28-dac969d19459"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"result\": {\n    \"maus\": [\n      {\n        \"month\": \"<string>\",\n        \"count\": \"<number>\"\n      },\n      {\n        \"month\": \"<string>\",\n        \"count\": \"<number>\"\n      }\n    ]\n  },\n  \"code\": \"<number>\",\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\"\n}"
+												}
+											]
+										}
+									],
+									"id": "4d8a6164-50cf-4bd2-904b-a55de1a10779"
+								},
+								{
+									"name": "summary",
+									"item": [
+										{
+											"name": "대시보드 통계정보 요약 조회 성공",
+											"id": "f0ad8dfc-2a36-4490-b785-6285d572102b",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/statistics/summary",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"statistics",
+														"summary"
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "6f8ecc80-6f49-4c0d-9f24-1f1d992d7882",
+													"name": "200",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/statistics/summary",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																"statistics",
+																"summary"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json",
+															"uuid": "0dc82148-df85-43b8-aece-baa999020538"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"result\": {\n    \"withdrawalGrowthRate\": \"<number>\",\n    \"mauGrowthRate\": \"<number>\",\n    \"mauCount\": \"<number>\",\n    \"dauGrowthRate\": \"<number>\",\n    \"dauCount\": \"<number>\",\n    \"newAccountCount\": \"<number>\",\n    \"totalWithdrawalCount\": \"<number>\",\n    \"newAccountGrowthRate\": \"<number>\"\n  },\n  \"success\": \"<boolean>\"\n}"
+												}
+											]
+										}
+									],
+									"id": "769fad9a-9a04-463b-95a8-02bc34ac8e72"
+								},
+								{
+									"name": "계정 통계정보 조회 (7개 단위로 나누기) 성공",
+									"id": "38ed9385-eb34-4b1f-8cb8-8933d3a51d19",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/admin/accounts/statistics?from=<string>&end=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"admin",
+												"accounts",
+												"statistics"
+											],
+											"query": [
+												{
+													"key": "from",
+													"value": "<string>",
+													"description": "(Required) 시작 날짜 (yyyy-MM)"
+												},
+												{
+													"key": "end",
+													"value": "<string>",
+													"description": "(Required) 종료 날짜 (yyyy-MM)"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "e9c0754c-29d9-4879-bbd2-7d4870118351",
+											"name": "200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/statistics?from=<string>&end=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"statistics"
+													],
+													"query": [
+														{
+															"description": "(Required) 시작 날짜 (yyyy-MM)",
+															"key": "from",
+															"value": "<string>"
+														},
+														{
+															"description": "(Required) 종료 날짜 (yyyy-MM)",
+															"key": "end",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"uuid": "7a41a682-8e5a-4f08-895f-a41ea99971f9"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"result\": {\n    \"registrationAccountCountByDates\": [\n      {\n        \"date\": \"<string>\",\n        \"count\": \"<number>\"\n      },\n      {\n        \"date\": \"<string>\",\n        \"count\": \"<number>\"\n      }\n    ],\n    \"totalAccountCount\": \"<number>\",\n    \"growthRate\": \"<number>\",\n    \"totalAccountCountByDates\": [\n      {\n        \"date\": \"<string>\",\n        \"count\": \"<number>\"\n      },\n      {\n        \"date\": \"<string>\",\n        \"count\": \"<number>\"\n      }\n    ],\n    \"todayRegistrationCount\": \"<number>\"\n  },\n  \"success\": \"<boolean>\"\n}"
+										}
+									]
+								}
+							],
+							"id": "dbcd244e-3de1-4f6e-b2e3-f71d2a2d68f8"
+						},
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "details",
+									"item": [
+										{
+											"name": "계정 상세정보 조회",
+											"id": "64942f33-081f-497b-bac2-b89fbb1eba75",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/:id/details",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														":id",
+														"details"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "d6c314a4-2964-4ddf-bbcb-0342e4e956b2",
+													"name": "200",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/:id/details",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																":id",
+																"details"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json",
+															"uuid": "c6216f7d-f7a9-4e5c-87ef-7b9cae826c78"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"result\": {\n    \"notificationSettingsInfo\": {\n      \"appPush\": \"<boolean>\",\n      \"emailPush\": \"<boolean>\",\n      \"accountPush\": \"<boolean>\",\n      \"appUpdatePush\": \"<boolean>\"\n    },\n    \"accountBasicInfo\": {\n      \"membershipPlan\": \"<string>\",\n      \"createdAt\": \"<string>\",\n      \"inactivity\": \"<boolean>\",\n      \"grade\": \"<number>\",\n      \"joinType\": \"<string>\",\n      \"nickname\": \"<string>\",\n      \"id\": \"<string>\",\n      \"region\": \"<string>\",\n      \"email\": \"<string>\",\n      \"updatedAt\": \"<string>\"\n    }\n  },\n  \"success\": \"<boolean>\"\n}"
+												}
+											]
+										}
+									],
+									"id": "156dd3c8-4760-4e71-8536-bbbd56e7d429"
+								},
+								{
+									"name": "linked-accounts",
+									"item": [
+										{
+											"name": "연계 계정 조회 성공",
+											"id": "dcf30423-4b85-47d7-911d-8794406d52ca",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/:id/linked-accounts",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														":id",
+														"linked-accounts"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "a56410df-550d-49dc-9531-ff952825f24c",
+													"name": "200",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/:id/linked-accounts",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																":id",
+																"linked-accounts"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json",
+															"uuid": "db89cc56-10d6-408d-8049-2896d79ee074"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"result\": {\n    \"linkedAccounts\": [\n      {\n        \"createdAt\": \"<string>\",\n        \"accountId\": \"<string>\",\n        \"loginId\": \"<string>\",\n        \"platformId\": \"<string>\",\n        \"id\": \"<string>\",\n        \"region\": \"<string>\",\n        \"updatedAt\": \"<string>\"\n      },\n      {\n        \"createdAt\": \"<string>\",\n        \"accountId\": \"<string>\",\n        \"loginId\": \"<string>\",\n        \"platformId\": \"<string>\",\n        \"id\": \"<string>\",\n        \"region\": \"<string>\",\n        \"updatedAt\": \"<string>\"\n      }\n    ],\n    \"totalCount\": \"<number>\"\n  },\n  \"success\": \"<boolean>\"\n}"
+												}
+											]
+										}
+									],
+									"id": "1d63f787-2782-4d80-a37a-c410117e7beb"
+								}
+							],
+							"id": "3d100668-319d-4890-ad0e-320140149438"
+						},
+						{
+							"name": "계정 조회 목록 성공",
+							"id": "6ab3cfc4-b790-4f47-81c8-bc76b7dd6a04",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/admin/accounts?page=<string>&size=<string>&keyword=<string>&searchType=<string>&joinType=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"accounts"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "<string>",
+											"description": "(Required) 페이지 번호"
+										},
+										{
+											"key": "size",
+											"value": "<string>",
+											"description": "(Required) 페이지 크기"
+										},
+										{
+											"key": "keyword",
+											"value": "<string>",
+											"description": "(Required) 검색어"
+										},
+										{
+											"key": "searchType",
+											"value": "<string>",
+											"description": "(Required) 검색 타입"
+										},
+										{
+											"key": "joinType",
+											"value": "<string>",
+											"description": "(Required) 가입 타입"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "2ec4ebe5-bdd1-4883-8303-bf88e1a33f82",
+									"name": "200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/admin/accounts?page=<string>&size=<string>&keyword=<string>&searchType=<string>&joinType=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"admin",
+												"accounts"
+											],
+											"query": [
+												{
+													"description": "(Required) 페이지 번호",
+													"key": "page",
+													"value": "<string>"
+												},
+												{
+													"description": "(Required) 페이지 크기",
+													"key": "size",
+													"value": "<string>"
+												},
+												{
+													"description": "(Required) 검색어",
+													"key": "keyword",
+													"value": "<string>"
+												},
+												{
+													"description": "(Required) 검색 타입",
+													"key": "searchType",
+													"value": "<string>"
+												},
+												{
+													"description": "(Required) 가입 타입",
+													"key": "joinType",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"uuid": "a2995cd7-8179-4850-b5ba-1d09793e2c47"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"result\": {\n    \"totalPages\": \"<number>\",\n    \"accounts\": [\n      {\n        \"membershipPlan\": \"<string>\",\n        \"linkedAccountCnt\": \"<number>\",\n        \"grade\": \"<number>\",\n        \"joinType\": \"<string>\",\n        \"nickname\": \"<string>\",\n        \"id\": \"<string>\",\n        \"region\": \"<string>\",\n        \"accountSettings\": {\n          \"temperature\": \"<string>\",\n          \"timeZone\": \"<string>\",\n          \"language\": \"<string>\"\n        },\n        \"email\": \"<string>\"\n      },\n      {\n        \"membershipPlan\": \"<string>\",\n        \"linkedAccountCnt\": \"<number>\",\n        \"grade\": \"<number>\",\n        \"joinType\": \"<string>\",\n        \"nickname\": \"<string>\",\n        \"id\": \"<string>\",\n        \"region\": \"<string>\",\n        \"accountSettings\": {\n          \"temperature\": \"<string>\",\n          \"timeZone\": \"<string>\",\n          \"language\": \"<string>\"\n        },\n        \"email\": \"<string>\"\n      }\n    ],\n    \"currentPage\": \"<number>\",\n    \"totalCount\": \"<number>\"\n  },\n  \"success\": \"<boolean>\"\n}"
+								}
+							]
+						}
+					],
+					"id": "e56a1a03-e8ca-4c86-8877-fcfdcc51be9e"
+				}
+			],
+			"id": "9f1029f9-52b6-4437-be45-c4ef4663d92f"
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"item": [
+						{
+							"name": "Login",
+							"id": "6407074b-8f77-4dbd-bbb3-8546b03b9b0d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"deviceType\": \"<string>\",\n  \"password\": \"<string>\",\n  \"region\": \"<string>\",\n  \"email\": \"<string>\",\n  \"deviceToken\": {\n    \"description\": \"Device token\"\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "4f14dcc8-1607-478f-96da-04195efd4f7a",
+									"name": "200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"deviceType\": \"<string>\",\n  \"password\": \"<string>\",\n  \"region\": \"<string>\",\n  \"email\": \"<string>\",\n  \"deviceToken\": {\n    \"description\": \"Device token\"\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"uuid": "a3c4a2e8-b484-4d8b-8e20-d67f1fda5ed6"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"result\": {\n    \"linkedAccount\": [\n      {\n        \"password\": \"<string>\",\n        \"loginId\": \"<string>\",\n        \"region\": \"<string>\"\n      },\n      {\n        \"password\": \"<string>\",\n        \"loginId\": \"<string>\",\n        \"region\": \"<string>\"\n      }\n    ],\n    \"jwtToken\": {\n      \"accessExpiredAt\": \"<number>\",\n      \"refreshExpiredAt\": \"<number>\",\n      \"accessToken\": \"<string>\",\n      \"refreshToken\": \"<string>\"\n    }\n  },\n  \"code\": \"<number>\",\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"errorData\": {\n    \"blockedUntil\": \"<number>\"\n  }\n}"
+								}
+							]
+						}
+					],
+					"id": "d4f20967-e60f-4055-935a-e0c99d064952"
+				}
+			],
+			"id": "44e031a8-d3b0-4966-86ed-5c6f7f58695e"
+		}
+	],
+	"variable": [
+		{
+			"id": "42b43262-4913-41f8-bd41-9c91299608f3",
+			"key": "baseUrl",
+			"value": "https://localhost:8080"
+		}
+	]
+}

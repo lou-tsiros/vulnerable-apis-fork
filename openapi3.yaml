@@ -1,0 +1,1481 @@
+openapi: 3.0.1
+info:
+  title: Core API
+  description: Core API
+  version: 0.1.0
+servers:
+- url: https://localhost:8080
+tags: []
+paths:
+  /accounts/info:
+    get:
+      tags:
+      - accounts
+      operationId: 계정 정보 조회
+      responses:
+        "200":
+          description: "200"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/accounts-info326327850'
+              examples:
+                계정 정보 조회:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : {
+                        "account" : {
+                          "id" : "12",
+                          "region" : "355",
+                          "email" : "awef@goaaew.com",
+                          "nickname" : "weafgwe",
+                          "joinType" : "email",
+                          "membershipPlan" : "basic",
+                          "grade" : 4,
+                          "linkedAccountCnt" : 1,
+                          "accountSettings" : {
+                            "timeZone" : "Asia/Seoul",
+                            "language" : "ko",
+                            "temperature" : "C"
+                          }
+                        },
+                        "linkedAccounts" : [ {
+                          "id" : "1234",
+                          "accountId" : "12",
+                          "platformId" : "789",
+                          "region" : "355",
+                          "loginId" : "awef@goaaew.com",
+                          "createdAt" : "2021-01-01 00:00:00",
+                          "updatedAt" : "2022-01-01 00:00:00"
+                        } ]
+                      }
+                    }
+  /accounts/nickname-availability:
+    post:
+      tags:
+      - accounts
+      operationId: 닉네임 중복
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/accounts-nickname-availability-1473584715'
+            examples:
+              닉네임 중복 아님:
+                value: |-
+                  {
+                    "nickname" : "test"
+                  }
+              닉네임 중복:
+                value: |-
+                  {
+                    "nickname" : "test"
+                  }
+      responses:
+        "200":
+          description: "200"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/accounts-nickname-availability1446978423'
+              examples:
+                닉네임 중복 아님:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : false
+                    }
+                닉네임 중복:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : true
+                    }
+  /admin/accounts:
+    get:
+      tags:
+      - admin
+      operationId: 계정 조회 목록 성공
+      parameters:
+      - name: page
+        in: query
+        description: 페이지 번호
+        required: true
+        schema:
+          type: string
+      - name: size
+        in: query
+        description: 페이지 크기
+        required: true
+        schema:
+          type: string
+      - name: keyword
+        in: query
+        description: 검색어
+        required: true
+        schema:
+          type: string
+      - name: searchType
+        in: query
+        description: 검색 타입
+        required: true
+        schema:
+          type: string
+      - name: joinType
+        in: query
+        description: 가입 타입
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: "200"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/admin-accounts683926443'
+              examples:
+                계정 조회 목록 성공:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : {
+                        "totalCount" : 2,
+                        "totalPages" : 1,
+                        "currentPage" : 0,
+                        "accounts" : [ {
+                          "id" : "1305805376793128978",
+                          "region" : "82",
+                          "email" : "user1@example.com",
+                          "nickname" : "user1",
+                          "joinType" : "email",
+                          "membershipPlan" : "basic",
+                          "grade" : 0,
+                          "linkedAccountCnt" : 1,
+                          "accountSettings" : {
+                            "timeZone" : "Asia/Seoul",
+                            "language" : "ko",
+                            "temperature" : "C"
+                          }
+                        }, {
+                          "id" : "1305805376793128979",
+                          "region" : "82",
+                          "email" : "user1@example.com",
+                          "nickname" : "user1",
+                          "joinType" : "email",
+                          "membershipPlan" : "basic",
+                          "grade" : 0,
+                          "linkedAccountCnt" : 1,
+                          "accountSettings" : {
+                            "timeZone" : "Asia/Seoul",
+                            "language" : "ko",
+                            "temperature" : "C"
+                          }
+                        } ]
+                      }
+                    }
+  /admin/accounts/by-id:
+    get:
+      tags:
+      - admin
+      operationId: ID로 계정 조회 성공
+      parameters:
+      - name: ids
+        in: query
+        description: 계정 ID
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: "200"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/admin-accounts-by-id1486899108'
+              examples:
+                ID로 계정 조회 성공:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : {
+                        "accounts" : [ {
+                          "id" : "1305805376793128978",
+                          "region" : "82",
+                          "email" : "user1@example.com",
+                          "nickname" : "user1",
+                          "joinType" : "email",
+                          "membershipPlan" : "basic",
+                          "grade" : 0,
+                          "linkedAccountCnt" : 1,
+                          "accountSettings" : {
+                            "timeZone" : "Asia/Seoul",
+                            "language" : "ko",
+                            "temperature" : "C"
+                          }
+                        }, {
+                          "id" : "1305805376793128979",
+                          "region" : "82",
+                          "email" : "user1@example.com",
+                          "nickname" : "user1",
+                          "joinType" : "email",
+                          "membershipPlan" : "basic",
+                          "grade" : 0,
+                          "linkedAccountCnt" : 1,
+                          "accountSettings" : {
+                            "timeZone" : "Asia/Seoul",
+                            "language" : "ko",
+                            "temperature" : "C"
+                          }
+                        } ]
+                      }
+                    }
+  /admin/accounts/search:
+    get:
+      tags:
+      - admin
+      operationId: 닉네임으로 계정 조회 성공
+      parameters:
+      - name: nickname
+        in: query
+        description: 닉네임
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: "200"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/admin-accounts-search-745061913'
+              examples:
+                닉네임으로 계정 조회 성공:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : {
+                        "account" : {
+                          "id" : "1305805376793128978",
+                          "region" : "82",
+                          "email" : "user1@example.com",
+                          "nickname" : "user1",
+                          "joinType" : "email",
+                          "membershipPlan" : "basic",
+                          "grade" : 0,
+                          "linkedAccountCnt" : 1,
+                          "accountSettings" : {
+                            "timeZone" : "Asia/Seoul",
+                            "language" : "ko",
+                            "temperature" : "C"
+                          }
+                        }
+                      }
+                    }
+  /admin/accounts/statistics:
+    get:
+      tags:
+      - admin
+      operationId: 계정 통계정보 조회 (7개 단위로 나누기) 성공
+      parameters:
+      - name: from
+        in: query
+        description: 시작 날짜 (yyyy-MM)
+        required: true
+        schema:
+          type: string
+      - name: end
+        in: query
+        description: 종료 날짜 (yyyy-MM)
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: "200"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/admin-accounts-statistics-1523199974'
+              examples:
+                계정 통계정보 조회 (7개 단위로 나누기) 성공:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : {
+                        "todayRegistrationCount" : 6,
+                        "totalAccountCount" : 6,
+                        "growthRate" : 3.0,
+                        "totalAccountCountByDates" : [ {
+                          "date" : "2024-10-10",
+                          "count" : 1
+                        }, {
+                          "date" : "2024-10-11",
+                          "count" : 2
+                        }, {
+                          "date" : "2024-10-12",
+                          "count" : 3
+                        } ],
+                        "registrationAccountCountByDates" : [ {
+                          "date" : "2024-10-10",
+                          "count" : 1
+                        }, {
+                          "date" : "2024-10-11",
+                          "count" : 1
+                        }, {
+                          "date" : "2024-10-12",
+                          "count" : 1
+                        } ]
+                      }
+                    }
+  /admin/accounts/statistics/active-user:
+    get:
+      tags:
+      - admin
+      operationId: 활성화 유저 조회 성공
+      parameters:
+      - name: from
+        in: query
+        description: 시작 날짜 (yyyy-MM-dd)
+        required: true
+        schema:
+          type: string
+      - name: end
+        in: query
+        description: 종료 날짜 (yyyy-MM-dd)
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: "200"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/admin-accounts-statistics-active-user-1726877385'
+              examples:
+                활성화 유저 조회 성공:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : {
+                        "activeUsers" : [ {
+                          "date" : "2024-10-10",
+                          "dauCount" : 1,
+                          "mauCount" : 1
+                        }, {
+                          "date" : "2024-10-11",
+                          "dauCount" : 2,
+                          "mauCount" : 2
+                        }, {
+                          "date" : "2024-10-12",
+                          "dauCount" : 3,
+                          "mauCount" : 3
+                        } ]
+                      }
+                    }
+  /admin/accounts/statistics/all:
+    get:
+      tags:
+      - admin
+      operationId: 계정 통계 정보 조회
+      parameters:
+      - name: from
+        in: query
+        description: 시작 날짜 (yyyy-MM-dd)
+        required: true
+        schema:
+          type: string
+      - name: end
+        in: query
+        description: 종료 날짜 (yyyy-MM-dd)
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: "200"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/admin-accounts-statistics-all-1991438124'
+              examples:
+                계정 통계 정보 조회:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : {
+                        "totalAccountCount" : 3,
+                        "accountStatisticsByDates" : [ {
+                          "date" : "2024-10-10",
+                          "totalAccountCount" : 1,
+                          "registrationCount" : 1
+                        }, {
+                          "date" : "2024-10-11",
+                          "totalAccountCount" : 2,
+                          "registrationCount" : 2
+                        }, {
+                          "date" : "2024-10-12",
+                          "totalAccountCount" : 3,
+                          "registrationCount" : 3
+                        } ]
+                      }
+                    }
+  /admin/accounts/statistics/dau:
+    get:
+      tags:
+      - admin
+      operationId: 'DAU '
+      parameters:
+      - name: from
+        in: query
+        description: 시작 날짜 (yyyy-MM-dd)
+        required: true
+        schema:
+          type: string
+      - name: end
+        in: query
+        description: 끝 날짜 (yyyy-MM-dd)
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: "200"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/admin-accounts-statistics-dau1054841756'
+              examples:
+                DAU 성공:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : {
+                        "daus" : [ {
+                          "day" : "2021-01-01",
+                          "count" : 10
+                        }, {
+                          "day" : "2021-01-02",
+                          "count" : 20
+                        } ]
+                      }
+                    }
+                DAU from 날짜가 end 날짜 이후 일 때:
+                  value: |-
+                    {
+                      "success" : false,
+                      "message" : "from date can't after end date",
+                      "code" : 4012,
+                      "errorData" : null
+                    }
+  /admin/accounts/statistics/mau:
+    get:
+      tags:
+      - admin
+      operationId: 'MAU '
+      parameters:
+      - name: from
+        in: query
+        description: 시작 날짜 (yyyy-MM)
+        required: true
+        schema:
+          type: string
+      - name: end
+        in: query
+        description: 끝 날짜 (yyyy-MM)
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: "200"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/admin-accounts-statistics-mau351196135'
+              examples:
+                MAU from 날짜가 end 날짜 이후 일 때:
+                  value: |-
+                    {
+                      "success" : false,
+                      "message" : "from date can't after end date",
+                      "code" : 4012,
+                      "errorData" : null
+                    }
+                MAU 성공!:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : {
+                        "maus" : [ {
+                          "month" : "2020-01",
+                          "count" : 10
+                        }, {
+                          "month" : "2020-02",
+                          "count" : 30
+                        }, {
+                          "month" : "2020-03",
+                          "count" : 15
+                        } ]
+                      }
+                    }
+  /admin/accounts/statistics/summary:
+    get:
+      tags:
+      - admin
+      operationId: 대시보드 통계정보 요약 조회 성공
+      responses:
+        "200":
+          description: "200"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/admin-accounts-statistics-summary486513513'
+              examples:
+                대시보드 통계정보 요약 조회 성공:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : {
+                        "dauCount" : 93,
+                        "dauGrowthRate" : 342.86,
+                        "mauCount" : 215,
+                        "mauGrowthRate" : 347.92,
+                        "newAccountCount" : 1,
+                        "newAccountGrowthRate" : 0.0,
+                        "totalWithdrawalCount" : 71,
+                        "withdrawalGrowthRate" : -21.11
+                      }
+                    }
+  /admin/accounts/{id}/details:
+    get:
+      tags:
+      - admin
+      operationId: 계정 상세정보 조회
+      parameters:
+      - name: id
+        in: path
+        description: ""
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: "200"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/admin-accounts-id-details1779288359'
+              examples:
+                계정 상세정보 조회:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : {
+                        "accountBasicInfo" : {
+                          "id" : "1305805376793128978",
+                          "region" : "82",
+                          "email" : "user1@example.com",
+                          "nickname" : "user1",
+                          "joinType" : "email",
+                          "membershipPlan" : "basic",
+                          "grade" : 0,
+                          "inactivity" : false,
+                          "createdAt" : "2024-12-04 20:37:47",
+                          "updatedAt" : "2024-12-04 20:37:47"
+                        },
+                        "notificationSettingsInfo" : {
+                          "appPush" : true,
+                          "emailPush" : false,
+                          "accountPush" : true,
+                          "appUpdatePush" : true
+                        }
+                      }
+                    }
+  /admin/accounts/{id}/linked-accounts:
+    get:
+      tags:
+      - admin
+      operationId: 연계 계정 조회 성공
+      parameters:
+      - name: id
+        in: path
+        description: ""
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: "200"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/admin-accounts-id-linked-accounts-188977865'
+              examples:
+                연계 계정 조회 성공:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : {
+                        "totalCount" : 2,
+                        "linkedAccounts" : [ {
+                          "id" : "1305805376793128978",
+                          "accountId" : "1305805376793128978",
+                          "platformId" : "1",
+                          "region" : "82",
+                          "loginId" : "loginId",
+                          "createdAt" : "2024-12-04 20:37:47",
+                          "updatedAt" : "2024-12-04 20:37:47"
+                        }, {
+                          "id" : "1305805376793128978",
+                          "accountId" : "1305805376793128978",
+                          "platformId" : "1",
+                          "region" : "82",
+                          "loginId" : "loginId",
+                          "createdAt" : "2024-12-04 20:37:47",
+                          "updatedAt" : "2024-12-04 20:37:47"
+                        } ]
+                      }
+                    }
+  /auth/login:
+    post:
+      tags:
+      - auth
+      operationId: 'Login'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/auth-login703259763'
+            examples:
+              Login Not email format:
+                value: |-
+                  {
+                    "deviceToken" : "deviceToken",
+                    "deviceType" : "aos",
+                    "email" : "loginId",
+                    "password" : "password",
+                    "region" : "82"
+                  }
+              Login oem user who has not converted Hejhome-account:
+                value: |-
+                  {
+                    "deviceToken" : "deviceToken",
+                    "deviceType" : "aos",
+                    "email" : "loginId",
+                    "password" : "password",
+                    "region" : "82"
+                  }
+              Login Wrong password for oem user:
+                value: |-
+                  {
+                    "deviceToken" : "deviceToken",
+                    "deviceType" : "aos",
+                    "email" : "loginId",
+                    "password" : "password",
+                    "region" : "82"
+                  }
+              Login Account is already blocked:
+                value: |-
+                  {
+                    "deviceToken" : "deviceToken",
+                    "deviceType" : "aos",
+                    "email" : "loginId",
+                    "password" : "password",
+                    "region" : "82"
+                  }
+              Login Not found account:
+                value: |-
+                  {
+                    "deviceToken" : "deviceToken",
+                    "deviceType" : "aos",
+                    "email" : "loginId",
+                    "password" : "password",
+                    "region" : "82"
+                  }
+              Login Wrong password:
+                value: |-
+                  {
+                    "deviceToken" : "deviceToken",
+                    "deviceType" : "aos",
+                    "email" : "loginId",
+                    "password" : "password",
+                    "region" : "82"
+                  }
+              Login Account is blocked:
+                value: |-
+                  {
+                    "deviceToken" : "deviceToken",
+                    "deviceType" : "aos",
+                    "email" : "loginId",
+                    "password" : "password",
+                    "region" : "82"
+                  }
+              Login No deviceToken in request:
+                value: |-
+                  {
+                    "deviceToken" : null,
+                    "deviceType" : "aos",
+                    "email" : "loginId",
+                    "password" : "password",
+                    "region" : "82"
+                  }
+              Login Login success:
+                value: |-
+                  {
+                    "deviceToken" : "deviceToken",
+                    "deviceType" : "aos",
+                    "email" : "loginId",
+                    "password" : "password",
+                    "region" : "82"
+                  }
+              Login Already converted OEM user:
+                value: |-
+                  {
+                    "deviceToken" : "deviceToken",
+                    "deviceType" : "aos",
+                    "email" : "loginId",
+                    "password" : "password",
+                    "region" : "82"
+                  }
+              Login Input restricted email domain:
+                value: |-
+                  {
+                    "deviceToken" : "deviceToken",
+                    "deviceType" : "aos",
+                    "email" : "temp@telm.net",
+                    "password" : "password",
+                    "region" : "82"
+                  }
+      responses:
+        "200":
+          description: "200"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/auth-login785598133'
+              examples:
+                Login Not email format:
+                  value: |-
+                    {
+                      "success" : false,
+                      "message" : "Invalid input type.",
+                      "code" : 1011,
+                      "errorData" : null
+                    }
+                Login oem user who has not converted Hejhome-account:
+                  value: |-
+                    {
+                      "success" : false,
+                      "message" : "OEM account is already exists.",
+                      "code" : 3015,
+                      "errorData" : null
+                    }
+                Login Wrong password for oem user:
+                  value: |-
+                    {
+                      "success" : false,
+                      "message" : "Password is wrong in tuya.",
+                      "code" : 3018,
+                      "errorData" : null
+                    }
+                Login Account is already blocked:
+                  value: |-
+                    {
+                      "success" : false,
+                      "message" : "This Account is blocked.",
+                      "code" : 3019,
+                      "errorData" : {
+                        "blockedUntil" : 1731000071685
+                      }
+                    }
+                Login Not found account:
+                  value: |-
+                    {
+                      "success" : false,
+                      "message" : "Not found account",
+                      "code" : 1004,
+                      "errorData" : null
+                    }
+                Login Wrong password:
+                  value: |-
+                    {
+                      "success" : false,
+                      "message" : "Password not match.",
+                      "code" : 1006,
+                      "errorData" : null
+                    }
+                Login Account is blocked:
+                  value: |-
+                    {
+                      "success" : false,
+                      "message" : "Account is blocked.",
+                      "code" : 3020,
+                      "errorData" : {
+                        "blockedUntil" : 1731000071685
+                      }
+                    }
+                Login No deviceToken in request:
+                  value: |-
+                    {
+                      "success" : false,
+                      "message" : "Invalid device token.",
+                      "code" : 3003,
+                      "errorData" : null
+                    }
+                Login Login success:
+                  value: |-
+                    {
+                      "success" : true,
+                      "result" : {
+                        "jwtToken" : {
+                          "accessToken" : "accessToken",
+                          "refreshToken" : "refreshToken",
+                          "accessExpiredAt" : 1731654739,
+                          "refreshExpiredAt" : 1733641939
+                        },
+                        "linkedAccount" : [ {
+                          "loginId" : "loginId1",
+                          "password" : "password1",
+                          "region" : "82"
+                        }, {
+                          "loginId" : "loginId2",
+                          "password" : "password2",
+                          "region" : "1"
+                        } ]
+                      }
+                    }
+                Login Already converted OEM user:
+                  value: |-
+                    {
+                      "success" : false,
+                      "message" : "Already converted OEM user.",
+                      "code" : 3017,
+                      "errorData" : null
+                    }
+                Login Input restricted email domain:
+                  value: |-
+                    {
+                      "success" : false,
+                      "message" : "Invalid email.",
+                      "code" : 1000,
+                      "errorData" : null
+                    }
+components:
+  schemas:
+    admin-accounts-statistics-dau1054841756:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            daus:
+              type: array
+              items:
+                type: object
+                properties:
+                  count:
+                    type: number
+                    description: 활성 사용자 수
+                  day:
+                    type: string
+                    description: 날짜
+          description: 응답 본문
+        code:
+          type: number
+          description: 응답 코드
+        success:
+          type: boolean
+          description: 응답 결과
+        message:
+          type: string
+          description: 응답 본문
+    admin-accounts-by-id1486899108:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            accounts:
+              type: array
+              description: 계정 목록
+              items:
+                type: object
+                properties:
+                  membershipPlan:
+                    type: string
+                    description: 멤버십 플랜
+                  linkedAccountCnt:
+                    type: number
+                    description: 연결된 계정 수
+                  grade:
+                    type: number
+                    description: 등급
+                  joinType:
+                    type: string
+                    description: 가입 타입
+                  nickname:
+                    type: string
+                    description: 닉네임
+                  id:
+                    type: string
+                    description: 계정 ID
+                  region:
+                    type: string
+                    description: 지역
+                  accountSettings:
+                    type: object
+                    properties:
+                      temperature:
+                        type: string
+                        description: 온도 단위
+                      timeZone:
+                        type: string
+                        description: 타임존
+                      language:
+                        type: string
+                        description: 언어
+                    description: 계정 설정
+                  email:
+                    type: string
+                    description: 이메일
+          description: 응답 본문
+        success:
+          type: boolean
+          description: 응답 결과
+    auth-login785598133:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            linkedAccount:
+              type: array
+              description: LinkedAccount info
+              items:
+                type: object
+                properties:
+                  password:
+                    type: string
+                    description: Password
+                  loginId:
+                    type: string
+                    description: LoginId
+                  region:
+                    type: string
+                    description: RegionCode based on ISO-3166-1 alpha-2
+            jwtToken:
+              type: object
+              properties:
+                accessExpiredAt:
+                  type: number
+                  description: JWT Access Token expiration time
+                refreshExpiredAt:
+                  type: number
+                  description: JWT Refresh Token expiration time
+                accessToken:
+                  type: string
+                  description: JWT Access Token
+                refreshToken:
+                  type: string
+                  description: JWT Refresh Token
+              description: JWT token info
+          description: Response content
+        code:
+          type: number
+          description: 응답 코드
+        success:
+          type: boolean
+          description: 응답 결과
+        message:
+          type: string
+          description: 응답 본문
+        errorData:
+          type: object
+          properties:
+            blockedUntil:
+              type: number
+              description: 계정 잠금 해제 시간
+          description: 에러 데이터
+    admin-accounts-statistics-active-user-1726877385:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            activeUsers:
+              type: array
+              description: 활성 사용자 목록
+              items:
+                type: object
+                properties:
+                  date:
+                    type: string
+                    description: 날짜
+                  mauCount:
+                    type: number
+                    description: MAU 수
+                  dauCount:
+                    type: number
+                    description: DAU 수
+          description: 응답 본문
+        success:
+          type: boolean
+          description: 응답 결과
+    accounts-nickname-availability1446978423:
+      type: object
+      properties:
+        result:
+          type: boolean
+          description: 중복 여부
+        success:
+          type: boolean
+          description: 응답 결과
+    admin-accounts683926443:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            totalPages:
+              type: number
+              description: 전체 페이지 수
+            accounts:
+              type: array
+              description: 계정 목록
+              items:
+                type: object
+                properties:
+                  membershipPlan:
+                    type: string
+                    description: 멤버십 플랜
+                  linkedAccountCnt:
+                    type: number
+                    description: 연결된 계정 수
+                  grade:
+                    type: number
+                    description: 등급
+                  joinType:
+                    type: string
+                    description: 가입 타입
+                  nickname:
+                    type: string
+                    description: 닉네임
+                  id:
+                    type: string
+                    description: 계정 ID
+                  region:
+                    type: string
+                    description: 지역
+                  accountSettings:
+                    type: object
+                    properties:
+                      temperature:
+                        type: string
+                        description: 온도 단위
+                      timeZone:
+                        type: string
+                        description: 타임존
+                      language:
+                        type: string
+                        description: 언어
+                    description: 계정 설정
+                  email:
+                    type: string
+                    description: 이메일
+            currentPage:
+              type: number
+              description: 현재 페이지 번호
+            totalCount:
+              type: number
+              description: 전체 계정 수
+          description: 응답 본문
+        success:
+          type: boolean
+          description: 응답 결과
+    admin-accounts-statistics-mau351196135:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            maus:
+              type: array
+              items:
+                type: object
+                properties:
+                  month:
+                    type: string
+                    description: 월
+                  count:
+                    type: number
+                    description: 활성 사용자 수
+          description: 응답 본문
+        code:
+          type: number
+          description: 응답 코드
+        success:
+          type: boolean
+          description: 응답 결과
+        message:
+          type: string
+          description: 응답 본문
+    admin-accounts-id-details1779288359:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            notificationSettingsInfo:
+              type: object
+              properties:
+                appPush:
+                  type: boolean
+                  description: 앱 푸시 알림 설정
+                emailPush:
+                  type: boolean
+                  description: 이메일 푸시 알림 설정
+                accountPush:
+                  type: boolean
+                  description: 계정 푸시 알림 설정
+                appUpdatePush:
+                  type: boolean
+                  description: 앱 업데이트 푸시 알림 설정
+              description: 알림 설정 정보
+            accountBasicInfo:
+              type: object
+              properties:
+                membershipPlan:
+                  type: string
+                  description: 멤버십 플랜
+                createdAt:
+                  type: string
+                  description: 계정 생성일
+                inactivity:
+                  type: boolean
+                  description: 휴면 계정 여부
+                grade:
+                  type: number
+                  description: 등급
+                joinType:
+                  type: string
+                  description: 가입 타입
+                nickname:
+                  type: string
+                  description: 닉네임
+                id:
+                  type: string
+                  description: 계정 ID
+                region:
+                  type: string
+                  description: 지역
+                email:
+                  type: string
+                  description: 이메일
+                updatedAt:
+                  type: string
+                  description: 계정 수정일
+              description: 계정 기본 정보
+          description: 응답 본문
+        success:
+          type: boolean
+          description: 응답 결과
+    admin-accounts-id-linked-accounts-188977865:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            linkedAccounts:
+              type: array
+              description: 연계 계정 목록
+              items:
+                type: object
+                properties:
+                  createdAt:
+                    type: string
+                    description: 생성일
+                  accountId:
+                    type: string
+                    description: 계정 ID
+                  loginId:
+                    type: string
+                    description: 로그인 ID
+                  platformId:
+                    type: string
+                    description: 플랫폼 ID
+                  id:
+                    type: string
+                    description: 연계 계정 ID
+                  region:
+                    type: string
+                    description: 지역
+                  updatedAt:
+                    type: string
+                    description: 수정일
+            totalCount:
+              type: number
+              description: 연계 계정 수
+          description: 응답 본문
+        success:
+          type: boolean
+          description: 응답 결과
+    admin-accounts-statistics-1523199974:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            registrationAccountCountByDates:
+              type: array
+              description: 날짜별 등록된 계정 수
+              items:
+                type: object
+                properties:
+                  date:
+                    type: string
+                    description: 날짜
+                  count:
+                    type: number
+                    description: 계정 수
+            totalAccountCount:
+              type: number
+              description: 전체 계정 수
+            growthRate:
+              type: number
+              description: 전일대비 등록된 계정 수 증가율
+            totalAccountCountByDates:
+              type: array
+              description: 날짜별 전체 계정 수
+              items:
+                type: object
+                properties:
+                  date:
+                    type: string
+                    description: 날짜
+                  count:
+                    type: number
+                    description: 계정 수
+            todayRegistrationCount:
+              type: number
+              description: 오늘 등록된 계정 수
+          description: 응답 본문
+        success:
+          type: boolean
+          description: 응답 결과
+    admin-accounts-search-745061913:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            account:
+              type: object
+              properties:
+                membershipPlan:
+                  type: string
+                  description: 멤버십 플랜
+                linkedAccountCnt:
+                  type: number
+                  description: 연결된 계정 수
+                grade:
+                  type: number
+                  description: 등급
+                joinType:
+                  type: string
+                  description: 가입 타입
+                nickname:
+                  type: string
+                  description: 닉네임
+                id:
+                  type: string
+                  description: 계정 ID
+                region:
+                  type: string
+                  description: 지역
+                accountSettings:
+                  type: object
+                  properties:
+                    temperature:
+                      type: string
+                      description: 온도 단위
+                    timeZone:
+                      type: string
+                      description: 타임존
+                    language:
+                      type: string
+                      description: 언어
+                  description: 계정 설정
+                email:
+                  type: string
+                  description: 이메일
+              description: 계정 정보
+          description: 응답 본문
+        success:
+          type: boolean
+          description: 응답 결과
+    admin-accounts-statistics-summary486513513:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            withdrawalGrowthRate:
+              type: number
+              description: 탈퇴 계정 증가율
+            mauGrowthRate:
+              type: number
+              description: MAU 증가율
+            mauCount:
+              type: number
+              description: MAU 수
+            dauGrowthRate:
+              type: number
+              description: DAU 증가율
+            dauCount:
+              type: number
+              description: DAU 수
+            newAccountCount:
+              type: number
+              description: 신규 계정 수
+            totalWithdrawalCount:
+              type: number
+              description: 총 탈퇴 계정 수
+            newAccountGrowthRate:
+              type: number
+              description: 신규 계정 증가율
+          description: 응답 본문
+        success:
+          type: boolean
+          description: 응답 결과
+    accounts-info326327850:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            linkedAccounts:
+              type: array
+              description: 연동 계정 목록
+              items:
+                type: object
+                properties:
+                  createdAt:
+                    type: string
+                    description: 생성일
+                  accountId:
+                    type: string
+                    description: 계정 ID
+                  loginId:
+                    type: string
+                    description: 로그인 ID
+                  platformId:
+                    type: string
+                    description: 플랫폼 ID
+                  id:
+                    type: string
+                    description: 연동 계정 ID
+                  region:
+                    type: string
+                    description: 지역 코드
+                  updatedAt:
+                    type: string
+                    description: 수정일
+            account:
+              type: object
+              properties:
+                membershipPlan:
+                  type: string
+                  description: 멤버십 플랜
+                linkedAccountCnt:
+                  type: number
+                  description: 연동 계정 수
+                grade:
+                  type: number
+                  description: 등급
+                joinType:
+                  type: string
+                  description: 가입 방식
+                nickname:
+                  type: string
+                  description: 닉네임
+                id:
+                  type: string
+                  description: 계정 ID
+                region:
+                  type: string
+                  description: 지역 코드
+                accountSettings:
+                  type: object
+                  properties:
+                    temperature:
+                      type: string
+                      description: 온도 단위
+                    timeZone:
+                      type: string
+                      description: 시간대
+                    language:
+                      type: string
+                      description: 언어
+                  description: 계정 설정
+                email:
+                  type: string
+                  description: 이메일
+              description: 계정 정보
+          description: 응답 객체
+        success:
+          type: boolean
+          description: 응답 결과
+    auth-login703259763:
+      type: object
+      properties:
+        deviceType:
+          type: string
+          description: Device type
+        password:
+          type: string
+          description: Password
+        region:
+          type: string
+          description: RegionCode based on ISO-3166-1 alpha-2
+        email:
+          type: string
+          description: Email
+        deviceToken:
+          description: Device token
+    admin-accounts-statistics-all-1991438124:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            accountStatisticsByDates:
+              type: array
+              description: 날짜별 계정 통계 정보
+              items:
+                type: object
+                properties:
+                  date:
+                    type: string
+                    description: 날짜
+                  registrationCount:
+                    type: number
+                    description: 신규 등록 수
+                  totalAccountCount:
+                    type: number
+                    description: 누적 계정 수
+            totalAccountCount:
+              type: number
+              description: 전체 계정 수
+          description: 응답 본문
+        success:
+          type: boolean
+          description: 응답 결과
+    accounts-nickname-availability-1473584715:
+      type: object
+      properties:
+        nickname:
+          type: string
+          description: 닉네임
