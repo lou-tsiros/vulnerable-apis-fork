@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "ec23d8a5-f577-42b2-920e-b97290db62db",
+		"_postman_id": "b0fc8d51-c979-4e89-9eb6-e121705f0632",
 		"name": "Core Collection",
 		"description": "Core API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "36445156-ec23d8a5-f577-42b2-920e-b97290db62db"
+		"_uid": "36445156-b0fc8d51-c979-4e89-9eb6-e121705f0632"
 	},
 	"item": [
 		{
@@ -15,7 +15,7 @@
 					"item": [
 						{
 							"name": "계정 정보 조회",
-							"id": "76079350-1314-450c-a564-685956a1fe44",
+							"id": "78c0b59a-b611-41af-8825-caba0f25ccfa",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -40,7 +40,7 @@
 							},
 							"response": [
 								{
-									"id": "798cccfa-258c-44f7-97b3-ec69b5658d2d",
+									"id": "689a1dd9-ac30-4b7c-9101-160feb433b59",
 									"name": "200",
 									"originalRequest": {
 										"method": "GET",
@@ -64,6 +64,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -76,14 +77,14 @@
 							]
 						}
 					],
-					"id": "9cd71aae-8e77-4a42-85da-5901187bbe4e"
+					"id": "a24cf457-63c2-4d52-9287-f88b25d50e50"
 				},
 				{
 					"name": "nickname-availability",
 					"item": [
 						{
 							"name": "닉네임 중복",
-							"id": "f4c6fb82-72d0-4f0e-ac5b-7452e245d938",
+							"id": "d76abc15-bcb8-4277-8367-659a4430d7ba",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -122,7 +123,7 @@
 							},
 							"response": [
 								{
-									"id": "00d20557-eff8-428f-ae08-a5c291db90ea",
+									"id": "3a6db4e2-9a19-486b-924a-5a0be11def99",
 									"name": "닉네임 중복 아님",
 									"originalRequest": {
 										"method": "POST",
@@ -160,6 +161,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -170,7 +172,7 @@
 									"body": "{\n  \"success\" : true,\n  \"result\" : false\n}"
 								},
 								{
-									"id": "d5e97157-069e-4ba5-98f6-5eb0e05c27dc",
+									"id": "b8d10dfc-7fcd-4d3a-955d-11a219791a6c",
 									"name": "닉네임 중복",
 									"originalRequest": {
 										"method": "POST",
@@ -208,6 +210,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -220,10 +223,10 @@
 							]
 						}
 					],
-					"id": "6a1f4383-fffc-4483-8813-e0804521d356"
+					"id": "4748fb29-3f31-4659-bc41-b5451f0c2088"
 				}
 			],
-			"id": "4d94318c-62e4-45e1-8be5-bff0dbd2bf0f"
+			"id": "91e5d36b-25a5-46e6-bbec-0b527f629b70"
 		},
 		{
 			"name": "admin",
@@ -236,7 +239,7 @@
 							"item": [
 								{
 									"name": "ID로 계정 조회 성공",
-									"id": "897e97a8-b669-4b99-b7c4-ae4f5b6004aa",
+									"id": "78b3110e-59e4-4abf-87cb-ee2cb627d1d9",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -269,7 +272,7 @@
 									},
 									"response": [
 										{
-											"id": "c8ad128c-cb75-45e0-a61d-d6cb18d28280",
+											"id": "f325472d-ab04-4d0d-b526-aacb7ab2b1bb",
 											"name": "200",
 											"originalRequest": {
 												"method": "GET",
@@ -301,6 +304,7 @@
 											"status": "OK",
 											"code": 200,
 											"_postman_previewlanguage": "json",
+											"_postman_previewtype": "html",
 											"header": [
 												{
 													"key": "Content-Type",
@@ -313,14 +317,14 @@
 									]
 								}
 							],
-							"id": "47054957-46af-40fd-ac46-3c565f450e66"
+							"id": "70d0ec9e-520b-41cf-b65f-67daf0b5ab5f"
 						},
 						{
 							"name": "search",
 							"item": [
 								{
 									"name": "닉네임으로 계정 조회 성공",
-									"id": "fa19c231-1ef3-4bb3-9591-dfb3ed69cb02",
+									"id": "759b507f-b4f1-4d69-90e0-74fb1fd5d303",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -353,7 +357,7 @@
 									},
 									"response": [
 										{
-											"id": "578f9959-36b4-4919-ba7b-0006c7c1bd47",
+											"id": "e7a27823-f7b4-4925-aa44-d87fdb30d9a7",
 											"name": "200",
 											"originalRequest": {
 												"method": "GET",
@@ -385,6 +389,7 @@
 											"status": "OK",
 											"code": 200,
 											"_postman_previewlanguage": "json",
+											"_postman_previewtype": "html",
 											"header": [
 												{
 													"key": "Content-Type",
@@ -397,7 +402,7 @@
 									]
 								}
 							],
-							"id": "2fcdb347-0ad2-4acb-94d8-8730d13cd6d0"
+							"id": "2d30051b-6e80-47ce-963b-8ea8692bddb5"
 						},
 						{
 							"name": "statistics",
@@ -407,7 +412,7 @@
 									"item": [
 										{
 											"name": "활성화 유저 조회 성공",
-											"id": "3a7052ab-83c4-4017-a898-3d6feceb7b79",
+											"id": "46fe3ac1-f51e-44c2-af76-6be22e1460e3",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -446,7 +451,7 @@
 											},
 											"response": [
 												{
-													"id": "e8a5584a-2fb4-4a19-914a-b0a5259e0d20",
+													"id": "5393a058-7003-4abe-aa4f-7d5380ce1cbf",
 													"name": "200",
 													"originalRequest": {
 														"method": "GET",
@@ -484,6 +489,7 @@
 													"status": "OK",
 													"code": 200,
 													"_postman_previewlanguage": "json",
+													"_postman_previewtype": "html",
 													"header": [
 														{
 															"key": "Content-Type",
@@ -496,14 +502,14 @@
 											]
 										}
 									],
-									"id": "c4c4a75b-321d-4614-81d6-79150e43b2f7"
+									"id": "95caa9a5-dff5-40f6-8d6d-f2d50e96899e"
 								},
 								{
 									"name": "all",
 									"item": [
 										{
 											"name": "계정 통계 정보 조회",
-											"id": "195fdf19-6f7d-447d-af67-34ab6be251ba",
+											"id": "6d29127d-be1c-4ebf-b84d-77ad066e8830",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -542,7 +548,7 @@
 											},
 											"response": [
 												{
-													"id": "35a0516b-98f4-4fda-9f22-0853732b0599",
+													"id": "cbd2e032-e714-47d8-983d-8fcd6ba9fe0c",
 													"name": "200",
 													"originalRequest": {
 														"method": "GET",
@@ -580,6 +586,7 @@
 													"status": "OK",
 													"code": 200,
 													"_postman_previewlanguage": "json",
+													"_postman_previewtype": "html",
 													"header": [
 														{
 															"key": "Content-Type",
@@ -592,14 +599,14 @@
 											]
 										}
 									],
-									"id": "d8a089c2-2111-443f-aec2-fff750c342ae"
+									"id": "eb0c9a87-7822-4153-9c6a-4a31fe142e22"
 								},
 								{
 									"name": "dau",
 									"item": [
 										{
 											"name": "DAU ",
-											"id": "2d57f0d0-529d-4c07-9f1c-9341a01d6b05",
+											"id": "f72be1a6-1246-48bd-8f87-6e250bed51a7",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -638,7 +645,7 @@
 											},
 											"response": [
 												{
-													"id": "e8b24829-841b-4a4e-9076-ea46e3db4525",
+													"id": "3518ef76-32ec-4826-b877-61ba2a25e456",
 													"name": "DAU 성공",
 													"originalRequest": {
 														"method": "GET",
@@ -676,6 +683,7 @@
 													"status": "OK",
 													"code": 200,
 													"_postman_previewlanguage": "json",
+													"_postman_previewtype": "html",
 													"header": [
 														{
 															"key": "Content-Type",
@@ -686,7 +694,7 @@
 													"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"daus\" : [ {\n      \"day\" : \"2021-01-01\",\n      \"count\" : 10\n    }, {\n      \"day\" : \"2021-01-02\",\n      \"count\" : 20\n    } ]\n  }\n}"
 												},
 												{
-													"id": "80574f53-550a-4e72-8221-916d85b1f157",
+													"id": "67518289-9580-46f5-a364-09a9c9bf3a39",
 													"name": "DAU from 날짜가 end 날짜 이후 일 때",
 													"originalRequest": {
 														"method": "GET",
@@ -724,6 +732,7 @@
 													"status": "OK",
 													"code": 200,
 													"_postman_previewlanguage": "json",
+													"_postman_previewtype": "html",
 													"header": [
 														{
 															"key": "Content-Type",
@@ -736,14 +745,14 @@
 											]
 										}
 									],
-									"id": "53557ee6-f833-46c0-ad56-b5015e654d0a"
+									"id": "215afc41-5ea9-4939-a4b4-cf7ec466d144"
 								},
 								{
 									"name": "mau",
 									"item": [
 										{
 											"name": "MAU ",
-											"id": "60b898d8-f108-440f-b49d-12f41cdd2783",
+											"id": "9cd885cb-1cf2-4589-881a-a3963be26e14",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -782,7 +791,7 @@
 											},
 											"response": [
 												{
-													"id": "76e3437f-56d7-4772-971a-76279eaaae8d",
+													"id": "08b783c4-f2fb-4d12-8d38-3565a63e8e1b",
 													"name": "MAU from 날짜가 end 날짜 이후 일 때",
 													"originalRequest": {
 														"method": "GET",
@@ -820,6 +829,7 @@
 													"status": "OK",
 													"code": 200,
 													"_postman_previewlanguage": "json",
+													"_postman_previewtype": "html",
 													"header": [
 														{
 															"key": "Content-Type",
@@ -830,7 +840,7 @@
 													"body": "{\n  \"success\" : false,\n  \"message\" : \"from date can't after end date\",\n  \"code\" : 4012,\n  \"errorData\" : null\n}"
 												},
 												{
-													"id": "2ead629d-3969-46b0-937b-242bdd634016",
+													"id": "fdcce432-2bd4-4ba6-8609-20fdac33710e",
 													"name": "MAU 성공!",
 													"originalRequest": {
 														"method": "GET",
@@ -868,6 +878,7 @@
 													"status": "OK",
 													"code": 200,
 													"_postman_previewlanguage": "json",
+													"_postman_previewtype": "html",
 													"header": [
 														{
 															"key": "Content-Type",
@@ -880,14 +891,14 @@
 											]
 										}
 									],
-									"id": "f23695d8-57e8-4282-b3ea-df111a63cf73"
+									"id": "2ff3b485-d739-4bd1-b16c-f729073a8e2f"
 								},
 								{
 									"name": "summary",
 									"item": [
 										{
 											"name": "대시보드 통계정보 요약 조회 성공",
-											"id": "e33d041e-d6a6-48ac-b0b3-c25e37795201",
+											"id": "8893f537-9446-4818-ba50-0244f719c7c7",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -914,7 +925,7 @@
 											},
 											"response": [
 												{
-													"id": "dfc8878c-dfbb-45cc-9b29-018fbf2ca788",
+													"id": "66024fb5-2d17-4136-9e53-950d8e90138f",
 													"name": "200",
 													"originalRequest": {
 														"method": "GET",
@@ -940,6 +951,7 @@
 													"status": "OK",
 													"code": 200,
 													"_postman_previewlanguage": "json",
+													"_postman_previewtype": "html",
 													"header": [
 														{
 															"key": "Content-Type",
@@ -952,11 +964,11 @@
 											]
 										}
 									],
-									"id": "2bd89a95-3827-4afb-b33d-c32def697b6e"
+									"id": "74e197d1-a18f-4b51-9bd3-f4afe25dd896"
 								},
 								{
 									"name": "계정 통계정보 조회 (7개 단위로 나누기) 성공",
-									"id": "ea30b322-a5e7-4b85-93b4-d1a8e470b577",
+									"id": "1409193a-0298-42eb-b6bf-bc0773e93dcb",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -994,7 +1006,7 @@
 									},
 									"response": [
 										{
-											"id": "c101ca43-8d91-4d4e-bdd8-cfa37f98f239",
+											"id": "fd1154fc-93e9-454e-a4d3-29ec91f6e470",
 											"name": "200",
 											"originalRequest": {
 												"method": "GET",
@@ -1031,6 +1043,7 @@
 											"status": "OK",
 											"code": 200,
 											"_postman_previewlanguage": "json",
+											"_postman_previewtype": "html",
 											"header": [
 												{
 													"key": "Content-Type",
@@ -1043,7 +1056,7 @@
 									]
 								}
 							],
-							"id": "71dce629-6972-428b-ba02-527e99012db0"
+							"id": "32c40622-80f6-4dda-8f51-205ed320f83e"
 						},
 						{
 							"name": "{id}",
@@ -1053,7 +1066,7 @@
 									"item": [
 										{
 											"name": "계정 상세정보 조회",
-											"id": "8af4347c-4021-4ddd-b713-386e435eef74",
+											"id": "6aab5751-9270-42d2-90c6-7620e95f3f4c",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -1086,7 +1099,7 @@
 											},
 											"response": [
 												{
-													"id": "e6ab27d7-0113-4c1d-a0da-35689e9438b9",
+													"id": "59583eef-559f-4345-8e72-f23bdd4d5ba7",
 													"name": "200",
 													"originalRequest": {
 														"method": "GET",
@@ -1117,6 +1130,7 @@
 													"status": "OK",
 													"code": 200,
 													"_postman_previewlanguage": "json",
+													"_postman_previewtype": "html",
 													"header": [
 														{
 															"key": "Content-Type",
@@ -1129,14 +1143,14 @@
 											]
 										}
 									],
-									"id": "fcc0111f-da4c-41ac-bcfe-30921c7e3626"
+									"id": "5c92d8ae-4a8c-4526-bf86-8a751951ffc7"
 								},
 								{
 									"name": "linked-accounts",
 									"item": [
 										{
 											"name": "연계 계정 조회 성공",
-											"id": "d595314b-b68b-4eae-84e7-b29a319ed2fe",
+											"id": "7fe322cf-fd37-417f-9e1b-966833ff0e83",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -1169,7 +1183,7 @@
 											},
 											"response": [
 												{
-													"id": "3a95cc31-37ff-4fb4-97f3-687c6e32c81d",
+													"id": "ea1f62e4-05f7-4108-a395-9bd28ffd0819",
 													"name": "200",
 													"originalRequest": {
 														"method": "GET",
@@ -1200,6 +1214,7 @@
 													"status": "OK",
 													"code": 200,
 													"_postman_previewlanguage": "json",
+													"_postman_previewtype": "html",
 													"header": [
 														{
 															"key": "Content-Type",
@@ -1212,14 +1227,14 @@
 											]
 										}
 									],
-									"id": "90961072-b116-4cef-a437-60583b3e5eb9"
+									"id": "cebb25d9-1d3c-485d-b88d-4d65fb9b6955"
 								}
 							],
-							"id": "7b1f6bb7-16f3-4ae6-bc27-1abb0660b179"
+							"id": "dff95eb3-307b-4b53-be7d-c820d7c499c7"
 						},
 						{
 							"name": "계정 조회 목록 성공",
-							"id": "ccdb4154-9b88-43e6-b8a0-5b9b79770c00",
+							"id": "501d3170-b20c-42c8-b971-18cd15b9927a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1271,7 +1286,7 @@
 							},
 							"response": [
 								{
-									"id": "01c9ee9a-3035-475e-9b2c-4c1907374ff4",
+									"id": "a2fbdb2f-6e99-48d5-a357-d904eae7554b",
 									"name": "200",
 									"originalRequest": {
 										"method": "GET",
@@ -1322,6 +1337,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -1334,10 +1350,10 @@
 							]
 						}
 					],
-					"id": "6d9143fb-f8b9-471b-bcfc-ec2c72860713"
+					"id": "90a2225b-41e7-4f69-b2fb-84b31f1d23e3"
 				}
 			],
-			"id": "ce098a74-572b-4e2b-9ef0-336216ef0f7e"
+			"id": "a256a200-b33b-48c5-96a0-4f5e655772ca"
 		},
 		{
 			"name": "auth",
@@ -1347,7 +1363,7 @@
 					"item": [
 						{
 							"name": "Login",
-							"id": "e46d5b19-d965-4a3a-90c6-ba59e0db1be6",
+							"id": "ccded73d-dd01-4747-94f3-26b2fe315351",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1386,7 +1402,7 @@
 							},
 							"response": [
 								{
-									"id": "bf1c193e-3538-46e5-a3d1-ac057db21528",
+									"id": "d5052283-82b6-42a9-ac90-d37a352efa5d",
 									"name": "Login Not email format",
 									"originalRequest": {
 										"method": "POST",
@@ -1424,6 +1440,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -1434,7 +1451,7 @@
 									"body": "{\n  \"success\": false,\n  \"message\": \"Invalid input type.\",\n  \"code\": 1011,\n  \"errorData\": {\n    \"blockedUntil\": 4747.383937700633\n  }\n}"
 								},
 								{
-									"id": "0235ed8d-fd9d-422b-8745-5e23ad3df05c",
+									"id": "64f47eaa-2a3b-42be-b6f3-fe78d4d43b49",
 									"name": "Login oem user who has not converted Hejhome-account",
 									"originalRequest": {
 										"method": "POST",
@@ -1472,6 +1489,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -1482,7 +1500,7 @@
 									"body": "{\n  \"success\": false,\n  \"message\": \"OEM account is already exists.\",\n  \"code\": 3015,\n  \"errorData\": {\n    \"blockedUntil\": 2795.76088847733\n  }\n}"
 								},
 								{
-									"id": "794d0e83-d93e-4935-b74a-aa58338f3ae8",
+									"id": "34b5f034-b93f-4db6-8187-8a8603e46bb9",
 									"name": "Login Wrong password for oem user",
 									"originalRequest": {
 										"method": "POST",
@@ -1520,6 +1538,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -1530,7 +1549,7 @@
 									"body": "{\n  \"success\": false,\n  \"message\": \"Password is wrong in tuya.\",\n  \"code\": 3018,\n  \"errorData\": {\n    \"blockedUntil\": 708.0954528953698\n  }\n}"
 								},
 								{
-									"id": "9ccf1957-a524-4fc2-aed3-e6c7250159ef",
+									"id": "03c1a5ef-4f87-4e83-a3ed-05f6a7a36d2c",
 									"name": "Login Account is already blocked",
 									"originalRequest": {
 										"method": "POST",
@@ -1568,6 +1587,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -1578,7 +1598,7 @@
 									"body": "{\n  \"success\" : false,\n  \"message\" : \"This Account is blocked.\",\n  \"code\" : 3019,\n  \"errorData\" : {\n    \"blockedUntil\" : 1731000071685\n  }\n}"
 								},
 								{
-									"id": "5ffd48c4-9634-4052-8ae4-b2425237986e",
+									"id": "06594407-b2ce-480a-99a7-7c2e5270fd54",
 									"name": "Login Not found account",
 									"originalRequest": {
 										"method": "POST",
@@ -1616,6 +1636,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -1626,7 +1647,7 @@
 									"body": "{\n  \"success\": false,\n  \"message\": \"Not found account\",\n  \"code\": 1004,\n  \"errorData\": {\n    \"blockedUntil\": 3236.0512541886787\n  }\n}"
 								},
 								{
-									"id": "98962249-046c-4b32-9977-260c3253f3be",
+									"id": "1e236756-fbe2-4a68-bfd5-c156901e4d4b",
 									"name": "Login Wrong password",
 									"originalRequest": {
 										"method": "POST",
@@ -1664,6 +1685,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -1674,7 +1696,7 @@
 									"body": "{\n  \"success\": false,\n  \"message\": \"Password not match.\",\n  \"code\": 1006,\n  \"errorData\": {\n    \"blockedUntil\": 1416.7018146969544\n  }\n}"
 								},
 								{
-									"id": "00cf0320-9690-49ed-8af6-a771f6b191e5",
+									"id": "cab46370-818f-4a07-910c-3a5cf9309959",
 									"name": "Login Account is blocked",
 									"originalRequest": {
 										"method": "POST",
@@ -1712,6 +1734,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -1722,7 +1745,7 @@
 									"body": "{\n  \"success\" : false,\n  \"message\" : \"Account is blocked.\",\n  \"code\" : 3020,\n  \"errorData\" : {\n    \"blockedUntil\" : 1731000071685\n  }\n}"
 								},
 								{
-									"id": "6c260418-0e5d-4f97-914f-d437b1d95ef3",
+									"id": "f38db247-355e-47cc-b0fc-56f9bee07f4c",
 									"name": "Login No deviceToken in request",
 									"originalRequest": {
 										"method": "POST",
@@ -1760,6 +1783,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -1770,7 +1794,7 @@
 									"body": "{\n  \"success\": false,\n  \"message\": \"Invalid device token.\",\n  \"code\": 3003,\n  \"errorData\": {\n    \"blockedUntil\": 4048.2260570463445\n  }\n}"
 								},
 								{
-									"id": "da14c1b9-7d90-43a2-9f08-67f43e61d54b",
+									"id": "d4b91b18-d8b3-4050-abfa-8e2f0284b82d",
 									"name": "Login Login success",
 									"originalRequest": {
 										"method": "POST",
@@ -1808,6 +1832,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -1818,7 +1843,7 @@
 									"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"jwtToken\" : {\n      \"accessToken\" : \"accessToken\",\n      \"refreshToken\" : \"refreshToken\",\n      \"accessExpiredAt\" : 1731654739,\n      \"refreshExpiredAt\" : 1733641939\n    },\n    \"linkedAccount\" : [ {\n      \"loginId\" : \"loginId1\",\n      \"password\" : \"password1\",\n      \"region\" : \"82\"\n    }, {\n      \"loginId\" : \"loginId2\",\n      \"password\" : \"password2\",\n      \"region\" : \"1\"\n    } ]\n  }\n}"
 								},
 								{
-									"id": "c89a6848-8f16-466b-ae86-3a7e6a966ccd",
+									"id": "bd9fd9b7-b5a1-4163-97a0-bd09801fe698",
 									"name": "Login Already converted OEM user",
 									"originalRequest": {
 										"method": "POST",
@@ -1856,6 +1881,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -1866,7 +1892,7 @@
 									"body": "{\n  \"success\": false,\n  \"message\": \"Already converted OEM user.\",\n  \"code\": 3017,\n  \"errorData\": {\n    \"blockedUntil\": 3844.675312119796\n  }\n}"
 								},
 								{
-									"id": "7db78b3d-a1fb-429d-b9b0-2ac63804c7eb",
+									"id": "692c6232-b543-4c4f-87b3-c3e89007a95e",
 									"name": "Login Input restricted email domain",
 									"originalRequest": {
 										"method": "POST",
@@ -1904,6 +1930,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -1916,10 +1943,10 @@
 							]
 						}
 					],
-					"id": "0c2f9f07-2fb9-49bc-89fe-94e954e0a1c2"
+					"id": "daf3c2d9-7b0a-4d44-91a1-1c211573be3e"
 				}
 			],
-			"id": "fbe9444a-aecc-4bc6-a0f4-8ddd2ae35925"
+			"id": "2cf7046b-89dc-493d-be55-306a503256a2"
 		}
 	],
 	"variable": [
