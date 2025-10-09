@@ -9,6 +9,7 @@ id = 36d34c0e-8794-42a8-872d-9b3faa0a1967
 
 [config.relations.collections]
 rootDirectory = postman/collections
+files[] = {"id":"36445156-16da18b8-1ccc-49e0-866a-0f835fcd255f","path":"Core Moo Collection.json","metaData":{"generateCollectionPreferences":"{\"requestNameSource\":\"Fallback\",\"indentCharacter\":\"Space\",\"parametersResolution\":\"Example\",\"folderStrategy\":\"Paths\",\"nestedFolderHierarchy\":false,\"includeAuthInfoInExample\":true,\"enableOptionalParameters\":true,\"keepImplicitHeaders\":false,\"includeDeprecated\":true,\"alwaysInheritAuthentication\":false,\"updateCollectionSync\":true,\"requestParametersResolution\":\"Example\",\"exampleParametersResolution\":\"Example\"}"}}
 
 [config.relations.collections.metaData]
 
