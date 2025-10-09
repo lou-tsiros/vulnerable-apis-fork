@@ -1,0 +1,1933 @@
+{
+	"info": {
+		"_postman_id": "ec23d8a5-f577-42b2-920e-b97290db62db",
+		"name": "Core Collection",
+		"description": "Core API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "36445156-ec23d8a5-f577-42b2-920e-b97290db62db"
+	},
+	"item": [
+		{
+			"name": "accounts",
+			"item": [
+				{
+					"name": "info",
+					"item": [
+						{
+							"name": "계정 정보 조회",
+							"id": "76079350-1314-450c-a564-685956a1fe44",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/accounts/info",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"accounts",
+										"info"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "798cccfa-258c-44f7-97b3-ec69b5658d2d",
+									"name": "200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/accounts/info",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"accounts",
+												"info"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"account\" : {\n      \"id\" : \"12\",\n      \"region\" : \"355\",\n      \"email\" : \"awef@goaaew.com\",\n      \"nickname\" : \"weafgwe\",\n      \"joinType\" : \"email\",\n      \"membershipPlan\" : \"basic\",\n      \"grade\" : 4,\n      \"linkedAccountCnt\" : 1,\n      \"accountSettings\" : {\n        \"timeZone\" : \"Asia/Seoul\",\n        \"language\" : \"ko\",\n        \"temperature\" : \"C\"\n      }\n    },\n    \"linkedAccounts\" : [ {\n      \"id\" : \"1234\",\n      \"accountId\" : \"12\",\n      \"platformId\" : \"789\",\n      \"region\" : \"355\",\n      \"loginId\" : \"awef@goaaew.com\",\n      \"createdAt\" : \"2021-01-01 00:00:00\",\n      \"updatedAt\" : \"2022-01-01 00:00:00\"\n    } ]\n  }\n}"
+								}
+							]
+						}
+					],
+					"id": "9cd71aae-8e77-4a42-85da-5901187bbe4e"
+				},
+				{
+					"name": "nickname-availability",
+					"item": [
+						{
+							"name": "닉네임 중복",
+							"id": "f4c6fb82-72d0-4f0e-ac5b-7452e245d938",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"nickname\" : \"test\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/accounts/nickname-availability",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"accounts",
+										"nickname-availability"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "00d20557-eff8-428f-ae08-a5c291db90ea",
+									"name": "닉네임 중복 아님",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"nickname\" : \"test\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/accounts/nickname-availability",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"accounts",
+												"nickname-availability"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\" : true,\n  \"result\" : false\n}"
+								},
+								{
+									"id": "d5e97157-069e-4ba5-98f6-5eb0e05c27dc",
+									"name": "닉네임 중복",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"nickname\" : \"test\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/accounts/nickname-availability",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"accounts",
+												"nickname-availability"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\" : true,\n  \"result\" : true\n}"
+								}
+							]
+						}
+					],
+					"id": "6a1f4383-fffc-4483-8813-e0804521d356"
+				}
+			],
+			"id": "4d94318c-62e4-45e1-8be5-bff0dbd2bf0f"
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "accounts",
+					"item": [
+						{
+							"name": "by-id",
+							"item": [
+								{
+									"name": "ID로 계정 조회 성공",
+									"id": "897e97a8-b669-4b99-b7c4-ae4f5b6004aa",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/admin/accounts/by-id?ids=string",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"admin",
+												"accounts",
+												"by-id"
+											],
+											"query": [
+												{
+													"key": "ids",
+													"value": "string",
+													"description": "계정 ID"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "c8ad128c-cb75-45e0-a61d-d6cb18d28280",
+											"name": "200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/by-id?ids=string",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"by-id"
+													],
+													"query": [
+														{
+															"description": "계정 ID",
+															"key": "ids",
+															"value": "string"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"accounts\" : [ {\n      \"id\" : \"1305805376793128978\",\n      \"region\" : \"82\",\n      \"email\" : \"user1@example.com\",\n      \"nickname\" : \"user1\",\n      \"joinType\" : \"email\",\n      \"membershipPlan\" : \"basic\",\n      \"grade\" : 0,\n      \"linkedAccountCnt\" : 1,\n      \"accountSettings\" : {\n        \"timeZone\" : \"Asia/Seoul\",\n        \"language\" : \"ko\",\n        \"temperature\" : \"C\"\n      }\n    }, {\n      \"id\" : \"1305805376793128979\",\n      \"region\" : \"82\",\n      \"email\" : \"user1@example.com\",\n      \"nickname\" : \"user1\",\n      \"joinType\" : \"email\",\n      \"membershipPlan\" : \"basic\",\n      \"grade\" : 0,\n      \"linkedAccountCnt\" : 1,\n      \"accountSettings\" : {\n        \"timeZone\" : \"Asia/Seoul\",\n        \"language\" : \"ko\",\n        \"temperature\" : \"C\"\n      }\n    } ]\n  }\n}"
+										}
+									]
+								}
+							],
+							"id": "47054957-46af-40fd-ac46-3c565f450e66"
+						},
+						{
+							"name": "search",
+							"item": [
+								{
+									"name": "닉네임으로 계정 조회 성공",
+									"id": "fa19c231-1ef3-4bb3-9591-dfb3ed69cb02",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/admin/accounts/search?nickname=string",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"admin",
+												"accounts",
+												"search"
+											],
+											"query": [
+												{
+													"key": "nickname",
+													"value": "string",
+													"description": "닉네임"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "578f9959-36b4-4919-ba7b-0006c7c1bd47",
+											"name": "200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/search?nickname=string",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"search"
+													],
+													"query": [
+														{
+															"description": "닉네임",
+															"key": "nickname",
+															"value": "string"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"account\" : {\n      \"id\" : \"1305805376793128978\",\n      \"region\" : \"82\",\n      \"email\" : \"user1@example.com\",\n      \"nickname\" : \"user1\",\n      \"joinType\" : \"email\",\n      \"membershipPlan\" : \"basic\",\n      \"grade\" : 0,\n      \"linkedAccountCnt\" : 1,\n      \"accountSettings\" : {\n        \"timeZone\" : \"Asia/Seoul\",\n        \"language\" : \"ko\",\n        \"temperature\" : \"C\"\n      }\n    }\n  }\n}"
+										}
+									]
+								}
+							],
+							"id": "2fcdb347-0ad2-4acb-94d8-8730d13cd6d0"
+						},
+						{
+							"name": "statistics",
+							"item": [
+								{
+									"name": "active-user",
+									"item": [
+										{
+											"name": "활성화 유저 조회 성공",
+											"id": "3a7052ab-83c4-4017-a898-3d6feceb7b79",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/statistics/active-user?from=string&end=string",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"statistics",
+														"active-user"
+													],
+													"query": [
+														{
+															"key": "from",
+															"value": "string",
+															"description": "시작 날짜 (yyyy-MM-dd)"
+														},
+														{
+															"key": "end",
+															"value": "string",
+															"description": "종료 날짜 (yyyy-MM-dd)"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "e8a5584a-2fb4-4a19-914a-b0a5259e0d20",
+													"name": "200",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/statistics/active-user?from=string&end=string",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																"statistics",
+																"active-user"
+															],
+															"query": [
+																{
+																	"description": "시작 날짜 (yyyy-MM-dd)",
+																	"key": "from",
+																	"value": "string"
+																},
+																{
+																	"description": "종료 날짜 (yyyy-MM-dd)",
+																	"key": "end",
+																	"value": "string"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"activeUsers\" : [ {\n      \"date\" : \"2024-10-10\",\n      \"dauCount\" : 1,\n      \"mauCount\" : 1\n    }, {\n      \"date\" : \"2024-10-11\",\n      \"dauCount\" : 2,\n      \"mauCount\" : 2\n    }, {\n      \"date\" : \"2024-10-12\",\n      \"dauCount\" : 3,\n      \"mauCount\" : 3\n    } ]\n  }\n}"
+												}
+											]
+										}
+									],
+									"id": "c4c4a75b-321d-4614-81d6-79150e43b2f7"
+								},
+								{
+									"name": "all",
+									"item": [
+										{
+											"name": "계정 통계 정보 조회",
+											"id": "195fdf19-6f7d-447d-af67-34ab6be251ba",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/statistics/all?from=string&end=string",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"statistics",
+														"all"
+													],
+													"query": [
+														{
+															"key": "from",
+															"value": "string",
+															"description": "시작 날짜 (yyyy-MM-dd)"
+														},
+														{
+															"key": "end",
+															"value": "string",
+															"description": "종료 날짜 (yyyy-MM-dd)"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "35a0516b-98f4-4fda-9f22-0853732b0599",
+													"name": "200",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/statistics/all?from=string&end=string",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																"statistics",
+																"all"
+															],
+															"query": [
+																{
+																	"description": "시작 날짜 (yyyy-MM-dd)",
+																	"key": "from",
+																	"value": "string"
+																},
+																{
+																	"description": "종료 날짜 (yyyy-MM-dd)",
+																	"key": "end",
+																	"value": "string"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"totalAccountCount\" : 3,\n    \"accountStatisticsByDates\" : [ {\n      \"date\" : \"2024-10-10\",\n      \"totalAccountCount\" : 1,\n      \"registrationCount\" : 1\n    }, {\n      \"date\" : \"2024-10-11\",\n      \"totalAccountCount\" : 2,\n      \"registrationCount\" : 2\n    }, {\n      \"date\" : \"2024-10-12\",\n      \"totalAccountCount\" : 3,\n      \"registrationCount\" : 3\n    } ]\n  }\n}"
+												}
+											]
+										}
+									],
+									"id": "d8a089c2-2111-443f-aec2-fff750c342ae"
+								},
+								{
+									"name": "dau",
+									"item": [
+										{
+											"name": "DAU ",
+											"id": "2d57f0d0-529d-4c07-9f1c-9341a01d6b05",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/statistics/dau?from=string&end=string",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"statistics",
+														"dau"
+													],
+													"query": [
+														{
+															"key": "from",
+															"value": "string",
+															"description": "시작 날짜 (yyyy-MM-dd)"
+														},
+														{
+															"key": "end",
+															"value": "string",
+															"description": "끝 날짜 (yyyy-MM-dd)"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "e8b24829-841b-4a4e-9076-ea46e3db4525",
+													"name": "DAU 성공",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/statistics/dau?from=string&end=string",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																"statistics",
+																"dau"
+															],
+															"query": [
+																{
+																	"description": "시작 날짜 (yyyy-MM-dd)",
+																	"key": "from",
+																	"value": "string"
+																},
+																{
+																	"description": "끝 날짜 (yyyy-MM-dd)",
+																	"key": "end",
+																	"value": "string"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"daus\" : [ {\n      \"day\" : \"2021-01-01\",\n      \"count\" : 10\n    }, {\n      \"day\" : \"2021-01-02\",\n      \"count\" : 20\n    } ]\n  }\n}"
+												},
+												{
+													"id": "80574f53-550a-4e72-8221-916d85b1f157",
+													"name": "DAU from 날짜가 end 날짜 이후 일 때",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/statistics/dau?from=string&end=string",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																"statistics",
+																"dau"
+															],
+															"query": [
+																{
+																	"description": "시작 날짜 (yyyy-MM-dd)",
+																	"key": "from",
+																	"value": "string"
+																},
+																{
+																	"description": "끝 날짜 (yyyy-MM-dd)",
+																	"key": "end",
+																	"value": "string"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"success\" : false,\n  \"message\" : \"from date can't after end date\",\n  \"code\" : 4012,\n  \"errorData\" : null\n}"
+												}
+											]
+										}
+									],
+									"id": "53557ee6-f833-46c0-ad56-b5015e654d0a"
+								},
+								{
+									"name": "mau",
+									"item": [
+										{
+											"name": "MAU ",
+											"id": "60b898d8-f108-440f-b49d-12f41cdd2783",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/statistics/mau?from=string&end=string",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"statistics",
+														"mau"
+													],
+													"query": [
+														{
+															"key": "from",
+															"value": "string",
+															"description": "시작 날짜 (yyyy-MM)"
+														},
+														{
+															"key": "end",
+															"value": "string",
+															"description": "끝 날짜 (yyyy-MM)"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "76e3437f-56d7-4772-971a-76279eaaae8d",
+													"name": "MAU from 날짜가 end 날짜 이후 일 때",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/statistics/mau?from=string&end=string",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																"statistics",
+																"mau"
+															],
+															"query": [
+																{
+																	"description": "시작 날짜 (yyyy-MM)",
+																	"key": "from",
+																	"value": "string"
+																},
+																{
+																	"description": "끝 날짜 (yyyy-MM)",
+																	"key": "end",
+																	"value": "string"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"success\" : false,\n  \"message\" : \"from date can't after end date\",\n  \"code\" : 4012,\n  \"errorData\" : null\n}"
+												},
+												{
+													"id": "2ead629d-3969-46b0-937b-242bdd634016",
+													"name": "MAU 성공!",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/statistics/mau?from=string&end=string",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																"statistics",
+																"mau"
+															],
+															"query": [
+																{
+																	"description": "시작 날짜 (yyyy-MM)",
+																	"key": "from",
+																	"value": "string"
+																},
+																{
+																	"description": "끝 날짜 (yyyy-MM)",
+																	"key": "end",
+																	"value": "string"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"maus\" : [ {\n      \"month\" : \"2020-01\",\n      \"count\" : 10\n    }, {\n      \"month\" : \"2020-02\",\n      \"count\" : 30\n    }, {\n      \"month\" : \"2020-03\",\n      \"count\" : 15\n    } ]\n  }\n}"
+												}
+											]
+										}
+									],
+									"id": "f23695d8-57e8-4282-b3ea-df111a63cf73"
+								},
+								{
+									"name": "summary",
+									"item": [
+										{
+											"name": "대시보드 통계정보 요약 조회 성공",
+											"id": "e33d041e-d6a6-48ac-b0b3-c25e37795201",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/statistics/summary",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"statistics",
+														"summary"
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "dfc8878c-dfbb-45cc-9b29-018fbf2ca788",
+													"name": "200",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/statistics/summary",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																"statistics",
+																"summary"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"dauCount\" : 93,\n    \"dauGrowthRate\" : 342.86,\n    \"mauCount\" : 215,\n    \"mauGrowthRate\" : 347.92,\n    \"newAccountCount\" : 1,\n    \"newAccountGrowthRate\" : 0.0,\n    \"totalWithdrawalCount\" : 71,\n    \"withdrawalGrowthRate\" : -21.11\n  }\n}"
+												}
+											]
+										}
+									],
+									"id": "2bd89a95-3827-4afb-b33d-c32def697b6e"
+								},
+								{
+									"name": "계정 통계정보 조회 (7개 단위로 나누기) 성공",
+									"id": "ea30b322-a5e7-4b85-93b4-d1a8e470b577",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/admin/accounts/statistics?from=string&end=string",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"admin",
+												"accounts",
+												"statistics"
+											],
+											"query": [
+												{
+													"key": "from",
+													"value": "string",
+													"description": "시작 날짜 (yyyy-MM)"
+												},
+												{
+													"key": "end",
+													"value": "string",
+													"description": "종료 날짜 (yyyy-MM)"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "c101ca43-8d91-4d4e-bdd8-cfa37f98f239",
+											"name": "200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/statistics?from=string&end=string",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														"statistics"
+													],
+													"query": [
+														{
+															"description": "시작 날짜 (yyyy-MM)",
+															"key": "from",
+															"value": "string"
+														},
+														{
+															"description": "종료 날짜 (yyyy-MM)",
+															"key": "end",
+															"value": "string"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"todayRegistrationCount\" : 6,\n    \"totalAccountCount\" : 6,\n    \"growthRate\" : 3.0,\n    \"totalAccountCountByDates\" : [ {\n      \"date\" : \"2024-10-10\",\n      \"count\" : 1\n    }, {\n      \"date\" : \"2024-10-11\",\n      \"count\" : 2\n    }, {\n      \"date\" : \"2024-10-12\",\n      \"count\" : 3\n    } ],\n    \"registrationAccountCountByDates\" : [ {\n      \"date\" : \"2024-10-10\",\n      \"count\" : 1\n    }, {\n      \"date\" : \"2024-10-11\",\n      \"count\" : 1\n    }, {\n      \"date\" : \"2024-10-12\",\n      \"count\" : 1\n    } ]\n  }\n}"
+										}
+									]
+								}
+							],
+							"id": "71dce629-6972-428b-ba02-527e99012db0"
+						},
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "details",
+									"item": [
+										{
+											"name": "계정 상세정보 조회",
+											"id": "8af4347c-4021-4ddd-b713-386e435eef74",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/:id/details",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														":id",
+														"details"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "string"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "e6ab27d7-0113-4c1d-a0da-35689e9438b9",
+													"name": "200",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/:id/details",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																":id",
+																"details"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"accountBasicInfo\" : {\n      \"id\" : \"1305805376793128978\",\n      \"region\" : \"82\",\n      \"email\" : \"user1@example.com\",\n      \"nickname\" : \"user1\",\n      \"joinType\" : \"email\",\n      \"membershipPlan\" : \"basic\",\n      \"grade\" : 0,\n      \"inactivity\" : false,\n      \"createdAt\" : \"2024-12-04 20:37:47\",\n      \"updatedAt\" : \"2024-12-04 20:37:47\"\n    },\n    \"notificationSettingsInfo\" : {\n      \"appPush\" : true,\n      \"emailPush\" : false,\n      \"accountPush\" : true,\n      \"appUpdatePush\" : true\n    }\n  }\n}"
+												}
+											]
+										}
+									],
+									"id": "fcc0111f-da4c-41ac-bcfe-30921c7e3626"
+								},
+								{
+									"name": "linked-accounts",
+									"item": [
+										{
+											"name": "연계 계정 조회 성공",
+											"id": "d595314b-b68b-4eae-84e7-b29a319ed2fe",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/admin/accounts/:id/linked-accounts",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"admin",
+														"accounts",
+														":id",
+														"linked-accounts"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "string"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "3a95cc31-37ff-4fb4-97f3-687c6e32c81d",
+													"name": "200",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/admin/accounts/:id/linked-accounts",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"admin",
+																"accounts",
+																":id",
+																"linked-accounts"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"totalCount\" : 2,\n    \"linkedAccounts\" : [ {\n      \"id\" : \"1305805376793128978\",\n      \"accountId\" : \"1305805376793128978\",\n      \"platformId\" : \"1\",\n      \"region\" : \"82\",\n      \"loginId\" : \"loginId\",\n      \"createdAt\" : \"2024-12-04 20:37:47\",\n      \"updatedAt\" : \"2024-12-04 20:37:47\"\n    }, {\n      \"id\" : \"1305805376793128978\",\n      \"accountId\" : \"1305805376793128978\",\n      \"platformId\" : \"1\",\n      \"region\" : \"82\",\n      \"loginId\" : \"loginId\",\n      \"createdAt\" : \"2024-12-04 20:37:47\",\n      \"updatedAt\" : \"2024-12-04 20:37:47\"\n    } ]\n  }\n}"
+												}
+											]
+										}
+									],
+									"id": "90961072-b116-4cef-a437-60583b3e5eb9"
+								}
+							],
+							"id": "7b1f6bb7-16f3-4ae6-bc27-1abb0660b179"
+						},
+						{
+							"name": "계정 조회 목록 성공",
+							"id": "ccdb4154-9b88-43e6-b8a0-5b9b79770c00",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/admin/accounts?page=string&size=string&keyword=string&searchType=string&joinType=string",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"accounts"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "string",
+											"description": "페이지 번호"
+										},
+										{
+											"key": "size",
+											"value": "string",
+											"description": "페이지 크기"
+										},
+										{
+											"key": "keyword",
+											"value": "string",
+											"description": "검색어"
+										},
+										{
+											"key": "searchType",
+											"value": "string",
+											"description": "검색 타입"
+										},
+										{
+											"key": "joinType",
+											"value": "string",
+											"description": "가입 타입"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "01c9ee9a-3035-475e-9b2c-4c1907374ff4",
+									"name": "200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/admin/accounts?page=string&size=string&keyword=string&searchType=string&joinType=string",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"admin",
+												"accounts"
+											],
+											"query": [
+												{
+													"description": "페이지 번호",
+													"key": "page",
+													"value": "string"
+												},
+												{
+													"description": "페이지 크기",
+													"key": "size",
+													"value": "string"
+												},
+												{
+													"description": "검색어",
+													"key": "keyword",
+													"value": "string"
+												},
+												{
+													"description": "검색 타입",
+													"key": "searchType",
+													"value": "string"
+												},
+												{
+													"description": "가입 타입",
+													"key": "joinType",
+													"value": "string"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"totalCount\" : 2,\n    \"totalPages\" : 1,\n    \"currentPage\" : 0,\n    \"accounts\" : [ {\n      \"id\" : \"1305805376793128978\",\n      \"region\" : \"82\",\n      \"email\" : \"user1@example.com\",\n      \"nickname\" : \"user1\",\n      \"joinType\" : \"email\",\n      \"membershipPlan\" : \"basic\",\n      \"grade\" : 0,\n      \"linkedAccountCnt\" : 1,\n      \"accountSettings\" : {\n        \"timeZone\" : \"Asia/Seoul\",\n        \"language\" : \"ko\",\n        \"temperature\" : \"C\"\n      }\n    }, {\n      \"id\" : \"1305805376793128979\",\n      \"region\" : \"82\",\n      \"email\" : \"user1@example.com\",\n      \"nickname\" : \"user1\",\n      \"joinType\" : \"email\",\n      \"membershipPlan\" : \"basic\",\n      \"grade\" : 0,\n      \"linkedAccountCnt\" : 1,\n      \"accountSettings\" : {\n        \"timeZone\" : \"Asia/Seoul\",\n        \"language\" : \"ko\",\n        \"temperature\" : \"C\"\n      }\n    } ]\n  }\n}"
+								}
+							]
+						}
+					],
+					"id": "6d9143fb-f8b9-471b-bcfc-ec2c72860713"
+				}
+			],
+			"id": "ce098a74-572b-4e2b-9ef0-336216ef0f7e"
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"item": [
+						{
+							"name": "Login",
+							"id": "e46d5b19-d965-4a3a-90c6-ba59e0db1be6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"deviceToken\" : \"deviceToken\",\n  \"deviceType\" : \"aos\",\n  \"email\" : \"loginId\",\n  \"password\" : \"password\",\n  \"region\" : \"82\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "bf1c193e-3538-46e5-a3d1-ac057db21528",
+									"name": "Login Not email format",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"deviceToken\" : \"deviceToken\",\n  \"deviceType\" : \"aos\",\n  \"email\" : \"loginId\",\n  \"password\" : \"password\",\n  \"region\" : \"82\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\": false,\n  \"message\": \"Invalid input type.\",\n  \"code\": 1011,\n  \"errorData\": {\n    \"blockedUntil\": 4747.383937700633\n  }\n}"
+								},
+								{
+									"id": "0235ed8d-fd9d-422b-8745-5e23ad3df05c",
+									"name": "Login oem user who has not converted Hejhome-account",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"deviceToken\" : \"deviceToken\",\n  \"deviceType\" : \"aos\",\n  \"email\" : \"loginId\",\n  \"password\" : \"password\",\n  \"region\" : \"82\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\": false,\n  \"message\": \"OEM account is already exists.\",\n  \"code\": 3015,\n  \"errorData\": {\n    \"blockedUntil\": 2795.76088847733\n  }\n}"
+								},
+								{
+									"id": "794d0e83-d93e-4935-b74a-aa58338f3ae8",
+									"name": "Login Wrong password for oem user",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"deviceToken\" : \"deviceToken\",\n  \"deviceType\" : \"aos\",\n  \"email\" : \"loginId\",\n  \"password\" : \"password\",\n  \"region\" : \"82\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\": false,\n  \"message\": \"Password is wrong in tuya.\",\n  \"code\": 3018,\n  \"errorData\": {\n    \"blockedUntil\": 708.0954528953698\n  }\n}"
+								},
+								{
+									"id": "9ccf1957-a524-4fc2-aed3-e6c7250159ef",
+									"name": "Login Account is already blocked",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"deviceToken\" : \"deviceToken\",\n  \"deviceType\" : \"aos\",\n  \"email\" : \"loginId\",\n  \"password\" : \"password\",\n  \"region\" : \"82\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\" : false,\n  \"message\" : \"This Account is blocked.\",\n  \"code\" : 3019,\n  \"errorData\" : {\n    \"blockedUntil\" : 1731000071685\n  }\n}"
+								},
+								{
+									"id": "5ffd48c4-9634-4052-8ae4-b2425237986e",
+									"name": "Login Not found account",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"deviceToken\" : \"deviceToken\",\n  \"deviceType\" : \"aos\",\n  \"email\" : \"loginId\",\n  \"password\" : \"password\",\n  \"region\" : \"82\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\": false,\n  \"message\": \"Not found account\",\n  \"code\": 1004,\n  \"errorData\": {\n    \"blockedUntil\": 3236.0512541886787\n  }\n}"
+								},
+								{
+									"id": "98962249-046c-4b32-9977-260c3253f3be",
+									"name": "Login Wrong password",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"deviceToken\" : \"deviceToken\",\n  \"deviceType\" : \"aos\",\n  \"email\" : \"loginId\",\n  \"password\" : \"password\",\n  \"region\" : \"82\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\": false,\n  \"message\": \"Password not match.\",\n  \"code\": 1006,\n  \"errorData\": {\n    \"blockedUntil\": 1416.7018146969544\n  }\n}"
+								},
+								{
+									"id": "00cf0320-9690-49ed-8af6-a771f6b191e5",
+									"name": "Login Account is blocked",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"deviceToken\" : \"deviceToken\",\n  \"deviceType\" : \"aos\",\n  \"email\" : \"loginId\",\n  \"password\" : \"password\",\n  \"region\" : \"82\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\" : false,\n  \"message\" : \"Account is blocked.\",\n  \"code\" : 3020,\n  \"errorData\" : {\n    \"blockedUntil\" : 1731000071685\n  }\n}"
+								},
+								{
+									"id": "6c260418-0e5d-4f97-914f-d437b1d95ef3",
+									"name": "Login No deviceToken in request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"deviceToken\" : null,\n  \"deviceType\" : \"aos\",\n  \"email\" : \"loginId\",\n  \"password\" : \"password\",\n  \"region\" : \"82\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\": false,\n  \"message\": \"Invalid device token.\",\n  \"code\": 3003,\n  \"errorData\": {\n    \"blockedUntil\": 4048.2260570463445\n  }\n}"
+								},
+								{
+									"id": "da14c1b9-7d90-43a2-9f08-67f43e61d54b",
+									"name": "Login Login success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"deviceToken\" : \"deviceToken\",\n  \"deviceType\" : \"aos\",\n  \"email\" : \"loginId\",\n  \"password\" : \"password\",\n  \"region\" : \"82\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\" : true,\n  \"result\" : {\n    \"jwtToken\" : {\n      \"accessToken\" : \"accessToken\",\n      \"refreshToken\" : \"refreshToken\",\n      \"accessExpiredAt\" : 1731654739,\n      \"refreshExpiredAt\" : 1733641939\n    },\n    \"linkedAccount\" : [ {\n      \"loginId\" : \"loginId1\",\n      \"password\" : \"password1\",\n      \"region\" : \"82\"\n    }, {\n      \"loginId\" : \"loginId2\",\n      \"password\" : \"password2\",\n      \"region\" : \"1\"\n    } ]\n  }\n}"
+								},
+								{
+									"id": "c89a6848-8f16-466b-ae86-3a7e6a966ccd",
+									"name": "Login Already converted OEM user",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"deviceToken\" : \"deviceToken\",\n  \"deviceType\" : \"aos\",\n  \"email\" : \"loginId\",\n  \"password\" : \"password\",\n  \"region\" : \"82\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\": false,\n  \"message\": \"Already converted OEM user.\",\n  \"code\": 3017,\n  \"errorData\": {\n    \"blockedUntil\": 3844.675312119796\n  }\n}"
+								},
+								{
+									"id": "7db78b3d-a1fb-429d-b9b0-2ac63804c7eb",
+									"name": "Login Input restricted email domain",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"deviceToken\" : \"deviceToken\",\n  \"deviceType\" : \"aos\",\n  \"email\" : \"temp@telm.net\",\n  \"password\" : \"password\",\n  \"region\" : \"82\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\": false,\n  \"message\": \"Invalid email.\",\n  \"code\": 1000,\n  \"errorData\": {\n    \"blockedUntil\": 9083.73838338109\n  }\n}"
+								}
+							]
+						}
+					],
+					"id": "0c2f9f07-2fb9-49bc-89fe-94e954e0a1c2"
+				}
+			],
+			"id": "fbe9444a-aecc-4bc6-a0f4-8ddd2ae35925"
+		}
+	],
+	"variable": [
+		{
+			"id": "fb37b47b-31c5-4f80-b448-a83456fb31d5",
+			"key": "baseUrl",
+			"value": "https://localhost:8080",
+			"type": "any"
+		}
+	]
+}
